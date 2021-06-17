@@ -45,6 +45,7 @@ study = StudyDefinition(
         "registered_at_start",
         registered_at_start = patients.registered_as_of("index_date"),
         ),
+
     ),
     
     sex = patients.sex(
