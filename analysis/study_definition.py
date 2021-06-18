@@ -1,5 +1,5 @@
 from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv
-from codelists import covid_codelist,flu_comorb
+from codelists import covid_codelist,flu_comorb,corticosteroid_contraindications
 from datetime import date, timedelta
 
 '''
@@ -23,13 +23,9 @@ study = StudyDefinition(
     index_date = ix_dt,
 
     population=patients.satisfying(
-       #'''age>=65''' 
-        # '''(age >= 65 OR ((age >=55 AND age <65)) AND has_comorbidities)) 
         
         # AND had_covid_symtoms
         # AND NOT corticosteroid_ADR
-        # AND NOT has_covid_admission
-        # AND NOT has_covid_emergency_admission'''
 
         """
             NOT has_died
@@ -41,11 +37,21 @@ study = StudyDefinition(
             (sex = "M" OR sex = "F")
             AND 
             (first_positive_test_type = "PCR_Only" OR first_positive_test_type = "LFT_WithPCR")
+            AND
+            NOT corticosteroid_contraindicated
         """,
 
         has_died=patients.died_from_any_cause(
             on_or_before = "index_date",
             returning = "binary_flag",
+        ),
+
+        corticosteroid_contraindicated = patients.with_these_clinical_events(
+            corticosteroid_contraindications, 
+            returning='binary_flag', 
+            # return_expectations={
+            #         "incidence": 0.01
+            #     }
         ),
 
         registered = patients.satisfying(
@@ -79,13 +85,15 @@ study = StudyDefinition(
             "rate":"universal",
             "category": {
                 "ratios": {
-                    "LFT_Only":0.3, 
-                    "PCR_Only":0.4, 
-                    "LFT_WithPCR":0.3
+                    "LFT_Only":0, 
+                    "PCR_Only":0.8, 
+                    "LFT_WithPCR":0.2
                 }
             }
         },
     ),
+
+    
 
     has_comorbidities = patients.with_these_clinical_events(
         flu_comorb, 
@@ -94,7 +102,7 @@ study = StudyDefinition(
         return_expectations={
                 "incidence": 0.05
             }
-        ),
+    ),
 
     sex = patients.sex(
         return_expectations = {

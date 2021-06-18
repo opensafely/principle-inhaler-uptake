@@ -12,3 +12,9 @@ flu_comorb = codelist_from_csv(
     system="snomed",
     column='code'
 )
+
+corticosteroid_contraindications = codelist_from_csv(
+    "codelists/jon_massey-inhaled-corticosteroid-contraindications-05ea5490.csv",
+    system="snomed",
+    column='code'
+)
