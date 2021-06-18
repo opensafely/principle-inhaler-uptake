@@ -1,5 +1,6 @@
 from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv
-from codelists import *
+from codelists import covid_codelist,flu_comorb
+from datetime import date, timedelta
 
 '''
 Guidance issued 2021-04-12, with inclusion criteria of symptom onset within 14 days, therefore index date of 2021-03-29
@@ -8,6 +9,10 @@ Guidance issued 2021-04-12, with inclusion criteria of symptom onset within 14 d
 #past 3 months for current prescription
 
 ix_dt = "2021-03-29"
+
+def indexoffset(ndays):
+    return (date.fromisoformat(ix_dt) + timedelta(days = ndays)).strftime('%Y-%m-%d')
+
 study = StudyDefinition(
     default_expectations={
         "date": {"earliest": "1900-01-01", "latest": "today"},
@@ -20,7 +25,7 @@ study = StudyDefinition(
     population=patients.satisfying(
        #'''age>=65''' 
         # '''(age >= 65 OR ((age >=55 AND age <65)) AND has_comorbidities)) 
-        # AND has_covid_pcr_positive
+        
         # AND had_covid_symtoms
         # AND NOT corticosteroid_ADR
         # AND NOT has_covid_admission
@@ -31,9 +36,11 @@ study = StudyDefinition(
             AND
             registered
             AND
-            age >=55
+            (age >= 65 OR ((age >=55 AND age <65) AND has_comorbidities)) 
             AND
             (sex = "M" OR sex = "F")
+            AND 
+            (first_positive_test_type = "PCR_Only" OR first_positive_test_type = "LFT_WithPCR")
         """,
 
         has_died=patients.died_from_any_cause(
@@ -45,9 +52,50 @@ study = StudyDefinition(
         "registered_at_start",
         registered_at_start = patients.registered_as_of("index_date"),
         ),
-
+        
     ),
     
+# would be nice to use "all tests" as this may exlude pts with initial +ve LFT followed by PCR
+    first_positive_test_date=patients.with_test_result_in_sgss(
+        pathogen="SARS-CoV-2",
+        test_result="positive",
+        on_or_after=ix_dt,
+        find_first_match_in_period=True,
+        returning="date",
+        date_format="YYYY-MM-DD",
+        return_expectations={
+            "date": {"earliest" : ix_dt},
+            "rate" : "exponential_increase"
+        },
+    ),
+    
+    first_positive_test_type=patients.with_test_result_in_sgss(
+        pathogen="SARS-CoV-2",
+        test_result="positive",
+        on_or_after=ix_dt,
+        find_first_match_in_period=True,
+        returning="case_category",
+        return_expectations={
+            "rate":"universal",
+            "category": {
+                "ratios": {
+                    "LFT_Only":0.3, 
+                    "PCR_Only":0.4, 
+                    "LFT_WithPCR":0.3
+                }
+            }
+        },
+    ),
+
+    has_comorbidities = patients.with_these_clinical_events(
+        flu_comorb, 
+        on_or_after=indexoffset(730), 
+        returning='binary_flag', 
+        return_expectations={
+                "incidence": 0.05
+            }
+        ),
+
     sex = patients.sex(
         return_expectations = {
         "rate": "universal",
@@ -85,7 +133,7 @@ study = StudyDefinition(
     ),
   
     age = patients.age_as_of(
-        "index_date",
+        "first_positive_test_date - 3 months",
         return_expectations = {
         "rate": "universal",
         "int": {"distribution": "population_ages"},
@@ -93,73 +141,21 @@ study = StudyDefinition(
         },
     ),
   
-    first_positive_test_date=patients.with_test_result_in_sgss(
-        pathogen="SARS-CoV-2",
-        test_result="positive",
+    covid_admission_date=patients.admitted_to_hospital(
+        returning= "date_admitted",
+        with_these_diagnoses=covid_codelist,
         on_or_after=ix_dt,
         find_first_match_in_period=True,
-        returning="date",
         date_format="YYYY-MM-DD",
-        return_expectations={
-            "date": {"earliest" : ix_dt},
-            "rate" : "exponential_increase"
-        },
-    ),
-    
-    first_positive_test_type=patients.with_test_result_in_sgss(
-        pathogen="SARS-CoV-2",
-        test_result="positive",
+        return_expectations={"date": {"earliest": ix_dt}}),
+
+    covid_emergency_admission_date=patients.attended_emergency_care(
+        returning= "date_arrived",
+        with_these_diagnoses=covid_codelist,
         on_or_after=ix_dt,
         find_first_match_in_period=True,
-        returning="case_category",
-        return_expectations={
-            "rate":"universal",
-            "category": {
-                "ratios": {
-                    "LFT_Only":0.3, 
-                    "PCR_Only":0.4, 
-                    "LFT_WithPCR":0.3
-                }
-            }
-        },
-    ),
+        date_format="YYYY-MM-DD",
+        return_expectations={"date": {"earliest": ix_dt}}),
 
-    # #stub
-    # has_comorbidities = 1,
-    # has_covid_pcr_positive = 1,
-    # had_covid_symptoms = 1,
-
-    # covid_admission_date=patients.admitted_to_hospital(
-    # returning= "date_admitted",
-    # with_these_diagnoses=covid_codelist,
-    # on_or_after=ix_dt,
-    # find_first_match_in_period=True,
-    # date_format="YYYY-MM-DD",
-    # return_expectations={"date": {"earliest": ix_dt}},
-
-    # covid_emergency_admission_date=patients.attended_emergency_care(
-    # returning= "date_admitted",
-    # with_these_diagnoses=covid_codelist,
-    # on_or_after=ix_dt,
-    # find_first_match_in_period=True,
-    # date_format="YYYY-MM-DD",
-    # return_expectations={"date": {"earliest": ix_dt}},
-
-    # # has_positive_covid_pcr = patients.with_test_result_in_sgss(
-
-    # # )
-
-
-    # first_positive_test_date=patients.with_test_result_in_sgss(
-    # pathogen="SARS-CoV-2",
-    # test_result="positive",
-    # on_or_after=ix_dt,
-    # find_first_match_in_period=True,
-    # returning="date",
-    # date_format="YYYY-MM-DD",
-    # return_expectations={
-    #     "date": {"earliest" : ix_dt},
-    #     "rate" : "exponential_increase"
-    # },
-    #),
+    
 )
