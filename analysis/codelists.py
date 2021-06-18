@@ -18,3 +18,9 @@ corticosteroid_contraindications = codelist_from_csv(
     system="snomed",
     column='code'
 )
+
+inhaled_or_systemic_corticosteroids = codelist_from_csv(
+    "codelists/jon_massey-inhaled-or-systemic-corticosteroids-1ef9c7c5-dmd.csv",
+    system="snomed",
+    column='dmd_id'
+)

@@ -1,0 +1,834 @@
+dmd_type,dmd_id,dmd_name,bnf_code
+VMP,35909511000001107,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
+AMP,3175711000001102,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
+AMP,3177111000001107,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
+AMP,11400011000001108,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
+AMP,3176711000001105,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
+AMP,3175911000001100,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
+AMP,17793411000001101,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
+AMP,4773611000001100,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
+VMP,320537007,Beclometasone 100micrograms/dose inhaler,0302000C0AAABAB
+AMP,3178211000001102,Beclometasone 100micrograms/dose inhaler,0302000C0AAABAB
+AMP,3179011000001102,Beclometasone 100micrograms/dose inhaler,0302000C0AAABAB
+AMP,11400511000001100,Beclometasone 100micrograms/dose inhaler,0302000C0AAABAB
+AMP,7379111000001102,Beclometasone 100micrograms/dose inhaler,0302000C0AAABAB
+AMP,3178411000001103,Beclometasone 100micrograms/dose inhaler,0302000C0AAABAB
+AMP,17794111000001108,Beclometasone 100micrograms/dose inhaler,0302000C0AAABAB
+AMP,4773811000001101,Beclometasone 100micrograms/dose inhaler,0302000C0AAABAB
+VMP,35908811000001103,Beclometasone 250micrograms/dose inhaler,0302000C0AAACAC
+AMP,3179811000001108,Beclometasone 250micrograms/dose inhaler,0302000C0AAACAC
+AMP,3180911000001103,Beclometasone 250micrograms/dose inhaler,0302000C0AAACAC
+AMP,11400811000001102,Beclometasone 250micrograms/dose inhaler,0302000C0AAACAC
+AMP,7379311000001100,Beclometasone 250micrograms/dose inhaler,0302000C0AAACAC
+AMP,3180011000001102,Beclometasone 250micrograms/dose inhaler,0302000C0AAACAC
+AMP,17833911000001100,Beclometasone 250micrograms/dose inhaler,0302000C0AAACAC
+AMP,4774011000001109,Beclometasone 250micrograms/dose inhaler,0302000C0AAACAC
+VMP,320534000,Beclometasone 100microgram inhalation powder capsules,0302000C0AAAEAE
+VMP,320535004,Beclometasone 200microgram inhalation powder capsules,0302000C0AAAFAF
+VMP,35907711000001105,Beclometasone 100microgram inhalation powder blisters with device,0302000C0AAAGAG
+VMP,35908311000001107,Beclometasone 200microgram inhalation powder blisters with device,0302000C0AAAHAH
+VMP,320520000,Beclometasone 400microgram inhalation powder capsules,0302000C0AAAIAI
+VMP,35909011000001104,Beclometasone 400microgram inhalation powder blisters with device,0302000C0AAAJAJ
+VMP,35908211000001104,Beclometasone 200microgram inhalation powder blisters,0302000C0AAAKAK
+VMP,35907611000001101,Beclometasone 100microgram inhalation powder blisters,0302000C0AAALAL
+VMP,35936211000001105,Salbutamol 100micrograms/dose / Beclometasone 50micrograms/dose inhaler,0302000C0AAANAN
+VMP,320543009,Salbutamol 400microgram / Beclometasone 200microgram inhalation powder capsules,0302000C0AAAPAP
+VMP,35908911000001108,Beclometasone 400microgram inhalation powder blisters,0302000C0AAAQAQ
+VMP,35908511000001101,Beclometasone 200micrograms/dose inhaler,0302000C0AAARAR
+AMP,4332611000001107,Beclometasone 200micrograms/dose inhaler,0302000C0AAARAR
+AMP,15052211000001104,Beclometasone 200micrograms/dose inhaler,0302000C0AAARAR
+VMP,35909211000001109,Beclometasone 50micrograms/dose breath actuated inhaler,0302000C0AAASAS
+VMP,35907811000001102,Beclometasone 100micrograms/dose breath actuated inhaler,0302000C0AAATAT
+VMP,35908611000001102,Beclometasone 250micrograms/dose breath actuated inhaler,0302000C0AAAUAU
+VMP,35909611000001106,Beclometasone 50micrograms/dose inhaler CFC free,0302000C0AABEBE
+VMP,35908111000001105,Beclometasone 100micrograms/dose inhaler CFC free,0302000C0AABFBF
+VMP,35909311000001101,Beclometasone 50micrograms/dose breath actuated inhaler CFC free,0302000C0AABGBG
+VMP,35907911000001107,Beclometasone 100micrograms/dose breath actuated inhaler CFC free,0302000C0AABHBH
+VMP,35909411000001108,Beclometasone 50micrograms/dose dry powder inhaler,0302000C0AABIBI
+VMP,35908011000001109,Beclometasone 100micrograms/dose dry powder inhaler,0302000C0AABJBJ
+VMP,35908711000001106,Beclometasone 250micrograms/dose dry powder inhaler,0302000C0AABKBK
+VMP,35369511000001103,Salbutamol 200microgram / Beclometasone 100microgram inhalation powder capsules,0302000C0AABLBL
+VMP,35909111000001103,Beclometasone 400micrograms/dose dry powder inhaler,0302000C0AABSBS
+VMP,35908411000001100,Beclometasone 200micrograms/dose dry powder inhaler,0302000C0AABUBU
+VMP,10621011000001101,Beclometasone 200micrograms/dose inhaler CFC free,0302000C0AABVBV
+VMP,10621111000001100,Beclometasone 250micrograms/dose inhaler CFC free,0302000C0AABWBW
+VMP,12911011000001100,Beclometasone 100micrograms/dose / Formoterol 6micrograms/dose inhaler CFC free,0302000C0AABXBX
+VMP,26148711000001101,Beclometasone 100micrograms/dose / Formoterol 6micrograms/dose dry powder inhaler,0302000C0AABYBY
+VMP,31087411000001106,Beclometasone 200micrograms/dose / Formoterol 6micrograms/dose inhaler CFC free,0302000C0AABZBZ
+VMP,31087511000001105,Beclometasone 200micrograms/dose / Formoterol 6micrograms/dose dry powder inhaler,0302000C0AACACA
+AMP,3180211000001107,Becloforte 250micrograms/dose inhaler,0302000C0BBAAAC
+AMP,3103211000001103,Becloforte 400microgram disks with Diskhaler,0302000C0BBACAJ
+AMP,3105311000001107,Becloforte 400microgram disks,0302000C0BBADAQ
+AMP,3190311000001103,Becotide 100microgram Rotacaps,0302000C0BCACAE
+AMP,3192111000001101,Becotide 200microgram Rotacaps,0302000C0BCADAF
+AMP,3194011000001108,Becotide 400microgram Rotacaps,0302000C0BCAGAI
+AMP,3178611000001100,Becotide 100 inhaler,0302000C0BCAHAB
+AMP,3176211000001103,Becotide 50 inhaler,0302000C0BCAIAA
+AMP,3179311000001104,Becotide 200 inhaler,0302000C0BCAQAR
+AMP,3292811000001106,Ventide inhaler,0302000C0BDAAAN
+AMP,3202211000001107,Ventide Rotacaps,0302000C0BDABAP
+AMP,3200511000001109,Ventide Paediatric Rotacaps,0302000C0BDACBL
+AMP,3604911000001105,AeroBec 50 Autohaler,0302000C0BEAAAS
+AMP,3182411000001107,AeroBec Forte 250 Autohaler,0302000C0BEABAU
+AMP,3181411000001102,AeroBec 100 Autohaler,0302000C0BEACAT
+AMP,3176411000001104,Beclazone 50 inhaler,0302000C0BFAAAA
+AMP,3178811000001101,Beclazone 100 inhaler,0302000C0BFABAB
+AMP,3180611000001109,Beclazone 250 inhaler,0302000C0BFACAC
+AMP,3604611000001104,Beclazone 50 Easi-Breathe inhaler,0302000C0BFADAS
+AMP,3181711000001108,Beclazone 100 Easi-Breathe inhaler,0302000C0BFAEAT
+AMP,3182611000001105,Beclazone 250 Easi-Breathe inhaler,0302000C0BFAFAU
+AMP,3179511000001105,Beclazone 200 inhaler,0302000C0BFAGAR
+AMP,3175211000001109,Filair 50 inhaler,0302000C0BGAAAA
+AMP,3177911000001105,Filair 100 inhaler,0302000C0BGABAB
+AMP,4753511000001101,Filair Forte 250micrograms/dose inhaler,0302000C0BGACAC
+AMP,3088611000001100,Becodisks 100microgram with Diskhaler,0302000C0BHAAAG
+AMP,3086011000001108,Becodisks 100microgram,0302000C0BHABAL
+AMP,3096011000001109,Becodisks 200microgram with Diskhaler,0302000C0BHACAH
+AMP,3099811000001109,Becodisks 200microgram,0302000C0BHADAK
+AMP,3102211000001109,Becodisks 400microgram with Diskhaler,0302000C0BHAEAJ
+AMP,3104911000001109,Becodisks 400microgram,0302000C0BHAFAQ
+AMP,3111911000001108,Asmabec 50 Clickhaler,0302000C0BIADBI
+AMP,3112511000001109,Asmabec 100 Clickhaler,0302000C0BIAEBJ
+AMP,3174111000001102,Asmabec 250 Clickhaler,0302000C0BIAFBK
+AMP,3176811000001102,Qvar 50 inhaler,0302000C0BJAABE
+AMP,3175611000001106,Qvar 100 inhaler,0302000C0BJABBF
+AMP,3177411000001102,Qvar 50 Autohaler,0302000C0BJACBG
+AMP,3177711000001108,Qvar 100 Autohaler,0302000C0BJADBH
+AMP,8159511000001107,Qvar 50micrograms/dose Easi-Breathe inhaler,0302000C0BJAEBG
+AMP,8159711000001102,Qvar 100micrograms/dose Easi-Breathe inhaler,0302000C0BJAFBH
+AMP,3113411000001101,Pulvinal Beclometasone Dipropionate 200micrograms/dose dry powder inhaler,0302000C0BLAABU
+AMP,3112911000001102,Pulvinal Beclometasone Dipropionate 100micrograms/dose dry powder inhaler,0302000C0BLABBJ
+AMP,3175111000001103,Pulvinal Beclometasone Dipropionate 400micrograms/dose dry powder inhaler,0302000C0BLACBS
+AMP,3189711000001107,Beclometasone 100 Cyclocaps,0302000C0BMAAAE
+AMP,3192611000001109,Beclometasone 200 Cyclocaps,0302000C0BMABAF
+AMP,3194511000001100,Beclometasone 400 Cyclocaps,0302000C0BMACAI
+AMP,9525111000001105,Easyhaler Beclometasone 200micrograms/dose dry powder inhaler,0302000C0BNAABU
+AMP,10617711000001103,Clenil Modulite 50micrograms/dose inhaler,0302000C0BPAABE
+AMP,10618211000001109,Clenil Modulite 100micrograms/dose inhaler,0302000C0BPABBF
+AMP,10619311000001107,Clenil Modulite 200micrograms/dose inhaler,0302000C0BPACBV
+AMP,10619611000001102,Clenil Modulite 250micrograms/dose inhaler,0302000C0BPADBW
+AMP,12906411000001100,Fostair 100micrograms/dose / 6micrograms/dose inhaler,0302000C0BQAABX
+AMP,31063411000001101,Fostair 200micrograms/dose / 6micrograms/dose inhaler,0302000C0BQABBZ
+AMP,26112111000001106,Fostair NEXThaler 100micrograms/dose / 6micrograms/dose dry powder inhaler,0302000C0BRAABY
+AMP,31063111000001106,Fostair NEXThaler 200micrograms/dose / 6micrograms/dose dry powder inhaler,0302000C0BRABCA
+AMP,35430111000001100,Kelhale 50micrograms/dose inhaler,0302000C0BSAABE
+AMP,35430311000001103,Kelhale 100micrograms/dose inhaler,0302000C0BSABBF
+AMP,36603211000001106,Soprobec 50micrograms/dose inhaler,0302000C0BTAABE
+AMP,36603411000001105,Soprobec 200micrograms/dose inhaler,0302000C0BTABBV
+AMP,36603611000001108,Soprobec 100micrograms/dose inhaler,0302000C0BTACBF
+AMP,36603811000001107,Soprobec 250micrograms/dose inhaler,0302000C0BTADBW
+VMP,35912811000001103,Budesonide 50micrograms/dose inhaler,0302000K0AAAAAA
+VMP,35912511000001101,Budesonide 200micrograms/dose inhaler,0302000K0AAADAD
+VMP,35912411000001100,Budesonide 200micrograms/dose dry powder inhaler,0302000K0AAAGAG
+VMP,35912711000001106,Budesonide 400micrograms/dose dry powder inhaler,0302000K0AAAHAH
+VMP,3654611000001109,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,10273211000001108,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,11005711000001109,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,10347911000001102,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,18507211000001101,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,10453211000001107,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,22622611000001108,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,10326711000001104,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,30004511000001108,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,38807411000001101,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,17810011000001102,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,15060511000001109,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,10274211000001106,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+AMP,21804611000001101,Budesonide 1mg/2ml nebuliser liquid unit dose vials,0302000K0AAAIAI
+VMP,3654511000001105,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,10272811000001101,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,11005511000001104,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,10347711000001104,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,18507011000001106,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,10453011000001102,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,22622411000001105,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,10326511000001109,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,30004311000001102,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,38807211000001100,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,17809311000001106,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,29775411000001101,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,10273611000001105,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+AMP,21804411000001104,Budesonide 500micrograms/2ml nebuliser liquid unit dose vials,0302000K0AAAJAJ
+VMP,35912111000001105,Budesonide 100micrograms/dose dry powder inhaler,0302000K0AAAKAK
+VMP,35912011000001109,Budesonide 100micrograms/dose / Formoterol 6micrograms/dose dry powder inhaler,0302000K0AAALAL
+VMP,38896811000001103,Budesonide 200micrograms/dose / Formoterol 6micrograms/dose dry powder inhaler,0302000K0AAAMAM
+VMP,3432911000001109,Budesonide 200microgram inhalation powder capsules,0302000K0AAARAR
+VMP,3433011000001101,Budesonide 400microgram inhalation powder capsules,0302000K0AAASAS
+VMP,4864911000001104,Budesonide 200micrograms/dose inhaler with spacer,0302000K0AAATAT
+VMP,4378111000001103,Budesonide 400micrograms/dose / Formoterol 12micrograms/dose dry powder inhaler,0302000K0AAAUAU
+VMP,8024611000001102,Budesonide 200micrograms/dose dry powder inhalation cartridge with device,0302000K0AAAVAV
+VMP,9117811000001107,Budesonide 200micrograms/dose dry powder inhalation cartridge,0302000K0AAAWAW
+VMP,14959511000001107,Budesonide 100micrograms/dose inhaler CFC free,0302000K0AAAZAZ
+VMP,15374611000001106,Budesonide 200micrograms/dose inhaler CFC free,0302000K0AABABA
+VMP,32960711000001105,Budesonide 200micrograms/dose / Formoterol 6micrograms/dose inhaler CFC free,0302000K0AABBBB
+AMP,2924111000001109,Pulmicort 200micrograms/dose inhaler,0302000K0BBADAD
+AMP,3240911000001108,Pulmicort LS 50micrograms/dose inhaler,0302000K0BBAEAA
+AMP,3636511000001103,Pulmicort 1mg Respules,0302000K0BBAGAI
+AMP,3112411000001105,Pulmicort 200 Turbohaler,0302000K0BBAHAG
+AMP,3228711000001106,Pulmicort 400 Turbohaler,0302000K0BBAIAH
+AMP,3635411000001106,Pulmicort 0.5mg Respules,0302000K0BBAJAJ
+AMP,3113111000001106,Pulmicort 100 Turbohaler,0302000K0BBAKAK
+AMP,4860811000001104,Pulmicort 200micrograms/dose inhaler with Nebuchamber,0302000K0BBALAT
+AMP,14951111000001102,Pulmicort 100micrograms/dose inhaler CFC free,0302000K0BBAMAZ
+AMP,15358411000001102,Pulmicort 200micrograms/dose inhaler CFC free,0302000K0BBANBA
+AMP,3294211000001101,Symbicort 100/6 Turbohaler,0302000K0BDAAAL
+AMP,3294611000001104,Symbicort 200/6 Turbohaler,0302000K0BDABAM
+AMP,4373811000001100,Symbicort 400/12 Turbohaler,0302000K0BDACAU
+AMP,32926011000001100,Symbicort 200micrograms/dose / 6micrograms/dose pressurised inhaler,0302000K0BDADBB
+AMP,3197211000001105,Budesonide 200 Cyclocaps,0302000K0BEAAAR
+AMP,3198411000001108,Budesonide 400 Cyclocaps,0302000K0BEABAS
+AMP,8031811000001102,Budelin Novolizer 200micrograms/dose inhalation powder,0302000K0BFAAAV
+AMP,9111811000001100,Budelin Novolizer 200micrograms/dose inhalation powder refill,0302000K0BFABAW
+AMP,10073911000001106,Easyhaler Budesonide 100micrograms/dose dry powder inhaler,0302000K0BGAAAK
+AMP,10074611000001102,Easyhaler Budesonide 200micrograms/dose dry powder inhaler,0302000K0BGABAG
+AMP,10074411000001100,Easyhaler Budesonide 400micrograms/dose dry powder inhaler,0302000K0BGACAH
+AMP,25254111000001105,DuoResp Spiromax 160micrograms/dose / 4.5micrograms/dose dry powder inhaler,0302000K0BHAAAM
+AMP,25254711000001106,DuoResp Spiromax 320micrograms/dose / 9micrograms/dose dry powder inhaler,0302000K0BHABAU
+AMP,34812111000001106,Fobumix Easyhaler 320micrograms/dose / 9micrograms/dose dry powder inhaler,0302000K0BIAAAU
+AMP,34950311000001108,Fobumix Easyhaler 160micrograms/dose / 4.5micrograms/dose dry powder inhaler,0302000K0BIABAM
+AMP,34950611000001103,Fobumix Easyhaler 80micrograms/dose / 4.5micrograms/dose dry powder inhaler,0302000K0BIADAL
+VMP,36059911000001104,Fluticasone propionate 50microgram inhalation powder blisters with device,0302000N0AAAAAA
+VMP,36059811000001109,Fluticasone propionate 50microgram inhalation powder blisters,0302000N0AAABAB
+VMP,36059311000001100,Fluticasone propionate 100microgram inhalation powder blisters with device,0302000N0AAACAC
+VMP,36059211000001108,Fluticasone propionate 100microgram inhalation powder blisters,0302000N0AAADAD
+VMP,36059411000001107,Fluticasone propionate 250microgram inhalation powder blisters with device,0302000N0AAAEAE
+VMP,36059511000001106,Fluticasone propionate 250microgram inhalation powder blisters,0302000N0AAAFAF
+VMP,36059111000001102,Fluticasone 25micrograms/dose inhaler,0302000N0AAAGAG
+VMP,36059711000001101,Fluticasone propionate 500microgram inhalation powder blisters with device,0302000N0AAAPAP
+VMP,36059611000001105,Fluticasone propionate 500microgram inhalation powder blisters,0302000N0AAAQAQ
+VMP,38897911000001106,Fluticasone propionate 50micrograms/dose dry powder inhaler,0302000N0AAARAR
+VMP,38897811000001101,Fluticasone propionate 100micrograms/dose dry powder inhaler,0302000N0AAASAS
+VMP,36565411000001101,Fluticasone propionate 250micrograms/dose dry powder inhaler,0302000N0AAATAT
+VMP,38897711000001109,Fluticasone propionate 500micrograms/dose dry powder inhaler,0302000N0AAAUAU
+VMP,320610001,Fluticasone 500micrograms/2ml nebuliser liquid unit dose vials,0302000N0AAAVAV
+VMP,320611002,Fluticasone 2mg/2ml nebuliser liquid unit dose vials,0302000N0AAAWAW
+VMP,38897611000001100,Fluticasone propionate 100micrograms/dose / Salmeterol 50micrograms/dose dry powder inhaler,0302000N0AAAXAX
+VMP,38897511000001104,Fluticasone propionate 250micrograms/dose / Salmeterol 50micrograms/dose dry powder inhaler,0302000N0AAAYAY
+VMP,38897411000001103,Fluticasone propionate 500micrograms/dose / Salmeterol 50micrograms/dose dry powder inhaler,0302000N0AAAZAZ
+AMP,31064811000001101,Fluticasone propionate 500micrograms/dose / Salmeterol 50micrograms/dose dry powder inhaler,0302000N0AAAZAZ
+VMP,21113711000001102,Fluticasone 125micrograms/dose / Formoterol 5micrograms/dose inhaler CFC free,0302000N0AABJBJ
+VMP,21113811000001105,Fluticasone 250micrograms/dose / Formoterol 10micrograms/dose inhaler CFC free,0302000N0AABKBK
+VMP,21113911000001100,Fluticasone 50micrograms/dose / Formoterol 5micrograms/dose inhaler CFC free,0302000N0AABLBL
+VMP,35647511000001107,Fluticasone 125micrograms/dose / Formoterol 5micrograms/dose breath actuated inhaler CFC free,0302000N0AABPBP
+VMP,35647611000001106,Fluticasone 50micrograms/dose / Formoterol 5micrograms/dose breath actuated inhaler CFC free,0302000N0AABQBQ
+AMP,3097711000001109,Flixotide 50microgram disks with Diskhaler,0302000N0BBAAAA
+AMP,3100811000001109,Flixotide 50microgram disks,0302000N0BBABAB
+AMP,3098611000001101,Flixotide 100microgram disks with Diskhaler,0302000N0BBACAC
+AMP,3099611000001105,Flixotide 100microgram disks,0302000N0BBADAD
+AMP,3106311000001102,Flixotide 250microgram disks with Diskhaler,0302000N0BBAEAE
+AMP,3103511000001100,Flixotide 250microgram disks,0302000N0BBAFAF
+AMP,4856011000001103,Flixotide 25micrograms/dose inhaler,0302000N0BBAGAG
+AMP,3108411000001105,Flixotide 500microgram disks with Diskhaler,0302000N0BBAPAP
+AMP,3110511000001108,Flixotide 500microgram disks,0302000N0BBAQAQ
+AMP,3183811000001101,Flixotide 50micrograms/dose Accuhaler,0302000N0BBARAR
+AMP,3184311000001107,Flixotide 100micrograms/dose Accuhaler,0302000N0BBASAS
+AMP,3184911000001108,Flixotide 250micrograms/dose Accuhaler,0302000N0BBATAT
+AMP,3185211000001103,Flixotide 500micrograms/dose Accuhaler,0302000N0BBAUAU
+AMP,3389111000001102,Flixotide 0.5mg/2ml Nebules,0302000N0BBAVAV
+AMP,3397211000001103,Flixotide 2mg/2ml Nebules,0302000N0BBAWAW
+AMP,398511000001105,Flixotide 125micrograms/dose Evohaler,0302000N0BBAYBA
+AMP,2831211000001109,Flixotide 250micrograms/dose Evohaler,0302000N0BBBABC
+AMP,726611000001102,Flixotide 50micrograms/dose Evohaler,0302000N0BBBBBH
+AMP,3186911000001100,Seretide 100 Accuhaler,0302000N0BCAAAX
+AMP,3187211000001106,Seretide 250 Accuhaler,0302000N0BCABAY
+AMP,3188311000001102,Seretide 500 Accuhaler,0302000N0BCACAZ
+AMP,453611000001102,Seretide 50 Evohaler,0302000N0BCADBE
+AMP,810211000001105,Seretide 125 Evohaler,0302000N0BCAEBF
+AMP,539811000001106,Seretide 250 Evohaler,0302000N0BCAFBG
+AMP,21019411000001101,Flutiform 125micrograms/dose / 5micrograms/dose inhaler,0302000N0BDAABJ
+AMP,21019711000001107,Flutiform 250micrograms/dose / 10micrograms/dose inhaler,0302000N0BDABBK
+AMP,21020611000001104,Flutiform 50micrograms/dose / 5micrograms/dose inhaler,0302000N0BDACBL
+AMP,35647311000001101,Flutiform K-haler 125micrograms/dose / 5micrograms/dose breath actuated inhaler,0302000N0BDADBP
+AMP,35650811000001109,Flutiform K-haler 50micrograms/dose / 5micrograms/dose breath actuated inhaler,0302000N0BDAEBQ
+AMP,29782111000001107,Sirdupla 25micrograms/dose / 125micrograms/dose inhaler,0302000N0BFAABF
+AMP,29782511000001103,Sirdupla 25micrograms/dose / 250micrograms/dose inhaler,0302000N0BFABBG
+AMP,30950311000001106,AirFluSal Forspiro 50micrograms/dose / 500micrograms/dose dry powder inhaler,0302000N0BGAAAZ
+AMP,34215311000001107,AirFluSal 25micrograms/dose / 125micrograms/dose inhaler,0302000N0BGABBF
+AMP,34215511000001101,AirFluSal 25micrograms/dose / 250micrograms/dose inhaler,0302000N0BGACBG
+AMP,33679711000001103,Aerivio Spiromax 50micrograms/dose / 500micrograms/dose dry powder inhaler,0302000N0BHAAAZ
+AMP,34023611000001101,Sereflo 25micrograms/dose / 125micrograms/dose inhaler,0302000N0BIAABF
+AMP,34023811000001102,Sereflo 25micrograms/dose / 250micrograms/dose inhaler,0302000N0BIABBG
+AMP,34677011000001107,Aloflute 25micrograms/dose / 125micrograms/dose inhaler,0302000N0BJAABF
+AMP,34675711000001103,Aloflute 25micrograms/dose / 250micrograms/dose inhaler,0302000N0BJABBG
+AMP,35515511000001100,Fusacomb Easyhaler 50micrograms/dose / 250micrograms/dose dry powder inhaler,0302000N0BKAAAY
+AMP,35515311000001106,Fusacomb Easyhaler 50micrograms/dose / 500micrograms/dose dry powder inhaler,0302000N0BKABAZ
+AMP,35594011000001105,Combisal 25micrograms/dose / 50micrograms/dose inhaler,0302000N0BLAABE
+AMP,35594211000001100,Combisal 25micrograms/dose / 125micrograms/dose inhaler,0302000N0BLABBF
+AMP,35594411000001101,Combisal 25micrograms/dose / 250micrograms/dose inhaler,0302000N0BLACBG
+AMP,36604711000001102,Stalpex 50micrograms/dose / 500micrograms/dose dry powder inhaler,0302000N0BMAAAZ
+VMP,38895411000001109,Mometasone 200micrograms/dose dry powder inhaler,0302000R0AAAAAA
+VMP,38895611000001107,Mometasone 400micrograms/dose dry powder inhaler,0302000R0AAACAC
+AMP,4045711000001107,Asmanex 200micrograms/dose Twisthaler,0302000R0BBAAAA
+AMP,4043811000001103,Asmanex 400micrograms/dose Twisthaler,0302000R0BBACAC
+VMP,9004511000001107,Ciclesonide 80micrograms/dose inhaler CFC free,0302000U0AAAAAA
+VMP,9004411000001108,Ciclesonide 160micrograms/dose inhaler CFC free,0302000U0AAABAB
+AMP,9003911000001102,Alvesco 80 inhaler,0302000U0BBAAAA
+AMP,9004211000001109,Alvesco 160 inhaler,0302000U0BBABAB
+VMP,23661311000001105,Fluticasone furoate 184micrograms/dose / Vilanterol 22micrograms/dose dry powder inhaler,0302000V0AAAAAA
+VMP,23661411000001103,Fluticasone furoate 92micrograms/dose / Vilanterol 22micrograms/dose dry powder inhaler,0302000V0AAABAB
+AMP,23621711000001102,Relvar Ellipta 184micrograms/dose / 22micrograms/dose dry powder inhaler,0302000V0BBAAAA
+AMP,23622011000001107,Relvar Ellipta 92micrograms/dose / 22micrograms/dose dry powder inhaler,0302000V0BBABAB
+VMP,34955111000001103,Generic Trelegy Ellipta 92micrograms/dose / 55micrograms/dose / 22micrograms/dose dry powder inhaler,0302000V0BCAAA0
+AMP,34952211000001104,Trelegy Ellipta 92micrograms/dose / 55micrograms/dose / 22micrograms/dose dry powder inhaler,0302000V0BCAAA0
+VMP,4052511000001106,Dexamethasone (base) 6.6mg/2ml solution for injection vials,0603020AAAAAAAA
+AMP,4048311000001104,Dexamethasone (base) 6.6mg/2ml solution for injection vials,0603020AAAAAAAA
+AMP,4050411000001106,Dexamethasone (base) 6.6mg/2ml solution for injection vials,0603020AAAAAAAA
+AMP,4050111000001101,Dexamethasone (base) 6.6mg/2ml solution for injection vials,0603020AAAAAAAA
+VMP,4052611000001105,Dexamethasone (base) 3.3mg/1ml solution for injection ampoules,0603020AAAAABAB
+AMP,4047111000001102,Dexamethasone (base) 3.3mg/1ml solution for injection ampoules,0603020AAAAABAB
+AMP,4047711000001101,Dexamethasone (base) 3.3mg/1ml solution for injection ampoules,0603020AAAAABAB
+AMP,38564611000001107,Dexamethasone (base) 3.3mg/1ml solution for injection ampoules,0603020AAAAABAB
+AMP,4047411000001107,Dexamethasone (base) 3.3mg/1ml solution for injection ampoules,0603020AAAAABAB
+AMP,32167711000001108,Dexamethasone (base) 3.3mg/1ml solution for injection ampoules,0603020AAAAABAB
+AMP,19532111000001104,Dexamethasone (base) 3.3mg/1ml solution for injection ampoules,0603020AAAAABAB
+VMP,22153811000001101,Dexamethasone (base) 6.6mg/2ml solution for injection ampoules,0603020AAAAACAC
+AMP,22127411000001109,Dexamethasone (base) 6.6mg/2ml solution for injection ampoules,0603020AAAAACAC
+AMP,28039811000001104,Dexamethasone (base) 6.6mg/2ml solution for injection ampoules,0603020AAAAACAC
+AMP,38565011000001101,Dexamethasone (base) 6.6mg/2ml solution for injection ampoules,0603020AAAAACAC
+AMP,22084911000001106,Dexamethasone (base) 6.6mg/2ml solution for injection ampoules,0603020AAAAACAC
+VMP,19525311000001106,Methylprednisolone aceponate 0.1% ointment,0603020ACAAAAAA
+AMP,19522311000001100,Advantan 0.1% ointment,0603020ACBBAAAA
+VMP,325345003,Betamethasone 500microgram tablets,0603020B0AAABAB
+AMP,3804311000001103,Betnelan 500microgram tablets,0603020B0BBAAAB
+VMP,35910611000001103,Betamethasone 4mg/1ml solution for injection ampoules,0603020C0AAAAAA
+AMP,30987311000001103,Betamethasone 4mg/1ml solution for injection ampoules,0603020C0AAAAAA
+AMP,30984811000001103,Betamethasone 4mg/1ml solution for injection ampoules,0603020C0AAAAAA
+AMP,30921211000001105,Betamethasone 4mg/1ml solution for injection ampoules,0603020C0AAAAAA
+VMP,325344004,Betamethasone 500microgram soluble tablets sugar free,0603020C0AAABAB
+AMP,21229111000001106,Betamethasone 500microgram soluble tablets sugar free,0603020C0AAABAB
+AMP,21232511000001108,Betamethasone 500microgram soluble tablets sugar free,0603020C0AAABAB
+AMP,37108411000001101,Betamethasone 500microgram soluble tablets sugar free,0603020C0AAABAB
+AMP,38808011000001106,Betamethasone 500microgram soluble tablets sugar free,0603020C0AAABAB
+AMP,22203611000001106,Betamethasone 500microgram soluble tablets sugar free,0603020C0AAABAB
+AMP,21142211000001109,Betamethasone 500microgram soluble tablets sugar free,0603020C0AAABAB
+AMP,3694811000001103,Betnesol 500microgram soluble tablets,0603020C0BBAAAB
+AMP,3932011000001108,Betnesol 4mg/1ml solution for injection ampoules,0603020C0BBABAA
+VMP,325349009,Cortisone 25mg tablets,0603020F0AAAHAH
+AMP,3669611000001101,Cortisone 25mg tablets,0603020F0AAAHAH
+AMP,3670511000001103,Cortisone 25mg tablets,0603020F0AAAHAH
+AMP,11556011000001106,Cortisone 25mg tablets,0603020F0AAAHAH
+AMP,20093711000001103,Cortisone 25mg tablets,0603020F0AAAHAH
+VMP,11816411000001105,Cortisone 2.5mg/5ml oral solution,0603020F0AAAJAJ
+VMP,11816511000001109,Cortisone 2.5mg/5ml oral suspension,0603020F0AAAJAJ
+AMP,11800811000001108,Cortisone 2.5mg/5ml oral solution,0603020F0AAAJAJ
+AMP,11800511000001105,Cortisone 2.5mg/5ml oral suspension,0603020F0AAAJAJ
+VMP,8792411000001102,Cortisone 5mg capsules,0603020F0AAAKAK
+AMP,8748411000001109,Cortisone 5mg capsules,0603020F0AAAKAK
+VMP,8450411000001102,Cortisone 5mg/5ml oral suspension,0603020F0AAAMAM
+AMP,8406711000001101,Cortisone 5mg/5ml oral suspension,0603020F0AAAMAM
+VMP,8452411000001101,Dexamethasone 5mg/5ml oral solution,0603020G0AAA5A5
+VMP,8452511000001102,Dexamethasone 5mg/5ml oral suspension,0603020G0AAA5A5
+AMP,8432811000001103,Dexamethasone 5mg/5ml oral solution,0603020G0AAA5A5
+AMP,8433511000001108,Dexamethasone 5mg/5ml oral suspension,0603020G0AAA5A5
+VMP,11716011000001103,Dexamethasone 2mg/5ml oral solution,0603020G0AAA6A6
+VMP,11716111000001102,Dexamethasone 2mg/5ml oral suspension,0603020G0AAA6A6
+AMP,11691911000001100,Dexamethasone 2mg/5ml oral solution,0603020G0AAA6A6
+AMP,11691411000001108,Dexamethasone 2mg/5ml oral suspension,0603020G0AAA6A6
+VMP,325365005,Dexamethasone 500micrograms/5ml oral solution,0603020G0AAA7A7
+VMP,8452311000001108,Dexamethasone 500micrograms/5ml oral suspension,0603020G0AAA7A7
+AMP,8433011000001100,Dexamethasone 500micrograms/5ml oral solution,0603020G0AAA7A7
+AMP,8434811000001109,Dexamethasone 500micrograms/5ml oral suspension,0603020G0AAA7A7
+VMP,11716411000001107,Dexamethasone 4mg/5ml oral solution,0603020G0AAA8A8
+VMP,11716511000001106,Dexamethasone 4mg/5ml oral suspension,0603020G0AAA8A8
+AMP,11693411000001107,Dexamethasone 4mg/5ml oral solution,0603020G0AAA8A8
+AMP,11693111000001102,Dexamethasone 4mg/5ml oral suspension,0603020G0AAA8A8
+VMP,11716811000001109,Dexamethasone 8mg/5ml oral solution,0603020G0AAA9A9
+VMP,11716911000001104,Dexamethasone 8mg/5ml oral suspension,0603020G0AAA9A9
+AMP,11694611000001108,Dexamethasone 8mg/5ml oral solution,0603020G0AAA9A9
+AMP,11694311000001103,Dexamethasone 8mg/5ml oral suspension,0603020G0AAA9A9
+VMP,325355004,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,3286511000001105,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,38039211000001104,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,3288811000001109,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,32064711000001105,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,35477511000001105,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,30047811000001109,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,15245611000001104,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,37220711000001102,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,3287811000001105,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,29803711000001101,Dexamethasone 500microgram tablets,0603020G0AAABAB
+AMP,24672711000001108,Dexamethasone 500microgram tablets,0603020G0AAABAB
+VMP,325356003,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,3290311000001101,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,33634511000001106,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,3292011000001100,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,17967911000001107,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,3291411000001104,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,34045511000001104,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,23968511000001105,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,32404811000001106,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,37221211000001103,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,30809411000001107,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,38867211000001104,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,17890811000001109,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,15104911000001100,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,15628711000001100,Dexamethasone 2mg tablets,0603020G0AAADAD
+AMP,21925111000001105,Dexamethasone 2mg tablets,0603020G0AAADAD
+VMP,11612111000001109,Dexamethasone 10mg/5ml oral solution,0603020G0AABHBH
+VMP,11714911000001107,Dexamethasone 10mg/5ml oral suspension,0603020G0AABHBH
+AMP,11602311000001108,Dexamethasone 10mg/5ml oral solution,0603020G0AABHBH
+AMP,11685611000001108,Dexamethasone 10mg/5ml oral suspension,0603020G0AABHBH
+VMP,8429111000001103,Dexamethasone 1mg/5ml oral solution,0603020G0AABJBJ
+VMP,8429011000001104,Dexamethasone 1mg/5ml oral suspension,0603020G0AABJBJ
+AMP,8422611000001104,Dexamethasone 1mg/5ml oral solution,0603020G0AABJBJ
+AMP,8423211000001107,Dexamethasone 1mg/5ml oral suspension,0603020G0AABJBJ
+VMP,11715411000001103,Dexamethasone 16mg/5ml oral solution,0603020G0AABKBK
+VMP,11715511000001104,Dexamethasone 16mg/5ml oral suspension,0603020G0AABKBK
+AMP,11689211000001109,Dexamethasone 16mg/5ml oral solution,0603020G0AABKBK
+AMP,11688611000001102,Dexamethasone 16mg/5ml oral suspension,0603020G0AABKBK
+VMP,11715011000001107,Dexamethasone 14mg/5ml oral solution,0603020G0AABLBL
+VMP,11715111000001108,Dexamethasone 14mg/5ml oral suspension,0603020G0AABLBL
+AMP,11687111000001109,Dexamethasone 14mg/5ml oral solution,0603020G0AABLBL
+AMP,11686511000001102,Dexamethasone 14mg/5ml oral suspension,0603020G0AABLBL
+VMP,11715211000001102,Dexamethasone 16.7mg/5ml oral solution,0603020G0AABMBM
+VMP,11715311000001105,Dexamethasone 16.7mg/5ml oral suspension,0603020G0AABMBM
+AMP,11688011000001109,Dexamethasone 16.7mg/5ml oral solution,0603020G0AABMBM
+AMP,11687711000001105,Dexamethasone 16.7mg/5ml oral suspension,0603020G0AABMBM
+VMP,11716611000001105,Dexamethasone 6mg/5ml oral solution,0603020G0AABNBN
+VMP,11716711000001101,Dexamethasone 6mg/5ml oral suspension,0603020G0AABNBN
+AMP,11694011000001101,Dexamethasone 6mg/5ml oral solution,0603020G0AABNBN
+AMP,11693711000001101,Dexamethasone 6mg/5ml oral suspension,0603020G0AABNBN
+VMP,8792611000001104,Dexamethasone 100microgram capsules,0603020G0AABPBP
+AMP,8747511000001109,Dexamethasone 100microgram capsules,0603020G0AABPBP
+VMP,8452111000001106,Dexamethasone 2.5mg/5ml oral solution,0603020G0AABQBQ
+VMP,8452211000001100,Dexamethasone 2.5mg/5ml oral suspension,0603020G0AABQBQ
+AMP,8432311000001107,Dexamethasone 2.5mg/5ml oral solution,0603020G0AABQBQ
+AMP,8432911000001108,Dexamethasone 2.5mg/5ml oral suspension,0603020G0AABQBQ
+VMP,11714511000001100,Dexamethasone 1.25mg/5ml oral solution,0603020G0AABRBR
+VMP,11714611000001101,Dexamethasone 1.25mg/5ml oral suspension,0603020G0AABRBR
+AMP,11684711000001103,Dexamethasone 1.25mg/5ml oral solution,0603020G0AABRBR
+AMP,11684111000001104,Dexamethasone 1.25mg/5ml oral suspension,0603020G0AABRBR
+VMP,11715811000001101,Dexamethasone 250micrograms/5ml oral solution,0603020G0AABTBT
+VMP,11715911000001106,Dexamethasone 250micrograms/5ml oral suspension,0603020G0AABTBT
+AMP,11691011000001104,Dexamethasone 250micrograms/5ml oral solution,0603020G0AABTBT
+AMP,11690411000001104,Dexamethasone 250micrograms/5ml oral suspension,0603020G0AABTBT
+VMP,11714711000001105,Dexamethasone 1.5mg/5ml oral solution,0603020G0AABUBU
+VMP,11714811000001102,Dexamethasone 1.5mg/5ml oral suspension,0603020G0AABUBU
+AMP,11685311000001103,Dexamethasone 1.5mg/5ml oral solution,0603020G0AABUBU
+AMP,11685011000001101,Dexamethasone 1.5mg/5ml oral suspension,0603020G0AABUBU
+VMP,11715611000001100,Dexamethasone 20mg/5ml oral solution,0603020G0AABVBV
+VMP,11715711000001109,Dexamethasone 20mg/5ml oral suspension,0603020G0AABVBV
+AMP,11690111000001109,Dexamethasone 20mg/5ml oral solution,0603020G0AABVBV
+AMP,11689511000001107,Dexamethasone 20mg/5ml oral suspension,0603020G0AABVBV
+VMP,11716211000001108,Dexamethasone 3mg/5ml oral solution,0603020G0AABWBW
+VMP,11716311000001100,Dexamethasone 3mg/5ml oral suspension,0603020G0AABWBW
+AMP,11692611000001100,Dexamethasone 3mg/5ml oral solution,0603020G0AABWBW
+AMP,11692211000001102,Dexamethasone 3mg/5ml oral suspension,0603020G0AABWBW
+VMP,37084211000001103,Dexamethasone 2mg/5ml oral solution sugar free,0603020G0AABXBX
+AMP,21926211000001105,Dexamethasone 2mg/5ml oral solution sugar free,0603020G0AABXBX
+AMP,22404911000001102,Dexamethasone 2mg/5ml oral solution sugar free,0603020G0AABXBX
+AMP,23968311000001104,Dexamethasone 2mg/5ml oral solution sugar free,0603020G0AABXBX
+AMP,38867611000001102,Dexamethasone 2mg/5ml oral solution sugar free,0603020G0AABXBX
+AMP,29803511000001106,Dexamethasone 2mg/5ml oral solution sugar free,0603020G0AABXBX
+AMP,24648711000001107,Dexamethasone 2mg/5ml oral solution sugar free,0603020G0AABXBX
+AMP,38718211000001102,Dexamethasone 2mg/5ml oral solution sugar free,0603020G0AABXBX
+AMP,23590911000001106,Dexamethasone 2mg/5ml oral solution sugar free,0603020G0AABXBX
+AMP,37956811000001109,Dexamethasone 2mg/5ml oral solution sugar free,0603020G0AABXBX
+VMP,24580511000001101,Dexamethasone 10mg capsules,0603020G0AABYBY
+AMP,24569711000001102,Dexamethasone 10mg capsules,0603020G0AABYBY
+VMP,24350911000001102,Dexamethasone 10mg/5ml oral solution sugar free,0603020G0AABZBZ
+AMP,24416211000001107,Dexamethasone 10mg/5ml oral solution sugar free,0603020G0AABZBZ
+AMP,28876811000001106,Dexamethasone 10mg/5ml oral solution sugar free,0603020G0AABZBZ
+AMP,24421311000001102,Dexamethasone 10mg/5ml oral solution sugar free,0603020G0AABZBZ
+AMP,24343211000001103,Dexamethasone 10mg/5ml oral solution sugar free,0603020G0AABZBZ
+AMP,29803311000001100,Dexamethasone 10mg/5ml oral solution sugar free,0603020G0AABZBZ
+VMP,8429311000001101,Dexamethasone 100micrograms/5ml oral solution,0603020G0AACACA
+VMP,8429211000001109,Dexamethasone 100micrograms/5ml oral suspension,0603020G0AACACA
+AMP,8423711000001100,Dexamethasone 100micrograms/5ml oral solution,0603020G0AACACA
+AMP,8424611000001107,Dexamethasone 100micrograms/5ml oral suspension,0603020G0AACACA
+VMP,8428911000001108,Dexamethasone 200micrograms/5ml oral solution,0603020G0AACCCC
+VMP,8428811000001103,Dexamethasone 200micrograms/5ml oral suspension,0603020G0AACCCC
+AMP,8424011000001100,Dexamethasone 200micrograms/5ml oral solution,0603020G0AACCCC
+AMP,8424411000001109,Dexamethasone 200micrograms/5ml oral suspension,0603020G0AACCCC
+VMP,28881311000001104,Dexamethasone 20mg/5ml oral solution sugar free,0603020G0AACDCD
+AMP,29224011000001100,Dexamethasone 20mg/5ml oral solution sugar free,0603020G0AACDCD
+AMP,28877111000001101,Dexamethasone 20mg/5ml oral solution sugar free,0603020G0AACDCD
+VMP,31141511000001103,Dexamethasone 400microgram capsules,0603020G0AACECE
+AMP,31138811000001105,Dexamethasone 400microgram capsules,0603020G0AACECE
+VMP,32071811000001109,Dexamethasone 2mg soluble tablets sugar free,0603020G0AACFCF
+AMP,32400911000001106,Dexamethasone 2mg soluble tablets sugar free,0603020G0AACFCF
+AMP,32418411000001103,Dexamethasone 2mg soluble tablets sugar free,0603020G0AACFCF
+AMP,37602611000001104,Dexamethasone 2mg soluble tablets sugar free,0603020G0AACFCF
+AMP,31959911000001105,Dexamethasone 2mg soluble tablets sugar free,0603020G0AACFCF
+VMP,32072011000001106,Dexamethasone 8mg soluble tablets sugar free,0603020G0AACGCG
+AMP,32401311000001100,Dexamethasone 8mg soluble tablets sugar free,0603020G0AACGCG
+AMP,32418811000001101,Dexamethasone 8mg soluble tablets sugar free,0603020G0AACGCG
+AMP,37603011000001102,Dexamethasone 8mg soluble tablets sugar free,0603020G0AACGCG
+AMP,31961311000001100,Dexamethasone 8mg soluble tablets sugar free,0603020G0AACGCG
+VMP,32071911000001104,Dexamethasone 4mg soluble tablets sugar free,0603020G0AACHCH
+AMP,32401111000001102,Dexamethasone 4mg soluble tablets sugar free,0603020G0AACHCH
+AMP,32418611000001100,Dexamethasone 4mg soluble tablets sugar free,0603020G0AACHCH
+AMP,37602811000001100,Dexamethasone 4mg soluble tablets sugar free,0603020G0AACHCH
+AMP,31961811000001109,Dexamethasone 4mg soluble tablets sugar free,0603020G0AACHCH
+VMP,376688006,Dexamethasone 4mg tablets,0603020G0AACICI
+AMP,33557411000001107,Dexamethasone 4mg tablets,0603020G0AACICI
+AMP,37628711000001102,Dexamethasone 4mg tablets,0603020G0AACICI
+AMP,34464111000001106,Dexamethasone 4mg tablets,0603020G0AACICI
+AMP,33497811000001107,Dexamethasone 4mg tablets,0603020G0AACICI
+AMP,37236811000001109,Dexamethasone 4mg tablets,0603020G0AACICI
+AMP,38867411000001100,Dexamethasone 4mg tablets,0603020G0AACICI
+AMP,35560411000001105,Dexamethasone 4mg tablets,0603020G0AACICI
+VMP,34796811000001100,Dexamethasone 40mg tablets,0603020G0AACJCJ
+VMP,35574111000001104,Dexamethasone 8mg tablets,0603020G0AACKCK
+AMP,35632011000001100,Dexamethasone 8mg tablets,0603020G0AACKCK
+AMP,35561711000001107,Dexamethasone 8mg tablets,0603020G0AACKCK
+AMP,3286911000001103,Decadron 500microgram tablets,0603020G0BBAAAB
+AMP,3851611000001100,Dexsol 2mg/5ml oral solution,0603020G0BEAABX
+AMP,19792911000001107,Martapan 2mg/5ml oral solution,0603020G0BFAABX
+AMP,34743111000001109,Glensoludex 2mg soluble tablets,0603020G0BGAACF
+AMP,34743411000001104,Glensoludex 4mg soluble tablets,0603020G0BGABCH
+AMP,34743611000001101,Glensoludex 8mg soluble tablets,0603020G0BGACCG
+AMP,34789811000001105,Neofordex 40mg tablets,0603020G0BHAACJ
+VMP,4052711000001101,Dexamethasone 4mg/1ml solution for injection ampoules,0603020H0AAABAB
+AMP,4044111000001107,Dexamethasone 4mg/1ml solution for injection ampoules,0603020H0AAABAB
+AMP,4045311000001108,Dexamethasone 4mg/1ml solution for injection ampoules,0603020H0AAABAB
+AMP,4044311000001109,Dexamethasone 4mg/1ml solution for injection ampoules,0603020H0AAABAB
+VMP,9154711000001101,Dexamethasone 100mg/5ml solution for injection vials,0603020H0AAAIAI
+AMP,9222411000001104,Dexamethasone 100mg/5ml solution for injection vials,0603020H0AAAIAI
+AMP,9119711000001107,Dexamethasone 100mg/5ml solution for injection vials,0603020H0AAAIAI
+VMP,4052811000001109,Dexamethasone 8mg/2ml solution for injection vials,0603020H0AAAKAK
+AMP,4042711000001103,Dexamethasone 8mg/2ml solution for injection vials,0603020H0AAAKAK
+AMP,4043611000001102,Dexamethasone 8mg/2ml solution for injection vials,0603020H0AAAKAK
+AMP,4043411000001100,Dexamethasone 8mg/2ml solution for injection vials,0603020H0AAAKAK
+VMP,27957911000001102,Dexamethasone (base) 3.8mg/1ml solution for injection vials,0603020H0AAALAL
+AMP,28041311000001105,Dexamethasone (base) 3.8mg/1ml solution for injection vials,0603020H0AAALAL
+AMP,28040011000001103,Dexamethasone (base) 3.8mg/1ml solution for injection vials,0603020H0AAALAL
+AMP,27943411000001100,Dexamethasone (base) 3.8mg/1ml solution for injection vials,0603020H0AAALAL
+VMP,325472005,Deflazacort 6mg tablets,0603020I0AAAAAA
+VMP,325474006,Deflazacort 30mg tablets,0603020I0AAACAC
+VMP,325476008,Deflazacort 1mg tablets,0603020I0AAADAD
+AMP,15449611000001100,Deflazacort 1mg tablets,0603020I0AAADAD
+VMP,33037911000001102,Deflazacort 22.75mg/1ml oral suspension,0603020I0AAAFAF
+AMP,32989611000001109,Deflazacort 22.75mg/1ml oral suspension,0603020I0AAAFAF
+AMP,3756411000001107,Calcort 6mg tablets,0603020I0BBAAAA
+AMP,3960211000001106,Calcort 30mg tablets,0603020I0BBABAC
+AMP,3850711000001101,Calcort 1mg tablets,0603020I0BBACAD
+VMP,15533611000001108,Hydrocortisone 2.5mg capsules,0603020J0AAA5A5
+AMP,15524111000001100,Hydrocortisone 2.5mg capsules,0603020J0AAA5A5
+VMP,325373001,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,13614311000001105,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,13661711000001105,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,33423211000001105,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,32711611000001102,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,13806811000001104,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,17973911000001105,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,34616211000001108,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,24154111000001101,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,35108911000001105,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,34957811000001100,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,37126311000001101,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,38070711000001101,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,37494211000001109,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,17930211000001109,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,36508411000001105,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,15092711000001102,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,18392311000001107,Hydrocortisone 10mg tablets,0603020J0AAADAD
+AMP,22044411000001106,Hydrocortisone 10mg tablets,0603020J0AAADAD
+VMP,325374007,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,13614511000001104,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,13661911000001107,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,34702511000001102,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,13807011000001108,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,17974111000001109,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,34616411000001107,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,24154311000001104,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,35109111000001100,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,34958011000001107,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,32407611000001101,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,37089411000001100,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,38063711000001102,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,17930411000001108,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,36508611000001108,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,15092911000001100,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,29837011000001103,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,18394311000001100,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+AMP,22044611000001109,Hydrocortisone 20mg tablets,0603020J0AAAEAE
+VMP,28422811000001103,Hydrocortisone 5mg/5ml oral solution,0603020J0AAAJAJ
+AMP,28418711000001102,Hydrocortisone 5mg/5ml oral solution,0603020J0AAAJAJ
+VMP,8581111000001102,Hydrocortisone 10mg/5ml oral suspension,0603020J0AAAKAK
+AMP,8532311000001100,Hydrocortisone 10mg/5ml oral suspension,0603020J0AAAKAK
+VMP,8581611000001105,Hydrocortisone 5mg/5ml oral suspension,0603020J0AAAXAX
+AMP,8531811000001100,Hydrocortisone 5mg/5ml oral suspension,0603020J0AAAXAX
+VMP,8581211000001108,Hydrocortisone 12.5mg/5ml oral suspension,0603020J0AABBBB
+AMP,8533511000001104,Hydrocortisone 12.5mg/5ml oral suspension,0603020J0AABBBB
+VMP,8581311000001100,Hydrocortisone 2.5mg/5ml oral suspension,0603020J0AABCBC
+AMP,8532411000001107,Hydrocortisone 2.5mg/5ml oral suspension,0603020J0AABCBC
+VMP,12540711000001109,Hydrocortisone 1mg/5ml oral suspension,0603020J0AABDBD
+AMP,12529911000001103,Hydrocortisone 1mg/5ml oral suspension,0603020J0AABDBD
+VMP,12555211000001108,Hydrocortisone 50mg/5ml oral suspension,0603020J0AABJBJ
+AMP,12553411000001108,Hydrocortisone 50mg/5ml oral suspension,0603020J0AABJBJ
+VMP,8581511000001106,Hydrocortisone 25mg/5ml oral suspension,0603020J0AABLBL
+AMP,8531111000001107,Hydrocortisone 25mg/5ml oral suspension,0603020J0AABLBL
+VMP,12541011000001103,Hydrocortisone 2mg/5ml oral suspension,0603020J0AABMBM
+AMP,12531011000001104,Hydrocortisone 2mg/5ml oral suspension,0603020J0AABMBM
+VMP,12554911000001103,Hydrocortisone 3mg/5ml oral suspension,0603020J0AABNBN
+AMP,12552211000001103,Hydrocortisone 3mg/5ml oral suspension,0603020J0AABNBN
+VMP,15436911000001101,Hydrocortisone 2mg capsules,0603020J0AABRBR
+AMP,15427611000001107,Hydrocortisone 2mg capsules,0603020J0AABRBR
+VMP,12563611000001103,Hydrocortisone 7.5mg/5ml oral suspension,0603020J0AABSBS
+AMP,12555711000001101,Hydrocortisone 7.5mg/5ml oral suspension,0603020J0AABSBS
+VMP,20455311000001102,Hydrocortisone 1mg capsules,0603020J0AABTBT
+AMP,20428711000001106,Hydrocortisone 1mg capsules,0603020J0AABTBT
+VMP,12540311000001105,Hydrocortisone 1.5mg/5ml oral suspension,0603020J0AABUBU
+AMP,12528511000001104,Hydrocortisone 1.5mg/5ml oral suspension,0603020J0AABUBU
+VMP,8581411000001107,Hydrocortisone 20mg/5ml oral suspension,0603020J0AABVBV
+AMP,8533211000001102,Hydrocortisone 20mg/5ml oral suspension,0603020J0AABVBV
+VMP,12540811000001101,Hydrocortisone 2.6mg/5ml oral suspension,0603020J0AABWBW
+AMP,12530211000001103,Hydrocortisone 2.6mg/5ml oral suspension,0603020J0AABWBW
+VMP,12554811000001108,Hydrocortisone 30mg/5ml oral suspension,0603020J0AABYBY
+AMP,12551911000001101,Hydrocortisone 30mg/5ml oral suspension,0603020J0AABYBY
+VMP,12540911000001106,Hydrocortisone 250micrograms/5ml oral suspension,0603020J0AABZBZ
+AMP,12530511000001100,Hydrocortisone 250micrograms/5ml oral suspension,0603020J0AABZBZ
+VMP,12540411000001103,Hydrocortisone 100mg/5ml oral suspension,0603020J0AACACA
+AMP,12528911000001106,Hydrocortisone 100mg/5ml oral suspension,0603020J0AACACA
+VMP,12555511000001106,Hydrocortisone 6mg/5ml oral suspension,0603020J0AACBCB
+AMP,12554011000001102,Hydrocortisone 6mg/5ml oral suspension,0603020J0AACBCB
+VMP,12554711000001100,Hydrocortisone 3.75mg/5ml oral suspension,0603020J0AACDCD
+AMP,12551611000001107,Hydrocortisone 3.75mg/5ml oral suspension,0603020J0AACDCD
+VMP,12555411000001107,Hydrocortisone 6.25mg/5ml oral suspension,0603020J0AACFCF
+AMP,12553711000001102,Hydrocortisone 6.25mg/5ml oral suspension,0603020J0AACFCF
+VMP,12555111000001102,Hydrocortisone 4mg/5ml oral suspension,0603020J0AACGCG
+AMP,12552811000001102,Hydrocortisone 4mg/5ml oral suspension,0603020J0AACGCG
+VMP,12555011000001103,Hydrocortisone 4.25mg/5ml oral suspension,0603020J0AACICI
+AMP,12552511000001100,Hydrocortisone 4.25mg/5ml oral suspension,0603020J0AACICI
+VMP,12554611000001109,Hydrocortisone 3.6mg/5ml oral suspension,0603020J0AACJCJ
+AMP,12551311000001102,Hydrocortisone 3.6mg/5ml oral suspension,0603020J0AACJCJ
+VMP,12563911000001109,Hydrocortisone 85micrograms/5ml oral suspension,0603020J0AACKCK
+AMP,12558711000001108,Hydrocortisone 85micrograms/5ml oral suspension,0603020J0AACKCK
+VMP,12540511000001104,Hydrocortisone 13.95mg/5ml oral suspension,0603020J0AACLCL
+AMP,12529311000001104,Hydrocortisone 13.95mg/5ml oral suspension,0603020J0AACLCL
+VMP,12555311000001100,Hydrocortisone 50micrograms/5ml oral suspension,0603020J0AACMCM
+AMP,12553111000001103,Hydrocortisone 50micrograms/5ml oral suspension,0603020J0AACMCM
+VMP,12563811000001104,Hydrocortisone 7mg/5ml oral suspension,0603020J0AACQCQ
+AMP,12558411000001102,Hydrocortisone 7mg/5ml oral suspension,0603020J0AACQCQ
+VMP,12540611000001100,Hydrocortisone 18mg/5ml oral suspension,0603020J0AACTCT
+AMP,12529611000001109,Hydrocortisone 18mg/5ml oral suspension,0603020J0AACTCT
+VMP,12563711000001107,Hydrocortisone 75mg/5ml oral suspension,0603020J0AACUCU
+AMP,12556011000001107,Hydrocortisone 75mg/5ml oral suspension,0603020J0AACUCU
+VMP,21496411000001103,Hydrocortisone 5mg modified-release tablets,0603020J0AACVCV
+VMP,21496311000001105,Hydrocortisone 20mg modified-release tablets,0603020J0AACWCW
+VMP,35776011000001106,Hydrocortisone 500microgram granules in capsules for opening,0603020J0AACXCX
+VMP,35775611000001109,Hydrocortisone 1mg granules in capsules for opening,0603020J0AACYCY
+VMP,35775711000001100,Hydrocortisone 2mg granules in capsules for opening,0603020J0AACZCZ
+VMP,35776111000001107,Hydrocortisone 5mg granules in capsules for opening,0603020J0AADADA
+VMP,36595311000001105,Hydrocortisone 10mg soluble tablets sugar free,0603020J0AADBDB
+AMP,37492011000001105,Hydrocortisone 10mg soluble tablets sugar free,0603020J0AADBDB
+AMP,36586911000001100,Hydrocortisone 10mg soluble tablets sugar free,0603020J0AADBDB
+AMP,197211000001101,Hydrocortone 10mg tablets,0603020J0BCAAAD
+AMP,706611000001109,Hydrocortone 20mg tablets,0603020J0BCABAE
+AMP,21494611000001109,Plenadren 5mg modified-release tablets,0603020J0BEAACV
+AMP,21494911000001103,Plenadren 20mg modified-release tablets,0603020J0BEABCW
+AMP,35699311000001104,Alkindi 0.5mg granules in capsules for opening,0603020J0BFAACX
+AMP,35700011000001101,Alkindi 1mg granules in capsules for opening,0603020J0BFABCY
+AMP,35700311000001103,Alkindi 2mg granules in capsules for opening,0603020J0BFACCZ
+AMP,35697611000001104,Alkindi 5mg granules in capsules for opening,0603020J0BFADDA
+AMP,36917711000001106,Hydventia 10mg tablets,0603020J0BGAAAD
+AMP,36917511000001101,Hydventia 20mg tablets,0603020J0BGABAE
+VMP,4396911000001107,Methylprednisolone sodium succinate 40mg powder and solvent for solution for injection vials,0603020K0AAAAAA
+AMP,30807511000001104,Methylprednisolone sodium succinate 40mg powder and solvent for solution for injection vials,0603020K0AAAAAA
+VMP,4396711000001105,Methylprednisolone sodium succinate 125mg powder and solvent for solution for injection vials,0603020K0AAABAB
+VMP,4195411000001101,Methylprednisolone sodium succinate 500mg powder and solvent for solution for injection vials,0603020K0AAACAC
+AMP,22128311000001101,Methylprednisolone sodium succinate 500mg powder and solvent for solution for injection vials,0603020K0AAACAC
+AMP,20129111000001104,Methylprednisolone sodium succinate 500mg powder and solvent for solution for injection vials,0603020K0AAACAC
+VMP,4195311000001108,Methylprednisolone sodium succinate 1g powder and solvent for solution for injection vials,0603020K0AAADAD
+AMP,22128611000001106,Methylprednisolone sodium succinate 1g powder and solvent for solution for injection vials,0603020K0AAADAD
+AMP,20129311000001102,Methylprednisolone sodium succinate 1g powder and solvent for solution for injection vials,0603020K0AAADAD
+VMP,4396811000001102,Methylprednisolone sodium succinate 2g powder and solvent for solution for injection vials,0603020K0AAAEAE
+AMP,4393011000001100,Solu-Medrone 40mg powder and solvent for solution for injection vials,0603020K0BCAAAA
+AMP,4392411000001100,Solu-Medrone 125mg powder and solvent for solution for injection vials,0603020K0BCABAB
+AMP,4179311000001102,Solu-Medrone 500mg powder and solvent for solution for injection vials,0603020K0BCACAC
+AMP,4180211000001105,Solu-Medrone 1g powder and solvent for solution for injection vials,0603020K0BCADAD
+AMP,4392711000001106,Solu-Medrone 2g powder and solvent for solution for injection vials,0603020K0BCAEAE
+VMP,36056911000001108,Hydrocortisone sodium phosphate 100mg/1ml solution for injection ampoules,0603020L0AAABAB
+AMP,30393911000001101,Hydrocortisone sodium phosphate 100mg/1ml solution for injection ampoules,0603020L0AAABAB
+VMP,36057011000001107,Hydrocortisone sodium phosphate 500mg/5ml solution for injection ampoules,0603020L0AAACAC
+AMP,30394611000001105,Hydrocortisone sodium phosphate 500mg/5ml solution for injection ampoules,0603020L0AAACAC
+AMP,3852011000001104,Efcortesol 100mg/1ml solution for injection ampoules,0603020L0BBAAAB
+AMP,4888811000001103,Efcortesol 500mg/5ml solution for injection ampoules,0603020L0BBABAC
+VMP,4195211000001100,Hydrocortisone sodium succinate 100mg powder and solvent for solution for injection vials,0603020M0AAAAAA
+VMP,13893711000001102,Hydrocortisone sodium succinate 100mg powder for solution for injection vials,0603020M0AAAEAE
+AMP,38536611000001108,Hydrocortisone sodium succinate 100mg powder for solution for injection vials,0603020M0AAAEAE
+AMP,4182611000001108,Solu-Cortef 100mg powder and solvent for solution for injection vials,0603020M0BCAAAA
+AMP,13871211000001104,Solu-Cortef 100mg powder for solution for injection vials,0603020M0BCABAE
+VMP,325411009,Methylprednisolone 2mg tablets,0603020S0AAAAAA
+VMP,325412002,Methylprednisolone 4mg tablets,0603020S0AAABAB
+VMP,325413007,Methylprednisolone 16mg tablets,0603020S0AAACAC
+VMP,325410005,Methylprednisolone 100mg tablets,0603020S0AAADAD
+VMP,13005411000001106,Methylprednisolone 1mg/5ml oral suspension,0603020S0AAAEAE
+AMP,12950111000001100,Methylprednisolone 1mg/5ml oral suspension,0603020S0AAAEAE
+AMP,4051211000001101,Medrone 2mg tablets,0603020S0BBAAAA
+AMP,4051611000001104,Medrone 4mg tablets,0603020S0BBABAB
+AMP,4051911000001105,Medrone 16mg tablets,0603020S0BBACAC
+AMP,4052211000001108,Medrone 100mg tablets,0603020S0BBADAD
+VMP,325426006,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,649711000001109,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,646211000001106,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,52911000001107,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,9807711000001108,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,10409611000001103,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,14786411000001103,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,30114811000001104,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,32807911000001101,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,707911000001100,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,30858911000001100,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,15175511000001102,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,18285011000001109,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,238511000001107,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,798611000001108,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,21851211000001107,Prednisolone 1mg tablets,0603020T0AAAAAA
+AMP,844111000001103,Prednisolone 1mg tablets,0603020T0AAAAAA
+VMP,28808611000001100,Prednisolone 2.5mg tablets,0603020T0AAABAB
+AMP,32776111000001109,Prednisolone 2.5mg tablets,0603020T0AAABAB
+AMP,32772911000001108,Prednisolone 2.5mg tablets,0603020T0AAABAB
+VMP,325427002,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,876911000001107,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,85511000001101,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,772111000001107,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,9807911000001105,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,10410111000001103,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,14786811000001101,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,30115011000001109,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,32808311000001101,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,350611000001104,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,30859111000001105,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,18625211000001107,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,18285211000001104,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,110811000001100,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,86711000001103,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,21851411000001106,Prednisolone 5mg tablets,0603020T0AAACAC
+AMP,940311000001100,Prednisolone 5mg tablets,0603020T0AAACAC
+VMP,325445002,Prednisolone 50mg tablets,0603020T0AAAEAE
+AMP,4752611000001107,Prednisolone 50mg tablets,0603020T0AAAEAE
+AMP,4752811000001106,Prednisolone 50mg tablets,0603020T0AAAEAE
+VMP,325442004,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,858811000001104,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,380011000001100,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,779211000001109,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,19743011000001109,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,4208511000001105,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,36568211000001107,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,30114011000001105,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,685311000001104,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,37130211000001109,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,17916411000001100,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,17999311000001104,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,15175711000001107,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,18307011000001109,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+AMP,22452711000001102,Prednisolone 2.5mg gastro-resistant tablets,0603020T0AAAFAF
+VMP,325443009,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,662011000001105,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,512811000001108,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,255211000001101,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,19743211000001104,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,4208911000001103,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,34444511000001106,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,30114311000001108,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,447211000001105,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,37130611000001106,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,17916811000001103,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,17999611000001109,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,15176111000001100,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,18307211000001104,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+AMP,22453011000001108,Prednisolone 5mg gastro-resistant tablets,0603020T0AAAGAG
+VMP,325450008,Prednisolone 25mg tablets,0603020T0AAARAR
+AMP,716111000001103,Prednisolone 25mg tablets,0603020T0AAARAR
+AMP,30991311000001108,Prednisolone 25mg tablets,0603020T0AAARAR
+AMP,313911000001107,Prednisolone 25mg tablets,0603020T0AAARAR
+AMP,37778711000001106,Prednisolone 25mg tablets,0603020T0AAARAR
+AMP,37131011000001108,Prednisolone 25mg tablets,0603020T0AAARAR
+AMP,17917211000001102,Prednisolone 25mg tablets,0603020T0AAARAR
+AMP,4852811000001108,Prednisolone 25mg tablets,0603020T0AAARAR
+VMP,32611811000001105,Prednisolone 1mg gastro-resistant tablets,0603020T0AAATAT
+AMP,33425811000001105,Prednisolone 1mg gastro-resistant tablets,0603020T0AAATAT
+AMP,33428411000001103,Prednisolone 1mg gastro-resistant tablets,0603020T0AAATAT
+AMP,37778311000001107,Prednisolone 1mg gastro-resistant tablets,0603020T0AAATAT
+AMP,37130011000001104,Prednisolone 1mg gastro-resistant tablets,0603020T0AAATAT
+AMP,32584711000001105,Prednisolone 1mg gastro-resistant tablets,0603020T0AAATAT
+VMP,28808711000001109,Prednisolone 20mg tablets,0603020T0AAAXAX
+AMP,32776511000001100,Prednisolone 20mg tablets,0603020T0AAAXAX
+AMP,32773211000001105,Prednisolone 20mg tablets,0603020T0AAAXAX
+VMP,416533002,Prednisolone 15mg/5ml oral solution,0603020T0AAAYAY
+VMP,432225008,Prednisolone 15mg/5ml oral suspension,0603020T0AAAYAY
+AMP,13055911000001108,Prednisolone 15mg/5ml oral solution,0603020T0AAAYAY
+AMP,13055311000001107,Prednisolone 15mg/5ml oral suspension,0603020T0AAAYAY
+VMP,13133111000001100,Prednisolone 5mg/5ml oral solution,0603020T0AAAZAZ
+VMP,432224007,Prednisolone 5mg/5ml oral suspension,0603020T0AAAZAZ
+AMP,13120411000001104,Prednisolone 5mg/5ml oral solution,0603020T0AAAZAZ
+AMP,13120111000001109,Prednisolone 5mg/5ml oral suspension,0603020T0AAAZAZ
+VMP,13078311000001101,Prednisolone 1.5mg/5ml oral solution,0603020T0AABBBB
+VMP,13078411000001108,Prednisolone 1.5mg/5ml oral suspension,0603020T0AABBBB
+AMP,13053711000001105,Prednisolone 1.5mg/5ml oral solution,0603020T0AABBBB
+AMP,13053211000001103,Prednisolone 1.5mg/5ml oral suspension,0603020T0AABBBB
+VMP,429995001,Prednisolone 10mg/5ml oral solution,0603020T0AABCBC
+VMP,13078611000001106,Prednisolone 10mg/5ml oral suspension,0603020T0AABCBC
+AMP,13054711000001107,Prednisolone 10mg/5ml oral solution,0603020T0AABCBC
+AMP,13054411000001101,Prednisolone 10mg/5ml oral suspension,0603020T0AABCBC
+VMP,13079511000001101,Prednisolone 25mg/5ml oral solution,0603020T0AABDBD
+VMP,13079611000001102,Prednisolone 25mg/5ml oral suspension,0603020T0AABDBD
+AMP,13058911000001102,Prednisolone 25mg/5ml oral solution,0603020T0AABDBD
+AMP,13058611000001108,Prednisolone 25mg/5ml oral suspension,0603020T0AABDBD
+VMP,8672011000001109,Prednisolone 2mg/5ml oral suspension,0603020T0AABEBE
+AMP,8651111000001103,Prednisolone 2mg/5ml oral suspension,0603020T0AABEBE
+VMP,13078911000001100,Prednisolone 1mg/5ml oral solution,0603020T0AABFBF
+VMP,13079011000001109,Prednisolone 1mg/5ml oral suspension,0603020T0AABFBF
+AMP,13056511000001108,Prednisolone 1mg/5ml oral solution,0603020T0AABFBF
+AMP,13056211000001105,Prednisolone 1mg/5ml oral suspension,0603020T0AABFBF
+VMP,13079311000001107,Prednisolone 20mg/5ml oral solution,0603020T0AABGBG
+VMP,13079411000001100,Prednisolone 20mg/5ml oral suspension,0603020T0AABGBG
+AMP,13058311000001103,Prednisolone 20mg/5ml oral solution,0603020T0AABGBG
+AMP,13058011000001101,Prednisolone 20mg/5ml oral suspension,0603020T0AABGBG
+VMP,325444003,Prednisolone 5mg soluble tablets,0603020T0AABHBH
+AMP,245011000001108,Prednisolone 5mg soluble tablets,0603020T0AABHBH
+AMP,34035411000001102,Prednisolone 5mg soluble tablets,0603020T0AABHBH
+AMP,392511000001108,Prednisolone 5mg soluble tablets,0603020T0AABHBH
+AMP,157711000001100,Prednisolone 5mg soluble tablets,0603020T0AABHBH
+AMP,30114611000001103,Prednisolone 5mg soluble tablets,0603020T0AABHBH
+AMP,28937511000001104,Prednisolone 5mg soluble tablets,0603020T0AABHBH
+AMP,34172711000001106,Prednisolone 5mg soluble tablets,0603020T0AABHBH
+AMP,15172311000001102,Prednisolone 5mg soluble tablets,0603020T0AABHBH
+VMP,13079111000001105,Prednisolone 2.5mg/5ml oral solution,0603020T0AABIBI
+VMP,13079211000001104,Prednisolone 2.5mg/5ml oral suspension,0603020T0AABIBI
+AMP,13057411000001106,Prednisolone 2.5mg/5ml oral solution,0603020T0AABIBI
+AMP,13056811000001106,Prednisolone 2.5mg/5ml oral suspension,0603020T0AABIBI
+VMP,14204411000001101,Prednisolone 1.67mg/5ml oral solution,0603020T0AABJBJ
+VMP,14204511000001102,Prednisolone 1.67mg/5ml oral suspension,0603020T0AABJBJ
+AMP,14173111000001101,Prednisolone 1.67mg/5ml oral solution,0603020T0AABJBJ
+AMP,14173511000001105,Prednisolone 1.67mg/5ml oral suspension,0603020T0AABJBJ
+VMP,28808411000001103,Prednisolone 10mg tablets,0603020T0AABKBK
+AMP,32776311000001106,Prednisolone 10mg tablets,0603020T0AABKBK
+AMP,32771211000001106,Prednisolone 10mg tablets,0603020T0AABKBK
+VMP,29424511000001109,Prednisolone 5mg/5ml oral solution unit dose,0603020T0AABLBL
+AMP,29559211000001100,Prednisolone 5mg/5ml oral solution unit dose,0603020T0AABLBL
+AMP,32688311000001106,Prednisolone 5mg/5ml oral solution unit dose,0603020T0AABLBL
+AMP,29361211000001105,Prednisolone 5mg/5ml oral solution unit dose,0603020T0AABLBL
+VMP,29904211000001102,Prednisolone 10mg/ml oral solution sugar free,0603020T0AABMBM
+AMP,30129111000001103,Prednisolone 10mg/ml oral solution sugar free,0603020T0AABMBM
+AMP,29879111000001105,Prednisolone 10mg/ml oral solution sugar free,0603020T0AABMBM
+AMP,37941611000001100,Prednisolone 10mg/ml oral solution sugar free,0603020T0AABMBM
+AMP,37778511000001101,Prednisolone 10mg/ml oral solution sugar free,0603020T0AABMBM
+VMP,32781411000001102,Prednisolone 30mg tablets,0603020T0AABNBN
+AMP,32776711000001105,Prednisolone 30mg tablets,0603020T0AABNBN
+AMP,32774411000001107,Prednisolone 30mg tablets,0603020T0AABNBN
+AMP,459611000001100,Deltacortril 2.5mg gastro-resistant tablets,0603020T0BCAAAF
+AMP,331111000001100,Deltacortril 5mg gastro-resistant tablets,0603020T0BCABAG
+AMP,22519711000001105,Dilacort 2.5mg gastro-resistant tablets,0603020T0BKAAAF
+AMP,22520311000001107,Dilacort 5mg gastro-resistant tablets,0603020T0BKABAG
+AMP,28798211000001102,Pevanti 2.5mg tablets,0603020T0BLAAAB
+AMP,28799011000001102,Pevanti 5mg tablets,0603020T0BLABAC
+AMP,28799311000001104,Pevanti 10mg tablets,0603020T0BLACBK
+AMP,28799611000001109,Pevanti 20mg tablets,0603020T0BLADAX
+AMP,28799811000001108,Pevanti 25mg tablets,0603020T0BLAEAR
+AMP,32652311000001103,Dilacort 2.5mg gastro-resistant tablets,0603020T0BNAAAF
+AMP,32652511000001109,Dilacort 5mg gastro-resistant tablets,0603020T0BNABAG
+AMP,33577711000001104,Dilacort 2.5mg gastro-resistant tablets,0603020T0BPAAAF
+AMP,33577911000001102,Dilacort 5mg gastro-resistant tablets,0603020T0BPABAG
+VMP,17872811000001100,Prednisone 1mg modified-release tablets,0603020X0AAAEAE
+VMP,17873211000001107,Prednisone 2mg modified-release tablets,0603020X0AAAFAF
+VMP,17873811000001108,Prednisone 5mg modified-release tablets,0603020X0AAAGAG
+AMP,17872911000001105,Lodotra 1mg modified-release tablets,0603020X0BDAAAE
+AMP,17873311000001104,Lodotra 2mg modified-release tablets,0603020X0BDABAF
+AMP,17873911000001103,Lodotra 5mg modified-release tablets,0603020X0BDACAG
+VMP,35921611000001103,Triamcinolone acetonide 40mg/1ml suspension for injection pre-filled syringes,0603020Z0AAAAAA
+VMP,35921911000001109,Triamcinolone acetonide 80mg/2ml suspension for injection pre-filled syringes,0603020Z0AAABAB
+AMP,793711000001105,Kenalog Intramuscular 40mg/1ml suspension for injection pre-filled syringes,0603020Z0BBAAAA
+AMP,865511000001102,Kenalog Intramuscular 80mg/2ml suspension for injection pre-filled syringes,0603020Z0BBABAB

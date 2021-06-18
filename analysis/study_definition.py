@@ -1,5 +1,5 @@
 from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv
-from codelists import covid_codelist,flu_comorb,corticosteroid_contraindications
+from codelists import covid_codelist,flu_comorb,corticosteroid_contraindications,inhaled_or_systemic_corticosteroids
 from datetime import date, timedelta
 
 '''
@@ -39,6 +39,8 @@ study = StudyDefinition(
             (first_positive_test_type = "PCR_Only" OR first_positive_test_type = "LFT_WithPCR")
             AND
             NOT corticosteroid_contraindicated
+            AND
+            NOT has_previous_steroid_prescription
         """,
 
         has_died=patients.died_from_any_cause(
@@ -54,6 +56,13 @@ study = StudyDefinition(
             #     }
         ),
 
+        has_previous_steroid_prescription = patients.with_these_medications(
+            inhaled_or_systemic_corticosteroids,
+            on_or_before = "index_date - 3 months",
+            returning = "binary_flag",
+            return_expectations = {"incidence": 0.5}
+        ),
+        
         registered = patients.satisfying(
         "registered_at_start",
         registered_at_start = patients.registered_as_of("index_date"),
