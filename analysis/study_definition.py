@@ -6,7 +6,7 @@ from datetime import date, timedelta
 Guidance issued 2021-04-12, with inclusion criteria of symptom onset within 14 days, therefore index date of 2021-03-29
 '''
 
-#past 3 months for current prescription
+#todo: 
 
 ix_dt = "2021-03-29"
 
@@ -25,7 +25,6 @@ study = StudyDefinition(
     population=patients.satisfying(
         
         # AND had_covid_symtoms
-        # AND NOT corticosteroid_ADR
 
         """
             NOT has_died
@@ -50,10 +49,7 @@ study = StudyDefinition(
 
         corticosteroid_contraindicated = patients.with_these_clinical_events(
             corticosteroid_contraindications, 
-            returning='binary_flag', 
-            # return_expectations={
-            #         "incidence": 0.01
-            #     }
+            returning='binary_flag'
         ),
 
         has_previous_steroid_prescription = patients.with_these_medications(
@@ -64,12 +60,15 @@ study = StudyDefinition(
         ),
         
         registered = patients.satisfying(
-        "registered_at_start",
-        registered_at_start = patients.registered_as_of("index_date"),
+            "registered_at_start",
+            registered_at_start = patients.registered_as_of("index_date"),
         ),
         
     ),
     
+
+### tood: with_gp_consultations( +- 1 wk from +ve PCR) - don't put in ctieria just use as variable
+
 # would be nice to use "all tests" as this may exlude pts with initial +ve LFT followed by PCR
     first_positive_test_date=patients.with_test_result_in_sgss(
         pathogen="SARS-CoV-2",
@@ -101,9 +100,7 @@ study = StudyDefinition(
             }
         },
     ),
-
-    
-
+  
     has_comorbidities = patients.with_these_clinical_events(
         flu_comorb, 
         on_or_after=indexoffset(730), 
@@ -152,12 +149,32 @@ study = StudyDefinition(
     age = patients.age_as_of(
         "first_positive_test_date - 3 months",
         return_expectations = {
-        "rate": "universal",
-        "int": {"distribution": "population_ages"},
-        "incidence" : 0.001
+            "rate": "universal",
+            "int": {"distribution": "population_ages"},
+            "incidence" : 0.001
         },
     ),
   
+    region = patients.registered_practice_as_of(
+        ix_dt,
+        returning='nuts1',
+        return_expectations={
+            "rate": "universal",
+            "category": {
+                "ratios": {
+                    "North East": 0.1,
+                    "North West": 0.1,
+                    "Yorkshire and the Humber": 0.1,
+                    "East Midlands": 0.1,
+                    "West Midlands": 0.1,
+                    "East of England": 0.1,
+                    "London": 0.2,
+                    "South East": 0.2,
+                },
+            },
+        },
+    ),
+
     covid_admission_date=patients.admitted_to_hospital(
         returning= "date_admitted",
         with_these_diagnoses=covid_codelist,
@@ -173,6 +190,4 @@ study = StudyDefinition(
         find_first_match_in_period=True,
         date_format="YYYY-MM-DD",
         return_expectations={"date": {"earliest": ix_dt}}),
-
-    
 )
