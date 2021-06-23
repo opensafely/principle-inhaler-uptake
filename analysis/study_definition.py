@@ -1,5 +1,5 @@
 from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv
-from codelists import covid_codelist,flu_comorb,corticosteroid_contraindications,inhaled_or_systemic_corticosteroids
+from codelists import covid_codelist,flu_comorb,corticosteroid_contraindications,inhaled_or_systemic_corticosteroids,ethnicity_codes,ethnicity_codes_16
 from datetime import date, timedelta
 
 '''
@@ -157,7 +157,7 @@ study = StudyDefinition(
   
     region = patients.registered_practice_as_of(
         ix_dt,
-        returning='nuts1',
+        returning='nuts1_region_name',
         return_expectations={
             "rate": "universal",
             "category": {
@@ -173,6 +173,26 @@ study = StudyDefinition(
                 },
             },
         },
+    ),
+    ethnicity=patients.with_these_clinical_events(
+        ethnicity_codes,
+        returning="category",
+        find_last_match_in_period=True,
+        include_date_of_match=True,
+        return_expectations={
+            "category": {"ratios": {"1": 0.2, "2": 0.2, "3": 0.2, "4": 0.2, "5": 0.2}},
+            "incidence": 0.75,
+        }
+    ),
+    ethnicity_16=patients.with_these_clinical_events(
+        ethnicity_codes_16,
+        returning="category",
+        find_last_match_in_period=True,
+        include_date_of_match=True,
+        return_expectations={
+            "category": {"ratios": {"1": 0.2, "2": 0.2, "3": 0.2, "4": 0.2, "5": 0.2}},
+            "incidence": 0.75,
+        }
     ),
 
     covid_admission_date=patients.admitted_to_hospital(

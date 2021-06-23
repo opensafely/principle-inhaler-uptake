@@ -24,3 +24,16 @@ inhaled_or_systemic_corticosteroids = codelist_from_csv(
     system="snomed",
     column='dmd_id'
 )
+
+ethnicity_codes = codelist_from_csv(
+    "codelists/opensafely-ethnicity-2020-04-27.csv",
+    system="ctv3",
+    column="Code",
+    category_column="Grouping_6",
+)
+ethnicity_codes_16 = codelist_from_csv(
+    "codelists/opensafely-ethnicity-2020-04-27.csv",
+    system="ctv3",
+    column="Code",
+    category_column="Grouping_16",
+)
