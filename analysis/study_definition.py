@@ -1,5 +1,5 @@
 from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv
-from codelists import covid_codelist,flu_comorb,corticosteroid_contraindications,inhaled_or_systemic_corticosteroids,ethnicity_codes,ethnicity_codes_16
+from codelists import covid_codelist,flu_comorb,inhaled_or_systemic_corticosteroids,ethnicity_codes,ethnicity_codes_16,budeonside_inhalers
 from datetime import date, timedelta
 
 '''
@@ -36,21 +36,22 @@ study = StudyDefinition(
             (sex = "M" OR sex = "F")
             AND 
             (first_positive_test_type = "PCR_Only" OR first_positive_test_type = "LFT_WithPCR")
-            AND
-            NOT corticosteroid_contraindicated
+           
             AND
             NOT has_previous_steroid_prescription
         """,
+        #  AND
+        #     NOT corticosteroid_contraindicated
 
         has_died=patients.died_from_any_cause(
             on_or_before = "index_date",
             returning = "binary_flag",
         ),
 
-        corticosteroid_contraindicated = patients.with_these_clinical_events(
-            corticosteroid_contraindications, 
-            returning='binary_flag'
-        ),
+        # corticosteroid_contraindicated = patients.with_these_clinical_events(
+        #     corticosteroid_contraindications, 
+        #     returning='binary_flag'
+        # ),
 
         has_previous_steroid_prescription = patients.with_these_medications(
             inhaled_or_systemic_corticosteroids,
@@ -66,8 +67,7 @@ study = StudyDefinition(
         
     ),
     
-
-### tood: with_gp_consultations( +- 1 wk from +ve PCR) - don't put in ctieria just use as variable
+   
 
 # would be nice to use "all tests" as this may exlude pts with initial +ve LFT followed by PCR
     first_positive_test_date=patients.with_test_result_in_sgss(
@@ -195,6 +195,19 @@ study = StudyDefinition(
         }
     ),
 
+    budesonide_prescription = patients.with_these_medications(
+            budeonside_inhalers,
+            between = ["first_positive_test_date","first_positive_test_date + 14 days"],
+            returning = "number_of_matches_in_period",
+            return_expectations = {"int" : {"distribution": "normal", "mean": 1, "stddev": 1}, "incidence" : 0.5}
+    ),
+
+    with_consultation = patients.with_gp_consultations(
+        between=["first_positive_test_date - 7 days","first_positive_test_date + 7 days"],
+        returning='binary_flag',
+        return_expectations = {"incidence": 0.5}
+    ),
+    
     covid_admission_date=patients.admitted_to_hospital(
         returning= "date_admitted",
         with_these_diagnoses=covid_codelist,

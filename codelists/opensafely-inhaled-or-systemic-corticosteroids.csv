@@ -1,4 +1,54 @@
 dmd_type,dmd_id,dmd_name,bnf_code
+VMP,35912611000001102,Budesonide 3mg gastro-resistant modified-release capsules,0105020A0AAAAAA
+VMP,317695007,Budesonide 2mg/100ml enema,0105020A0AAABAB
+VMP,317446001,Budesonide 3mg gastro-resistant capsules,0105020A0AAACAC
+VMP,11550711000001105,Budesonide 2mg foam enema,0105020A0AAADAD
+VMP,19743911000001108,Budesonide 9mg gastro-resistant granules sachets,0105020A0AAAEAE
+VMP,29094911000001100,Budesonide 9mg modified-release tablets,0105020A0AAAFAF
+VMP,35824211000001108,Budesonide 1mg orodispersible tablets sugar free,0105020A0AAAGAG
+AMP,3765811000001105,Entocort CR 3mg capsules,0105020A0BBAAAA
+AMP,3954411000001107,Entocort 2mg/100ml enema,0105020A0BBABAB
+AMP,3807811000001103,Budenofalk 3mg gastro-resistant capsules,0105020A0BCAAAC
+AMP,11550911000001107,Budenofalk 2mg foam enema,0105020A0BCABAD
+AMP,19738311000001103,Budenofalk 9mg gastro-resistant granules sachets,0105020A0BCACAE
+AMP,29094211000001109,Cortiment 9mg modified-release tablets,0105020A0BDAAAF
+AMP,35774711000001104,Jorveza 1mg orodispersible tablets,0105020A0BEAAAG
+VMP,317681009,Hydrocortisone 10% foam aerosol enema,0105020B0AAAAAA
+AMP,3050211000001109,Colifoam 10% aerosol,0105020B0BBAAAA
+VMP,317678004,Hydrocortisone 25mg suppositories,0105020C0AAABAB
+AMP,20549311000001109,Hydrocortisone 25mg suppositories,0105020C0AAABAB
+VMP,16036211000001100,Hydrocortisone 100mg suppositories,0105020C0AAACAC
+AMP,16017911000001100,Hydrocortisone 100mg suppositories,0105020C0AAACAC
+VMP,33631711000001104,Hydrocortisone 200mg suppositories,0105020C0AAAEAE
+AMP,33625811000001107,Hydrocortisone 200mg suppositories,0105020C0AAAEAE
+VMP,16090211000001106,Hydrocortisone 50mg suppositories,0105020C0AAAGAG
+AMP,16085511000001100,Hydrocortisone 50mg suppositories,0105020C0AAAGAG
+VMP,317692005,Prednisolone 20mg/100ml enema long tube,0105020D0AAAAAA
+VMP,38753811000001101,Prednisolone 20mg/application foam enema,0105020D0AAACAC
+AMP,20011611000001109,Prednisolone 20mg/application foam enema,0105020D0AAACAC
+AMP,19565211000001106,Prednisolone 20mg/application foam enema,0105020D0AAACAC
+AMP,37778111000001105,Prednisolone 20mg/application foam enema,0105020D0AAACAC
+AMP,19208211000001105,Prednisolone 20mg/application foam enema,0105020D0AAACAC
+AMP,3409611000001103,Predenema 20mg/100ml long tube,0105020D0BBAAAA
+AMP,3413611000001102,Predenema 20mg/100ml standard tube,0105020D0BBABAB
+AMP,363511000001104,Predfoam 20mg/application enema,0105020D0BCAAAC
+VMP,317690002,Prednisolone sodium phosphate 5mg suppositories,0105020E0AAAAAA
+AMP,21679011000001106,Prednisolone sodium phosphate 5mg suppositories,0105020E0AAAAAA
+AMP,21125111000001107,Prednisolone sodium phosphate 5mg suppositories,0105020E0AAAAAA
+AMP,24028311000001104,Prednisolone sodium phosphate 5mg suppositories,0105020E0AAAAAA
+AMP,20589511000001107,Prednisolone sodium phosphate 5mg suppositories,0105020E0AAAAAA
+AMP,17551611000001109,Prednisolone sodium phosphate 5mg suppositories,0105020E0AAAAAA
+VMP,317693000,Prednisolone 20mg/100ml rectal solution,0105020E0AAABAB
+AMP,36827211000001104,Prednisolone 20mg/100ml rectal solution,0105020E0AAABAB
+AMP,36375411000001105,Prednisolone 20mg/100ml rectal solution,0105020E0AAABAB
+VMP,9407011000001103,Prednisolone 40mg/100ml enema,0105020E0AAACAC
+AMP,9388511000001102,Prednisolone 40mg/100ml enema,0105020E0AAACAC
+AMP,900711000001108,Predsol 5mg suppositories,0105020E0BBAAAA
+AMP,3416911000001102,Predsol 20mg/100ml retention enema,0105020E0BBABAB
+VMP,11880411000001105,Beclometasone 5mg gastro-resistant modified-release tablets,0105020G0AAAAAA
+AMP,11835611000001107,Clipper 5mg gastro-resistant modified-release tablets,0105020G0BBAAAA
+VMP,34683311000001106,Generic Trimbow 87micrograms/dose / 5micrograms/dose / 9micrograms/dose inhaler,0301011ABBBAAA0
+AMP,34681611000001100,Trimbow 87micrograms/dose / 5micrograms/dose / 9micrograms/dose inhaler,0301011ABBBAAA0
 VMP,35909511000001107,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
 AMP,3175711000001102,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
 AMP,3177111000001107,Beclometasone 50micrograms/dose inhaler,0302000C0AAAAAA
@@ -270,6 +320,65 @@ AMP,23621711000001102,Relvar Ellipta 184micrograms/dose / 22micrograms/dose dry 
 AMP,23622011000001107,Relvar Ellipta 92micrograms/dose / 22micrograms/dose dry powder inhaler,0302000V0BBABAB
 VMP,34955111000001103,Generic Trelegy Ellipta 92micrograms/dose / 55micrograms/dose / 22micrograms/dose dry powder inhaler,0302000V0BCAAA0
 AMP,34952211000001104,Trelegy Ellipta 92micrograms/dose / 55micrograms/dose / 22micrograms/dose dry powder inhaler,0302000V0BCAAA0
+VMP,8515511000001106,Fludrocortisone 150micrograms/5ml oral suspension,0603010I0AAA2A2
+AMP,8481611000001102,Fludrocortisone 150micrograms/5ml oral suspension,0603010I0AAA2A2
+VMP,8515411000001107,Fludrocortisone 125micrograms/5ml oral suspension,0603010I0AAA3A3
+AMP,8478811000001104,Fludrocortisone 125micrograms/5ml oral suspension,0603010I0AAA3A3
+VMP,8516011000001107,Fludrocortisone 500micrograms/5ml oral suspension,0603010I0AAA4A4
+AMP,8480811000001106,Fludrocortisone 500micrograms/5ml oral suspension,0603010I0AAA4A4
+VMP,8515811000001109,Fludrocortisone 25micrograms/5ml oral suspension,0603010I0AAA5A5
+AMP,8481411000001100,Fludrocortisone 25micrograms/5ml oral suspension,0603010I0AAA5A5
+VMP,8515611000001105,Fludrocortisone 200micrograms/5ml oral suspension,0603010I0AAA6A6
+AMP,8482211000001106,Fludrocortisone 200micrograms/5ml oral suspension,0603010I0AAA6A6
+VMP,12031011000001102,Fludrocortisone 75micrograms/5ml oral suspension,0603010I0AAA7A7
+AMP,11975911000001108,Fludrocortisone 75micrograms/5ml oral suspension,0603010I0AAA7A7
+VMP,8515711000001101,Fludrocortisone 250micrograms/5ml oral suspension,0603010I0AAA8A8
+AMP,8480211000001105,Fludrocortisone 250micrograms/5ml oral suspension,0603010I0AAA8A8
+VMP,12030011000001106,Fludrocortisone 10micrograms/5ml oral suspension,0603010I0AAA9A9
+AMP,11968611000001104,Fludrocortisone 10micrograms/5ml oral suspension,0603010I0AAA9A9
+VMP,325336004,Fludrocortisone 100microgram tablets,0603010I0AAACAC
+AMP,32502211000001108,Fludrocortisone 100microgram tablets,0603010I0AAACAC
+AMP,32419211000001107,Fludrocortisone 100microgram tablets,0603010I0AAACAC
+AMP,38790211000001104,Fludrocortisone 100microgram tablets,0603010I0AAACAC
+AMP,38916611000001107,Fludrocortisone 100microgram tablets,0603010I0AAACAC
+AMP,32203511000001106,Fludrocortisone 100microgram tablets,0603010I0AAACAC
+VMP,8794211000001105,Fludrocortisone 50microgram capsules,0603010I0AAAJAJ
+AMP,8748011000001100,Fludrocortisone 50microgram capsules,0603010I0AAAJAJ
+VMP,8516211000001102,Fludrocortisone 62.5micrograms/5ml oral suspension,0603010I0AABCBC
+AMP,8482311000001103,Fludrocortisone 62.5micrograms/5ml oral suspension,0603010I0AABCBC
+VMP,12030311000001109,Fludrocortisone 1mg/5ml oral suspension,0603010I0AABEBE
+AMP,11970311000001100,Fludrocortisone 1mg/5ml oral suspension,0603010I0AABEBE
+VMP,12030711000001108,Fludrocortisone 600micrograms/5ml oral suspension,0603010I0AABFBF
+AMP,11973611000001101,Fludrocortisone 600micrograms/5ml oral suspension,0603010I0AABFBF
+VMP,12031111000001101,Fludrocortisone 850micrograms/5ml oral suspension,0603010I0AABGBG
+AMP,11976811000001106,Fludrocortisone 850micrograms/5ml oral suspension,0603010I0AABGBG
+VMP,12030411000001102,Fludrocortisone 20micrograms/5ml oral suspension,0603010I0AABHBH
+AMP,11971011000001107,Fludrocortisone 20micrograms/5ml oral suspension,0603010I0AABHBH
+VMP,12030911000001105,Fludrocortisone 750micrograms/5ml oral suspension,0603010I0AABIBI
+AMP,11975211000001104,Fludrocortisone 750micrograms/5ml oral suspension,0603010I0AABIBI
+VMP,12030811000001100,Fludrocortisone 625micrograms/5ml oral suspension,0603010I0AABJBJ
+AMP,11974411000001101,Fludrocortisone 625micrograms/5ml oral suspension,0603010I0AABJBJ
+VMP,12030211000001101,Fludrocortisone 187.5micrograms/5ml oral suspension,0603010I0AABQBQ
+AMP,11969811000001107,Fludrocortisone 187.5micrograms/5ml oral suspension,0603010I0AABQBQ
+VMP,35574611000001107,Fludrocortisone 150microgram capsules,0603010I0AABSBS
+AMP,35570611000001100,Fludrocortisone 150microgram capsules,0603010I0AABSBS
+VMP,8516311000001105,Fludrocortisone 85micrograms/5ml oral suspension,0603010I0AABTBT
+AMP,8482711000001104,Fludrocortisone 85micrograms/5ml oral suspension,0603010I0AABTBT
+VMP,8515911000001104,Fludrocortisone 400micrograms/5ml oral suspension,0603010I0AABUBU
+AMP,8480311000001102,Fludrocortisone 400micrograms/5ml oral suspension,0603010I0AABUBU
+VMP,12030511000001103,Fludrocortisone 30micrograms/5ml oral suspension,0603010I0AABVBV
+AMP,11971911000001106,Fludrocortisone 30micrograms/5ml oral suspension,0603010I0AABVBV
+VMP,12030111000001107,Fludrocortisone 130micrograms/5ml oral suspension,0603010I0AABWBW
+AMP,11969211000001106,Fludrocortisone 130micrograms/5ml oral suspension,0603010I0AABWBW
+VMP,15410611000001103,Fludrocortisone 30microgram capsules,0603010I0AABXBX
+AMP,15403511000001105,Fludrocortisone 30microgram capsules,0603010I0AABXBX
+VMP,8516111000001108,Fludrocortisone 50micrograms/5ml oral suspension,0603010I0AABYBY
+AMP,8481311000001107,Fludrocortisone 50micrograms/5ml oral suspension,0603010I0AABYBY
+VMP,8515311000001100,Fludrocortisone 100micrograms/5ml oral suspension,0603010I0AABZBZ
+AMP,8477911000001108,Fludrocortisone 100micrograms/5ml oral suspension,0603010I0AABZBZ
+VMP,36903811000001106,Fludrocortisone 50microgram tablets,0603010I0AACACA
+AMP,36892511000001109,Fludrocortisone 50microgram tablets,0603010I0AACACA
+AMP,838111000001105,Florinef 100microgram tablets,0603010I0BBAAAC
 VMP,4052511000001106,Dexamethasone (base) 6.6mg/2ml solution for injection vials,0603020AAAAAAAA
 AMP,4048311000001104,Dexamethasone (base) 6.6mg/2ml solution for injection vials,0603020AAAAAAAA
 AMP,4050411000001106,Dexamethasone (base) 6.6mg/2ml solution for injection vials,0603020AAAAAAAA
@@ -832,3 +941,14 @@ VMP,35921611000001103,Triamcinolone acetonide 40mg/1ml suspension for injection 
 VMP,35921911000001109,Triamcinolone acetonide 80mg/2ml suspension for injection pre-filled syringes,0603020Z0AAABAB
 AMP,793711000001105,Kenalog Intramuscular 40mg/1ml suspension for injection pre-filled syringes,0603020Z0BBAAAA
 AMP,865511000001102,Kenalog Intramuscular 80mg/2ml suspension for injection pre-filled syringes,0603020Z0BBABAB
+VMP,331164004,Hydrocortisone 2.5mg muco-adhesive buccal tablets sugar free,1203010M0AAAAAA
+AMP,18111811000001101,Hydrocortisone 2.5mg muco-adhesive buccal tablets sugar free,1203010M0AAAAAA
+AMP,17872211000001101,Hydrocortisone 2.5mg muco-adhesive buccal tablets sugar free,1203010M0AAAAAA
+AMP,18032711000001102,Hydrocortisone 2.5mg muco-adhesive buccal tablets sugar free,1203010M0AAAAAA
+AMP,24149511000001107,Hydrocortisone 2.5mg muco-adhesive buccal tablets sugar free,1203010M0AAAAAA
+AMP,37087211000001105,Hydrocortisone 2.5mg muco-adhesive buccal tablets sugar free,1203010M0AAAAAA
+AMP,18725311000001107,Hydrocortisone 2.5mg muco-adhesive buccal tablets sugar free,1203010M0AAAAAA
+AMP,22044211000001107,Hydrocortisone 2.5mg muco-adhesive buccal tablets sugar free,1203010M0AAAAAA
+VMP,28049511000001103,Hydrocortisone 4mg pastilles,1203010M0AAABAB
+AMP,28044511000001102,Hydrocortisone 4mg pastilles,1203010M0AAABAB
+AMP,3083211000001105,Corlan 2.5mg Pellets,1203010M0BBAAAA
