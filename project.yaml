@@ -17,5 +17,5 @@ actions:
     outputs:
       moderately_sensitive:
         notebook: output/analysis.html 
-        figures: output/figures/*
+        figures: output/figures/
           
