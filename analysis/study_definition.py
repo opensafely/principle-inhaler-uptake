@@ -1,5 +1,5 @@
 from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv
-from codelists import covid_codelist,flu_comorb,inhaled_or_systemic_corticosteroids,ethnicity_codes,ethnicity_codes_16,budeonside_inhalers
+from codelists import *
 from datetime import date, timedelta
 
 '''
@@ -60,11 +60,7 @@ study = StudyDefinition(
             return_expectations = {"incidence": 0.5}
         ),
         
-        registered = patients.satisfying(
-            "registered_at_start",
-            registered_at_start = patients.registered_as_of("index_date"),
-        ),
-        
+        registered = patients.registered_as_of("index_date"),
     ),
     
    
@@ -103,7 +99,7 @@ study = StudyDefinition(
   
     has_comorbidities = patients.with_these_clinical_events(
         flu_comorb, 
-        on_or_after=indexoffset(730), 
+        on_or_after= "index_date - 2 years",
         returning='binary_flag', 
         return_expectations={
                 "incidence": 0.05
@@ -178,7 +174,6 @@ study = StudyDefinition(
         ethnicity_codes,
         returning="category",
         find_last_match_in_period=True,
-        include_date_of_match=True,
         return_expectations={
             "category": {"ratios": {"1": 0.2, "2": 0.2, "3": 0.2, "4": 0.2, "5": 0.2}},
             "incidence": 0.75,
@@ -188,7 +183,6 @@ study = StudyDefinition(
         ethnicity_codes_16,
         returning="category",
         find_last_match_in_period=True,
-        include_date_of_match=True,
         return_expectations={
             "category": {"ratios": {"1": 0.2, "2": 0.2, "3": 0.2, "4": 0.2, "5": 0.2}},
             "incidence": 0.75,
@@ -207,20 +201,45 @@ study = StudyDefinition(
         returning='binary_flag',
         return_expectations = {"incidence": 0.5}
     ),
-    
-    covid_admission_date=patients.admitted_to_hospital(
-        returning= "date_admitted",
-        with_these_diagnoses=covid_codelist,
-        on_or_after=ix_dt,
-        find_first_match_in_period=True,
-        date_format="YYYY-MM-DD",
-        return_expectations={"date": {"earliest": ix_dt}}),
 
-    covid_emergency_admission_date=patients.attended_emergency_care(
-        returning= "date_arrived",
+    post_budesonide_hospitalisation = patients.satisfying(
+        """
+        budesonide_prescription>0 AND (
+            covid_admission_date > budesonide_prescription_date OR 
+            covid_emergency_admission_date > budesonide_prescription_date)
+        """,
+        budesonide_prescription_date = patients.with_these_medications(
+            budeonside_inhalers,
+            between = ["first_positive_test_date","first_positive_test_date + 14 days"],
+            returning = "date"
+        ),
+
+        covid_admission_date=patients.admitted_to_hospital(
+            returning= "date_admitted",
+            with_these_diagnoses=covid_codelist,
+            on_or_after="first_positive_test_date",
+            find_first_match_in_period=True,
+            date_format="YYYY-MM-DD"
+        ),
+
+        covid_emergency_admission_date=patients.attended_emergency_care(
+            returning= "date_arrived",
+            with_these_diagnoses=covid_codelist,
+            on_or_after="first_positive_test_date",
+            find_first_match_in_period=True,
+            date_format="YYYY-MM-DD",
+        ),
+    ),
+    
+    covid_admission=patients.admitted_to_hospital(
+        returning= "binary_flag",
         with_these_diagnoses=covid_codelist,
-        on_or_after=ix_dt,
-        find_first_match_in_period=True,
-        date_format="YYYY-MM-DD",
-        return_expectations={"date": {"earliest": ix_dt}}),
+        on_or_after="first_positive_test_date",
+        return_expectations = {"incidence": 0.05}),
+
+    covid_emergency_admission=patients.attended_emergency_care(
+        returning= "binary_flag",
+        with_these_diagnoses=covid_codelist,
+        on_or_after="first_positive_test_date",
+        return_expectations = {"incidence": 0.05}),
 )
