@@ -1,0 +1,2123 @@
+code,term
+103077004,Immunodeficiency secondary to neoplasm
+103078009,Immunodeficiency secondary to trauma
+103079001,Immunodeficiency caused by corticosteroid
+103080003,Immunodeficiency secondary to radiation therapy
+103081004,Immunodeficiency secondary to chemotherapy
+10451007,Double aortic arch
+10501004,Pulmonary alveolar proteinosis
+106001000119101,Chronic obstructive lung disease co-occurrent with acute bronchitis
+1064821000000109,Life threatening acute exacerbation of asthma
+106511000119106,Long-term current use of mycophenolate
+106581000119100,Long-term current use of cyclosporine
+106631000119102,Long-term current use of infliximab
+10674711000119105,Acute severe exacerbation of asthma co-occurrent with allergic rhinitis
+10675391000119101,Severe controlled persistent asthma
+10675431000119106,Severe persistent allergic asthma
+10675471000119109,Acute severe exacerbation of severe persistent allergic asthma
+10675551000119104,Acute severe exacerbation of severe persistent asthma co-occurrent with allergic rhinitis
+10675591000119109,Severe persistent allergic asthma controlled
+10675631000119109,Severe persistent asthma controlled co-occurrent with allergic rhinitis
+10675671000119107,Severe persistent allergic asthma uncontrolled
+10675711000119106,Severe persistent asthma uncontrolled co-occurrent with allergic rhinitis
+10675751000119107,Severe uncontrolled persistent asthma
+10675911000119109,Acute severe exacerbation of mild persistent allergic asthma
+10675991000119100,Acute severe exacerbation of mild persistent allergic asthma co-occurrent with allergic rhinitis
+10676431000119103,Acute severe exacerbation of moderate persistent allergic asthma
+10676511000119109,Acute severe exacerbation of moderate persistent asthma co-occurrent with allergic rhinitis
+10742121000119104,Asthma in mother complicating childbirth
+10746341000119109,Acquired immune deficiency syndrome complicating childbirth
+10759351000119103,Sickle cell anemia in mother complicating childbirth
+10818008,Congenital malposition of heart
+10838971000119103,Immunodeficiency caused by long term therapeutic use of drug
+108631000119101,History of autologous bone marrow transplant
+1086701000000102,Life threatening acute exacerbation of allergic asthma
+1086711000000100,Life threatening acute exacerbation of intrinsic asthma
+1090241000000107,Angioimmunoblastic T-cell lymphoma with dysproteinaemia
+1091861000000100,"Follicular lymphoma, cutaneous follicle centre"
+1091891000000106,B-cell Hodgkin's lymphoma
+1091921000000103,B-cell non-Hodgkin's lymphoma
+109425008,Single right ventricle
+109426009,Single left ventricle
+109427000,Supracristal ventricular septal defect
+109428005,Perimembranous ventricular septal defect
+109429002,Single muscular ventricular septum defect
+109430007,Multiple muscular ventricular septum defect
+109431006,Ebstein-like malformation of mitral valve
+109432004,Anomalous cardiac muscle bands
+109962001,Diffuse non-Hodgkin's lymphoma
+109964000,"Diffuse non-Hodgkin's lymphoma, undifferentiated"
+109965004,"Diffuse non-Hodgkin's lymphoma, lymphoblastic"
+109966003,"Diffuse non-Hodgkin's lymphoma, immunoblastic"
+109967007,"Diffuse non-Hodgkin's lymphoma, small cleaved cell"
+109968002,"Diffuse non-Hodgkin's lymphoma, small cell"
+109969005,"Diffuse non-Hodgkin's lymphoma, large cell"
+109970006,"Follicular non-Hodgkin's lymphoma, small cleaved cell"
+109971005,"Follicular non-Hodgkin's lymphoma, mixed small cleaved cell and large cell"
+109972003,"Follicular non-Hodgkin's lymphoma, large cell"
+109975001,T-zone lymphoma
+109976000,Lymphoepithelioid lymphoma
+109977009,Peripheral T-cell lymphoma
+109978004,T-cell lymphoma
+109979007,B-cell lymphoma
+109989006,Multiple myeloma
+110004001,"Acute promyelocytic leukemia, FAB M3"
+110005000,"Acute myelomonocytic leukemia, FAB M4"
+110006004,Prolymphocytic leukemia
+110007008,Adult T-cell leukemia/lymphoma
+111319002,"Truncus arteriosus, Edwards' type IV"
+111321007,Right aortic arch
+111322000,Congenital anomaly of pulmonary veins
+111323005,Total anomalous pulmonary venous return
+111396008,Chédiak-Higashi syndrome
+111585004,Neutropenia associated with autoimmune disease
+111587007,Severe combined immunodeficiency due to absent interleukin-2 receptor
+111901001,Bronchocentric granulomatosis
+1131009,Congenital valvular insufficiency
+113531000119106,Long term current use of abatacept
+113541000119102,Long-term current use of rituximab
+11433004,Congenital coronary artery fistula
+11614003,Congenital stenosis of pulmonary veins
+11641008,Millers' asthma
+116811000119106,Non-Hodgkin lymphoma of central nervous system metastatic to lymph node of lower limb
+116821000119104,Non-Hodgkin lymphoma of central nervous system metastatic to lymph node of upper limb
+117051000119103,Chronic total occlusion of coronary artery
+118599009,Hodgkin's disease
+118600007,Malignant lymphoma
+118601006,Non-Hodgkin's lymphoma
+118602004,Hodgkin's granuloma
+118605002,"Hodgkin lymphoma, nodular lymphocyte predominance"
+118606001,Hodgkin's sarcoma
+118607005,"Hodgkin lymphoma, lymphocyte-rich"
+118608000,"Hodgkin's disease, nodular sclerosis"
+118609008,"Hodgkin's disease, mixed cellularity"
+118610003,"Hodgkin's disease, lymphocytic depletion"
+118611004,Sézary's disease
+118613001,Hairy cell leukemia
+118615008,Malignant mast cell tumor
+118617000,Burkitt's lymphoma
+118618005,Mycosis fungoides
+118791000119106,Aplastic anemia caused by antineoplastic agent
+11944003,Feather-pickers' disease
+12075007,Congenital hypoplasia of ascending aorta
+121131000119109,Chronic graft versus host disease after transplantation of bone marrow
+12240661000119103,Long term systemic steroid user
+12295008,Bronchiectasis
+12301000132103,Acute lymphoid leukemia relapse
+12311000132101,Refractory acute lymphoid leukemia
+123617004,Fleckmilz
+123656005,Congenital atresia of cardiac valve
+123658006,Congenital cleft of cardiac valve
+123660008,Dextrorotation of heart
+123661007,Levoatrial cardinal vein
+123777002,Autoimmune leukopenia
+124991000119109,Severe persistent asthma co-occurrent with allergic rhinitis
+1259003,Schistosis
+127034005,Pancytopenia
+127040003,Sickle cell-hemoglobin SS disease
+127041004,Sickle cell-beta-thalassemia
+127042006,Sickle cell beta plus thalassemia
+127043001,Sickle cell-beta^0^-thalassemia
+127044007,Sickle cell-delta beta^0^-thalassemia
+127045008,Sickle cell anemia with coexistent alpha-thalassemia
+127047000,Sickle cell-hemoglobin Lepore disease
+127048005,Sickle cell-Hemoglobin O Arab disease
+127220001,Malignant lymphoma of lymph nodes
+127225006,Chronic myelomonocytic leukemia
+127230005,Neoplasm of spleen
+12770006,Cyanotic congenital heart disease
+127911000119105,Light chain nephropathy due to multiple myeloma
+128555001,Congenital coronary artery fistula to left atrium
+128556000,Congenital coronary artery fistula to left ventricle
+128557009,Congenital coronary artery fistula to right atrium
+128558004,Congenital coronary artery fistula to right ventricle
+128563000,Juxtaposed atrial appendage
+128567004,Congenital pulmonary venous atrium
+128568009,Congenital systemic venous atrium
+128875000,Primary cutaneous CD30 antigen positive large T-cell lymphoma
+129451001,Respiratory bronchiolitis associated interstitial lung disease
+129458007,Bronchiolitis obliterans organizing pneumonia
+129582000,Congenital coronary artery fistula to pulmonary artery
+129640007,Benign granulocytopenia in childhood
+129641006,Chronic benign neutropenia of childhood
+129642004,Chronic idiopathic immunoneutropenia in adults
+13048006,Orbital lymphoma
+13151001,Flax-dressers' disease
+13213009,Congenital heart disease
+133751000119102,Lymphoma of colon
+13453009,Anomalous muscle bands of left ventricle
+135836000,End stage chronic obstructive airways disease
+13645005,Chronic obstructive lung disease
+13689005,Congenital anomaly of aortic valve
+13867009,Preductal coarctation of aorta
+140561000119102,Long-term current use of azathioprine
+14700006,Bauxite fibrosis of lung
+14886009,Abdominal heart
+15096009,Congenital insufficiency of pulmonary valve
+152621000119105,History of allotransplantation of bone marrow
+15459006,Endocardial cushion defect
+15625411000119109,Long-term current use of apremilast
+15625451000119105,Long-term current use of tofacitinib
+15964981000119104,Congenital anomaly of cardiac chamber
+16003001,Giant bullous emphysema
+16567006,Mesocardia
+16584951000119101,Oral steroid-dependent asthma
+16846004,Obstructive emphysema
+168520004,Radiotherapy for immunosuppression
+169335009,External beam - surgery with chemotherapy
+169336005,External beam with chemotherapy
+169488004,Contraceptive intrauterine device failure - pregnant
+169501005,"Pregnant, diaphragm failure"
+169508004,"Pregnant, sheath failure"
+169560008,Pregnant - urine test confirms
+169561007,Pregnant - blood test confirms
+169562000,Pregnant - vaginal examination confirms
+169564004,Pregnant - on abdominal palpation
+169565003,Pregnant - planned
+169566002,Pregnancy unplanned but wanted
+16972009,Congenital aneurysm of aorta
+17024001,Aortopulmonary window
+17385007,Graphite fibrosis of lung
+17394001,Ebstein's anomaly with atrial septal defect
+1751000119100,Acute exacerbation of chronic obstructive airways disease with asthma
+175901007,Live donor renal transplant
+175902000,Cadaveric renal transplant
+17718000,Ostium primum defect
+17996008,Pneumoconiosis caused by inorganic dust
+18041002,Printers' asthma
+18121009,Chronic berylliosis
+183005,Autoimmune pancytopenia
+183023001,Transplant immunosuppression
+183478001,Emergency hospital admission for asthma
+185086009,Chronic obstructive bronchitis
+18546004,Congenital stenosis of aortic valve
+187821001,Angiosarcoma of spleen
+187822008,Fibrosarcoma of spleen
+188487008,Lymphosarcoma and reticulosarcoma
+188489006,"Reticulosarcoma of lymph nodes of head, face and neck"
+188492005,Reticulosarcoma of lymph nodes of axilla and upper limb
+188493000,Reticulosarcoma of lymph nodes of inguinal region and lower limb
+188498009,Lymphosarcoma
+188500005,"Lymphosarcoma of lymph nodes of head, face and neck"
+188501009,Lymphosarcoma of intrathoracic lymph nodes
+188502002,Lymphosarcoma of intra-abdominal lymph nodes
+188503007,Lymphosarcoma of lymph nodes of axilla and upper limb
+188504001,Lymphosarcoma of lymph nodes of inguinal region and lower limb
+188505000,Lymphosarcoma of intrapelvic lymph nodes
+188506004,Lymphosarcoma of spleen
+188507008,Lymphosarcoma of lymph nodes of multiple sites
+188510001,"Burkitt's lymphoma of lymph nodes of head, face and neck"
+188511002,Burkitt's lymphoma of intrathoracic lymph nodes
+188512009,Burkitt's lymphoma of intra-abdominal lymph nodes
+188513004,Burkitt's lymphoma of lymph nodes of axilla and upper limb
+188514005,Burkitt's lymphoma of lymph nodes of inguinal region and lower limb
+188515006,Burkitt's lymphoma of intrapelvic lymph nodes
+188516007,Burkitt's lymphoma of spleen
+188517003,Burkitt's lymphoma of lymph nodes of multiple sites
+188524002,Hodgkin's paragranuloma of intrathoracic lymph nodes
+188526000,Hodgkin's paragranuloma of intra-abdominal lymph nodes
+188529007,Hodgkin's paragranuloma of intrapelvic lymph nodes
+188531003,Hodgkin's paragranuloma of lymph nodes of multiple sites
+188534006,"Hodgkin's granuloma of lymph nodes of head, face and neck"
+188536008,Hodgkin's granuloma of intra-abdominal lymph nodes
+188537004,Hodgkin's granuloma of lymph nodes of axilla and upper limb
+188538009,Hodgkin's granuloma of lymph nodes of inguinal region and lower limb
+188541000,Hodgkin's granuloma of lymph nodes of multiple sites
+188544008,"Hodgkin's sarcoma of lymph nodes of head, face and neck"
+188547001,Hodgkin's sarcoma of lymph nodes of axilla and upper limb
+188548006,Hodgkin's sarcoma of lymph nodes of inguinal region and lower limb
+188551004,Hodgkin's sarcoma of lymph nodes of multiple sites
+188554007,"Hodgkin's disease, lymphocytic-histiocytic predominance of lymph nodes of head, face and neck"
+188558005,"Hodgkin's disease, lymphocytic-histiocytic predominance of lymph nodes of axilla and upper limb"
+188559002,"Hodgkin's disease, lymphocytic-histiocytic predominance of lymph nodes of inguinal region and lower limb"
+188562004,"Hodgkin's disease, lymphocytic-histiocytic predominance of lymph nodes of multiple sites"
+188565002,"Hodgkin's disease, nodular sclerosis of lymph nodes of head, face and neck"
+188566001,"Hodgkin's disease, nodular sclerosis of intrathoracic lymph nodes"
+188567005,"Hodgkin's disease, nodular sclerosis of intra-abdominal lymph nodes"
+188568000,"Hodgkin's disease, nodular sclerosis of lymph nodes of axilla and upper limb"
+188569008,"Hodgkin's disease, nodular sclerosis of lymph nodes of inguinal region and lower limb"
+188570009,"Hodgkin's disease, nodular sclerosis of intrapelvic lymph nodes"
+188572001,"Hodgkin's disease, nodular sclerosis of lymph nodes of multiple sites"
+188575004,"Hodgkin's disease, mixed cellularity of lymph nodes of head, face and neck"
+188576003,"Hodgkin's disease, mixed cellularity of intrathoracic lymph nodes"
+188577007,"Hodgkin's disease, mixed cellularity of intra-abdominal lymph nodes"
+188578002,"Hodgkin's disease, mixed cellularity of lymph nodes of axilla and upper limb"
+188579005,"Hodgkin's disease, mixed cellularity of lymph nodes of inguinal region and lower limb"
+188580008,"Hodgkin's disease, mixed cellularity of intrapelvic lymph nodes"
+188582000,"Hodgkin's disease, mixed cellularity of lymph nodes of multiple sites"
+188585003,"Hodgkin's disease, lymphocytic depletion of lymph nodes of head, face and neck"
+188586002,"Hodgkin's disease, lymphocytic depletion of intrathoracic lymph nodes"
+188587006,"Hodgkin's disease, lymphocytic depletion of intra-abdominal lymph nodes"
+188589009,"Hodgkin's disease, lymphocytic depletion of lymph nodes of axilla and upper limb"
+188590000,"Hodgkin's disease, lymphocytic depletion of lymph nodes of inguinal region and lower limb"
+188591001,"Hodgkin's disease, lymphocytic depletion of intrapelvic lymph nodes"
+188592008,"Hodgkin's disease, lymphocytic depletion of spleen"
+188593003,"Hodgkin's disease, lymphocytic depletion of lymph nodes of multiple sites"
+188609000,"Nodular lymphoma of lymph nodes of head, face and neck"
+188612002,Nodular lymphoma of lymph nodes of axilla and upper limb
+188613007,Nodular lymphoma of lymph nodes of inguinal region and lower limb
+188627002,Mycosis fungoides of lymph nodes of multiple sites
+188630009,"Sézary's disease of lymph nodes of head, face and neck"
+188631008,Sézary's disease of intrathoracic lymph nodes
+188632001,Sézary's disease of intra-abdominal lymph nodes
+188633006,Sézary's disease of lymph nodes of axilla and upper limb
+188634000,Sézary's disease of lymph nodes of inguinal region and lower limb
+188635004,Sézary's disease of intrapelvic lymph nodes
+188637007,Sézary's disease of lymph nodes of multiple sites
+188645002,"Leukemic reticuloendotheliosis of lymph nodes of head, face and neck"
+188648000,Leukemic reticuloendotheliosis of lymph nodes of axilla and upper limb
+188649008,Leukemic reticuloendotheliosis of lymph nodes of inguinal region and lower limb
+188672005,Follicular non-Hodgkin's mixed small cleaved and large cell lymphoma
+188674006,Diffuse malignant lymphoma - small non-cleaved cell
+188675007,Malignant lymphoma - small cleaved cell
+188676008,Malignant lymphoma - mixed small and large cell
+188679001,Diffuse non-Hodgkin's lymphoma undifferentiated (diffuse)
+188718006,"Malignant plasma cell neoplasm, extramedullary plasmacytoma"
+188725004,Lymphoid leukemia
+188726003,Subacute lymphoid leukemia
+188728002,Aleukemic lymphoid leukemia
+188729005,Adult T-cell leukemia
+188732008,Myeloid leukemia
+188733003,Chronic eosinophilic leukemia
+188734009,Chronic neutrophilic leukemia
+188736006,Subacute myeloid leukemia
+188737002,Chloroma
+188741003,Aleukemic myeloid leukemia
+188744006,Monocytic leukemia
+188745007,Chronic monocytic leukemia
+188746008,Subacute monocytic leukemia
+188748009,Aleukemic monocytic leukemia
+188754005,Megakaryocytic leukemia
+188768003,Myelomonocytic leukemia
+188770007,Subacute myelomonocytic leukemia
+190030009,Compound leukemias
+19057007,Status anginosus
+190905008,Cystic fibrosis
+190909002,Cystic fibrosis with intestinal manifestations
+19092004,Holt-Oram syndrome
+190993005,Autosomal recessive severe combined immunodeficiency
+190996002,Severe combined immunodeficiency with reticular dysgenesis
+190997006,Severe combined immunodeficiency with low T- and B-cell numbers
+190998001,Severe combined immunodeficiency with low or normal B-cell numbers
+19249002,Premature closure of foramen ovale
+192658007,Giant cell interstitial pneumonitis
+195949008,Chronic asthmatic bronchitis
+195951007,Acute exacerbation of chronic obstructive airways disease
+195953005,Mixed simple and mucopurulent chronic bronchitis
+195957006,Chronic bullous emphysema
+195958001,Segmental bullous emphysema
+195959009,Zonal bullous emphysema
+195967001,Asthma
+195977004,Mixed asthma
+195984007,Recurrent bronchiectasis
+195985008,Post-infective bronchiectasis
+196001008,Chronic obstructive pulmonary disease with acute lower respiratory infection
+196017002,Pneumoconiosis associated with tuberculosis
+196026004,Chronic emphysema caused by chemical fumes
+196027008,Toxic bronchiolitis obliterans
+196028003,Chronic pulmonary fibrosis caused by chemical fumes
+196049002,Chronic pulmonary radiation disease
+196053000,Chronic drug-induced interstitial lung disorders
+196115007,Pulmonary congestion and hypostasis
+196116008,Pulmonary hypostasis
+196124003,Alveolar capillary block
+196125002,Diffuse interstitial pulmonary fibrosis
+196135008,Pulmonary amyloidosis
+197367007,Hepatic granulomas in berylliosis
+19849005,Meat-wrappers' asthma
+19944001,Autologous bone marrow transplant without purging
+203436008,Osteoporosis in multiple myelomatosis
+203592006,X-linked severe combined immunodeficiency
+204296002,Discordant ventriculoarterial connection
+204299009,Dextrotransposition of aorta
+204300001,Incomplete great vessel transposition
+204306007,Pentalogy of Fallot
+204311009,Eisenmenger's complex
+204312002,Ventricular septal defect between left ventricle and right atrium
+204315000,Atrial septal defect within oval fossa
+204317008,Patent foramen ovale
+204318003,Persistent ostium secundum
+204319006,Lutembacher's syndrome
+204330009,Common atrioventricular-type ventricular septal defect
+204339005,Congenital pulmonary valve abnormality
+204342004,Congenital atresia of the pulmonary valve
+204343009,Hypoplasia of pulmonary valve
+204345002,Congenital fusion of pulmonic cusps
+204346001,Congenital fusion of pulmonary valve segment
+204351007,Fallot's trilogy
+204352000,Supernumerary pulmonary valve cusps
+204354004,Congenital tricuspid atresia and stenosis
+204357006,Ebstein's anomaly of tricuspid valve
+204362007,Parachute malformation of mitral valve
+204363002,Supernumerary cusps of the mitral valve
+204368006,Subaortic stenosis
+204370002,Stenosis of infundibulum of right ventricle
+204378009,Congenital coronary aneurysm
+204379001,Congenital stricture of coronary artery
+204391005,Hypoplasia of cardiac vein
+204394002,Congenital anomaly of myocardium
+204395001,Congenital aneurysm of heart
+204397009,Cor triloculare
+204398004,Congenital epicardial cyst
+204399007,Hemicardia
+204407002,Anomalous bands of heart
+204409004,Anomalous ventricular bands
+204423002,Anomalous origin of the aortic arch
+204427001,Persistent aortic arch convolutions
+204431007,Atresia and stenosis of aorta
+204433005,Aplasia of aorta
+204443008,Pulmonary artery atresia
+204448004,Atresia of pulmonary artery with septal defect
+204451006,Anomalies of great veins
+204456001,Subdiaphragmatic total anomalous pulmonary venous return
+204457005,Supradiaphragmatic total anomalous pulmonary venous return
+204463001,Absence of inferior vena cava
+204464007,Absence of superior vena cava
+204467000,Pulmonary vein atresia
+205769006,Situs inversus with levocardia
+205834002,Acardia
+206586007,Congenital cardiac failure
+20753005,Hypertensive heart disease complicating AND/OR reason for care during pregnancy
+21470009,Syncope anginosa
+218728005,Interrupted aortic arch
+21981000,Single coronary artery
+22406001,Severe combined immunodeficiency due to absent lymphoid stem cells
+225057002,Brittle asthma
+22607003,Asbestosis
+23022004,Tuberculous bronchiectasis
+230586003,Neuropathy due to multiple myeloma
+23063005,Congenital atresia of mitral valve
+230685009,Myasthenia gravis associated with thymoma
+232075002,Lymphoma of retina
+233627004,Congenital cystic bronchiectasis
+233628009,Acquired bronchiectasis
+233629001,Idiopathic bronchiectasis
+233630006,Obstructive bronchiectasis
+233631005,Toxin-induced bronchiectasis
+233632003,Bronchiectasis caused by toxic aspiration
+233633008,Bronchiectasis caused by toxic inhalation
+233634002,Post-lung transplantation bronchiectasis
+233672007,Byssinosis grade 3
+233673002,Drug-induced bronchiolitis obliterans
+233674008,Pulmonary emphysema in alpha-1 primary immunodeficiency deficiency
+233675009,Toxic emphysema
+233677001,Scar emphysema
+233678006,Childhood asthma
+233679003,Late onset asthma
+233683003,Hay fever with asthma
+233687002,Colophony asthma
+233688007,Sulfite-induced asthma
+233691007,Asthmatic pulmonary eosinophilia
+233703007,Interstitial lung disease
+233713004,Seasonal cryptogenic organizing pneumonia with biochemical cholestasis
+233714005,Diffuse infiltrative lung disease
+233715006,Idiopathic diffuse pulmonary ossification
+233716007,Micronodular pulmonary ossification
+233717003,Diffuse pulmonary neurofibromatosis
+233718008,Pulmonary tuberous sclerosis
+233720006,Pulmonary lipid storage disease
+233723008,Bronchiolitis obliterans with usual interstitial pneumonitis
+233724002,Toxic diffuse interstitial pulmonary fibrosis
+233725001,Drug-induced diffuse interstitial pulmonary fibrosis
+233726000,Localized pulmonary fibrosis
+233727009,Mediastinal radiation fibrosis
+233738009,Radiation-induced fibrous mediastinitis
+233748006,Simple pneumoconiosis
+233749003,Complicated pneumoconiosis
+233750003,Erionite pneumoconiosis
+233751004,Metal pneumoconiosis
+233753001,Subacute berylliosis
+233754007,Cerium pneumoconiosis
+233755008,Nickel pneumoconiosis
+233756009,Thorium pneumoconiosis
+233757000,Zirconium pneumoconiosis
+233758005,Mica pneumoconiosis
+233759002,Mixed mineral dust pneumoconiosis
+233760007,Acute silicosis
+233761006,Subacute silicosis
+233762004,Chronic silicosis
+233763009,Silicotuberculosis
+233764003,Wollastonite pneumoconiosis
+233817007,Triple vessel disease of the heart
+233858000,Familial mitral valve prolapse
+234132006,Congenital abnormality of great veins and coronary sinus
+234319005,Splenectomy
+234331007,Syngeneic bone marrow transplant
+234332000,T-cell depleted allogeneic bone marrow graft
+234333005,Imperfect T-cell depleted allogeneic bone marrow graft
+234334004,Allogeneic related bone marrow transplant
+234335003,Allogeneic unrelated bone marrow transplant
+234391009,Sickle cell anemia with high hemoglobin F
+234416002,X-linked hypogammaglobulinemia
+234519006,Bone marrow transplant rejection
+234520000,Bone marrow transplant failure
+234522008,Disease relapse in transplant marrow
+234533006,X-linked agammaglobulinemia with growth hormone deficiency
+234534000,Autosomal agammaglobulinemia with absent B-cells
+234537007,Autosomal recessive hyperimmunoglobulin M syndrome
+234570002,Severe combined immunodeficiency with maternofetal engraftment
+234632005,Immunodeficiency associated with chromosomal abnormality
+234633000,"Centromeric instability of chromosomes 1,9 and 16 and immunodeficiency"
+234634006,Chromosome 18 syndromes and antibody deficiency
+234635007,Chromosome 22 abnormalities with hypogammaglobulinemia
+234636008,Monosomy 22 and absence of immunoglobulin A
+234637004,Deletion of X-chromosome and hypogammaglobulinemia
+234638009,"Microcephaly, normal intelligence and immunodeficiency"
+234639001,"Triple X syndrome, epilepsy, and hypogammaglobulinemia"
+234640004,18-p syndrome with associated immunodeficiency
+234641000,Immunodeficiency associated with multiple organ system abnormalities
+234642007,Age-related immunodeficiency
+234645009,Drug-induced immunodeficiency
+234646005,Graft-versus-host disease
+235331000000103,Delivery of oral chemotherapy for neoplasm
+235391000000102,Delivery of chemotherapy for neoplasm
+2360001000004109,Steroid dependent asthma
+236138007,Xenograft renal transplant
+236302005,Acute interstitial pneumonia
+236436003,End stage renal failure with renal transplant
+236513009,Lymphoma of kidney
+23719005,Transplantation of bone marrow
+237227006,Congenital heart disease in pregnancy
+237656000,Acute splenic tumor
+238831000000103,Delivery of exclusively oral chemotherapy for neoplasm
+238841000000107,Delivery of complex chemotherapy for neoplasm including prolonged infusional treatment at first attendance
+238851000000105,Delivery of complex parenteral chemotherapy for neoplasm at first attendance
+238861000000108,Delivery of simple parenteral chemotherapy for neoplasm at first attendance
+239071000000100,Delivery of subsequent element of cycle of chemotherapy for neoplasm
+23958009,Vanishing lung
+240047005,X-linked muscular dystrophy with limb girdle distribution
+240048000,X-linked muscular dystrophy with abnormal dystrophin
+240049008,Intermediate X-linked muscular dystrophy
+240050008,Manifesting female carrier of X-linked muscular dystrophy
+240051007,X-linked limb girdle muscular dystrophy with normal dystrophin
+240071003,X-linked muscular dystrophy not predominantly limb girdle
+240531002,African Burkitt's lymphoma
+240794006,Splenic schistosomal giant cell lymphoma
+24829000,Eosinophilic ulcerative colitis
+250941001,Right ventricular fibromuscular infundibular stenosis
+250942008,Right ventricular muscular infundibular stenosis
+250983006,Bicuspid doming of aortic cusp
+251038002,Aortic root congenital abnormality
+253264007,"Congenital heart disease, septal and bulbar anomalies"
+253265008,Congenital cardiac rotation
+253267000,Congenital abnormality of relationship of cardiac component
+253269002,Criss-cross heart
+253270001,Abnormal relationship of aortic orifice to pulmonary orifice
+253271002,Mirror-imaged heart
+253272009,Congenital abnormality of cardiac connection
+253274005,Abnormal atrioventricular connection
+253275006,Abnormal atrioventricular connection - biventricular
+253277003,Discordant atrioventricular connection
+253278008,Ambiguous atrioventricular connection
+253279000,Absent atrioventricular connection with straddling valve
+253280002,Abnormal atrioventricular connection - univentricular
+253281003,Double inlet ventricle
+253282005,Double inlet right ventricle
+253283000,Double inlet left ventricle
+253284006,Double inlet to ventricle of indeterminate morphology
+253285007,Absent right sided atrioventricular connection
+253288009,Left sided atrium connecting to both ventricles
+253289001,Left sided atrium connecting to ventricle of indeterminate morphology
+253290005,Absent left sided atrioventricular connection
+253293007,Right sided atrium connecting to both ventricles
+253294001,Right sided atrium connecting to ventricle of indeterminate morphology
+253295000,Abnormal ventriculoarterial connection
+253297008,Transposition of aorta
+253298003,Double outlet right ventricle with subaortic ventricular septal defect
+253299006,Double outlet right ventricle with noncommitted ventricular septal defect
+253300003,Double outlet right ventricle with doubly committed ventricular septal defect
+253301004,Double outlet from ventricle of indeterminate morphology
+253302006,Single outlet ventriculoarterial connection
+253303001,Solitary aortic trunk with pulmonary atresia
+253304007,Solitary pulmonary trunk with aortic atresia
+253305008,Solitary arterial trunk
+253307000,Atretic right superior vena cava
+253308005,Absent right superior vena cava
+253310007,Anomalous insertion of right superior vena cava to left atrium
+253311006,Bilateral superior vena cava
+253312004,Absent bridging vein
+253313009,Inferior vena cava interruption with left sided hemiazygos continuation
+253314003,Inferior vena cava interruption with right sided azygos continuation
+253315002,Inferior vena cava interruption with bilateral azygos continuation
+253316001,Abnormal inferior vena caval connection
+253317005,Inferior vena cava connecting to morphological left atrium
+253318000,Inferior vena cava connecting to coronary sinus
+253321003,Anomalous termination of right pulmonary vein
+253322005,Obstructed pulmonary venous connection
+253323000,Coronary sinus abnormality
+253324006,Coronary sinus defect in left atrium
+253326008,Coronary sinus orifice atresia
+253327004,Congenital coronary sinus stenosis
+253328009,Coronary sinus to left ventricle fistula
+253329001,Ductus venosus abnormality
+253330006,Patent ductus venosus
+253333008,Abnormal connection of hepatic vein to atrium
+253334002,Congenital abnormality of atria and atrial septum
+253335001,Isomerism of atrial appendages
+253336000,Isomerism of right atrial appendage
+253337009,Isomerism of left atrial appendage
+253338004,Mirror imaged atria
+253340009,Prominent valve of inferior vena cava
+253341008,Obstructive Eustachian valve
+253342001,Prolapse of Eustachian valve
+253343006,Anomalous valve of coronary sinus
+253345004,Right atrial appendage absent
+253346003,Right atrial appendage - left - juxtaposition
+253348002,Right atrial endocardial fibroelastosis
+253349005,Right atrial hypoplasia
+253353007,Divided left atrium
+253354001,Supramitral left atrial ring
+253356004,Left atrial appendage absent
+253357008,Left atrial appendage - right - juxtaposition
+253359006,Left atrial endocardial fibroelastosis
+253360001,Left atrial hypoplasia
+253364005,Foramen ovale valvar aneurysm
+253366007,Interauricular septal defect
+253369000,Sinus venosus defect with overriding superior vena cava
+253370004,Sinus venosus defect with overriding inferior vena cava
+253371000,Atrial septal defect through coronary sinus orifice
+253373002,Atrioventricular septal defect - isolated atrial component
+253374008,Congenital abnormality of atrioventricular valves in atrioventricular septal defect
+253375009,Tricuspid leaflet dysplasia
+253376005,Tricuspid annulus hypoplasia
+253377001,Dilatation of tricuspid annulus
+253378006,Overriding tricuspid valve
+253379003,Straddling tricuspid valve
+253381001,Absent tricuspid leaflet
+253382008,Double orifice of tricuspid valve
+253384009,Accessory tissue on tricuspid leaflet
+253386006,Arcade abnormality of tricuspid chordae tendinae
+253387002,Tricuspid chordae tendinae too short
+253388007,Tricuspid chordae tendinae too long
+253389004,Tricuspid chordae tendinae to outlet septum
+253391007,Parachute malformation of tricuspid valve
+253392000,Absent tricuspid papillary muscle
+253393005,Fused tricuspid papillary muscle
+253394004,Hypoplastic tricuspid papillary muscle
+253395003,Mitral valve dysplasia
+253396002,Mitral leaflet dysplasia
+253397006,Overriding mitral valve
+253399009,Straddling mitral valve
+253401003,Absent mitral leaflets
+253402005,Double orifice of mitral valve
+253403000,Ebstein-like downward displacement of mitral valve
+253404006,Anterior leaflet of mitral valve attached to septum
+253405007,Accessory tissue on mitral leaflet
+253407004,Arcade abnormality of mitral chordae tendinae
+253411005,Absent mitral papillary muscle
+253412003,Fused mitral papillary muscles
+253413008,Hypoplastic mitral papillary muscle
+253414002,Atrioventricular septal defect and common atrioventricular junction
+253415001,Atrioventricular septal defect - isolated ventricular component
+253416000,Atrioventricular septal defect: atrial and ventricular components
+253417009,Atrioventricular septal defect - ventricular component
+253418004,Atrioventricular septal defect - ventricular component under superior bridging leaflet
+253419007,Atrioventricular septal defect with ventricular component under superior bridging leaflet with chords at crest ventricular septum
+253420001,Atrioventricular septal defect with ventricular component under superior bridging leaflet with chords to papillary muscle on right ventricular side septum
+253421002,Atrioventricular septal defect with ventricular component under free floating superior bridging leaflet and chords to papillary muscle at right ventricular free wall
+253422009,Atrioventricular septal defect - ventricular component under inferior bridging leaflet
+253423004,Malaligned atrial septum
+253425006,Double outlet right atrium
+253426007,Double outlet left atrium
+253429000,Atresia of common atrioventricular valve
+253430005,Imperforate common atrioventricular valve
+253431009,Hypoplasia of common atrioventricular valve
+253432002,Dysplasia of common atrioventricular valve
+253434001,Common atrioventricular valve limited to one ventricle
+253435000,Dilatation of common atrioventricular valve annulus
+253436004,Common atrioventricular valve stenosis
+253437008,Common atrioventricular valve leaflet abnormality
+253438003,Common atrioventricular valve prolapse
+253439006,True cleft of common atrioventricular valve leaflet
+253440008,Accessory tissue on common atrioventricular valve leaflet
+253441007,Double orifice of common atrioventricular valve
+253442000,Triple orifice of left ventricular component of common atrioventricular valve
+253443005,Ebstein's anomaly of common atrioventricular valve
+253445003,Common atrioventricular valve chordae too short
+253446002,Common atrioventricular valve chordae too long
+253447006,Common atrioventricular valve chordae to outlet septum
+253448001,Arcade abnormality of common atrioventricular valve chordae
+253450009,Parachute malformation of common atrioventricular valve
+253451008,Absent common atrioventricular valve papillary muscle
+253452001,Fused common atrioventricular valve papillary muscle
+253453006,Hypoplastic common atrioventricular valve papillary muscle
+253455004,Right atrioventricular valve atresia
+253456003,Imperforate right atrioventricular valve
+253457007,Right atrioventricular valve dysplasia
+253458002,Right atrioventricular valve hypoplasia
+253460000,Overriding right atrioventricular valve
+253463003,Straddling right atrioventricular valve
+253465005,Absent right atrioventricular valve leaflets
+253467002,Double orifice of right atrioventricular valve
+253468007,Ebstein's anomaly of right atrioventricular valve
+253470003,True cleft of right atrioventricular valve leaflet
+253471004,Accessory tissue on right atrioventricular valve leaflet
+253472006,Right atrioventricular valve leaflet dysplasia
+253476009,Right atrioventricular valve chordae to outlet septum
+253477000,Arcade abnormality of right atrioventricular valve chordae
+253479002,Parachute malformation of right atrioventricular valve
+253480004,Absent right atrioventricular valve papillary muscle
+253481000,Fused right atrioventricular valve papillary muscles
+253482007,Hypoplastic right atrioventricular valve papillary muscle
+253484008,Left atrioventricular valve atresia
+253485009,Imperforate left atrioventricular valve
+253486005,Left atrioventricular valve dysplasia
+253487001,Left atrioventricular valve hypoplasia
+253489003,Overriding left atrioventricular valve
+253492004,Straddling left atrioventricular valve
+253494003,Absent left atrioventricular valve leaflets
+253495002,Double orifice of left atrioventricular valve
+253496001,Ebstein's anomaly of left atrioventricular valve
+253498000,True cleft of left atrioventricular valve leaflet
+253499008,Accessory tissue on left atrioventricular valve leaflet
+253500004,Left atrioventricular valve leaflet dysplasia
+253504008,Left atrioventricular valve chordae to outlet septum
+253505009,Arcade abnormality of left atrioventricular valve chordae
+253507001,Parachute malformation of left atrioventricular valve
+253508006,Absent left atrioventricular valve papillary muscle
+253509003,Fused left atrioventricular valve papillary muscles
+253510008,Hypoplastic left atrioventricular valve papillary muscle
+253511007,Congenital abnormality of ventricles and ventricular septum
+253512000,Tetralogy of Fallot with pulmonary stenosis
+253513005,Tetralogy of Fallot with pulmonary atresia
+253514004,Dextraposition of aorta in Fallot's tetralogy
+253515003,Ventricular septal defect in Fallot's tetralogy
+253518001,Diffuse hypoplasia of right ventricle
+253519009,Hypoplasia of right ventricular inflow tract
+253520003,Hypoplasia of right ventricular outflow tract
+253521004,Hypoplasia of right ventricular outflow tract and trabecular area
+253523001,Primary right ventricular endocardial fibroelastosis
+253524007,Two chambered right ventricle
+253525008,Congenital right ventricular diverticulum
+253527000,Congenital right ventricular aneurysm
+253528005,Arrhythmogenic right ventricular dysplasia
+253529002,Right ventricular outflow tract abnormality
+253530007,Right ventricular outflow tract obstruction
+253531006,Right ventricular outflow obstruction - localized
+253532004,Right ventricular outflow obstruction - tubular
+253533009,Right ventricular outflow tract atresia
+253534003,Right ventricular outflow tract absent
+253536001,Left ventricular hypoplasia
+253537005,Diffuse hypoplasia of left ventricle
+253538000,Hypoplasia of left ventricular inflow tract
+253539008,Hypoplasia of left ventricular outflow tract
+253540005,Hypoplasia of left ventricular outflow tract and trabecular area
+253542002,Abnormal left ventricular muscle band
+253543007,Primary left ventricular endocardial fibroelastosis
+253544001,Congenital left ventricular aneurysm
+253545000,Left ventricular outflow tract abnormality
+253546004,Left ventricular outflow tract obstruction
+253547008,Left ventricular outflow tract atresia
+253548003,Indeterminate ventricular outflow tract obstruction
+253550006,Multiple ventricular septal defects
+253551005,Restrictive ventricular septal defect
+253552003,Perimembranous ventricular septal defect with extension to right ventricular inlet
+253553008,Perimembranous ventricular septal defect with extension to right ventricular trabecular component
+253554002,Perimembranous ventricular septal defect with extension to right ventricular outlet
+253555001,Perimembranous ventricular septal defect with extension to all right ventricular components
+253556000,Ventricular septal defect with malaligned outlet septum to right
+253559007,Ventricular septal defect with malaligned outlet septum to left
+253562005,Ventricular septal defect with absent outlet septum and overriding truncal valve
+253563000,Muscular ventricular septal defect in inlet septum
+253564006,Muscular ventricular septal defect in central trabecular septum
+253565007,Muscular ventricular septal defect in apical trabecular septum
+253566008,Muscular ventricular septal defect in marginal septum
+253567004,Muscular ventricular septal defect in outlet septum
+253568009,Doubly committed subarterial ventricular septal defect
+253569001,Doubly committed subarterial ventricular septal defect with membranous septum extension
+253570000,Doubly committed subarterial ventricular septal defect with muscular posterior inferior rim
+253571001,Giant ventricular septal defect
+253573003,Subpulmonary infundibulum
+253574009,Subaortic infundibulum
+253575005,Bilateral muscular infundibula
+253576006,Bilateral deficient infundibula
+253578007,Congenital abnormality of arterial valves
+253579004,Truncal valve abnormality
+253580001,Truncal valve dysplasia
+253581002,Truncal valve stenosis
+253582009,Truncal valve regurgitation
+253583004,Truncal valve prolapse
+253584005,Accessory tissue on truncal valve cusp
+253585006,Pulmonary valve cusp hypoplasia
+253586007,Pulmonary valve ring hypoplasia
+253587003,Commissural fusion of pulmonary valve
+253588008,Pulmonary valve dysplasia
+253590009,Pulmonary atresia with intact ventricular septum
+253591008,Pulmonary atresia with ventricular septal defect
+253592001,Pulmonary valve atresia without ventricular outflow tract
+253593006,Imperforate pulmonary valve
+253594000,Muscular pulmonary atresia
+253596003,Absent pulmonary valve syndrome
+253597007,Accessory tissue on pulmonary valve cusp
+253598002,Unicuspid pulmonary valve
+253599005,Bicuspid pulmonary valve
+253600008,Quadricuspid pulmonary valve
+253601007,Aortic valve ring hypoplasia
+253602000,Commissural fusion of aortic valve
+253603005,Eccentric opening of aortic valve
+253607006,Hypoplasia of aortic valve cusp
+253608001,Accessory tissue on aortic valve cusp
+253609009,Abnormal number of aortic valve cusps
+253610004,Unicuspid aortic valve
+253611000,Quadricuspid aortic valve
+253614008,Tubular hypoplasia of aorta
+253615009,Anomalies of the aorta excluding coarction
+253621008,Pulmonary trunk stenosis
+253622001,Pulmonary trunk hypoplasia
+253623006,Pulmonary trunk atresia
+253624000,Pulmonary atresia with confluent pulmonary arteries
+253625004,Pulmonary atresia with absent pulmonary artery
+253627007,Pulmonary trunk absent with confluent pulmonary arteries
+253628002,Pulmonary trunk absent with non-confluent pulmonary arteries
+253629005,Pulmonary trunk absent with absent pulmonary artery
+253632008,Abnormal origin of right pulmonary artery
+253633003,Anomalous origin of right pulmonary artery from ductus arteriosus
+253634009,Anomalous origin of right pulmonary artery from ascending aorta
+253635005,Abnormal origin of left pulmonary artery
+253636006,Anomalous origin of left pulmonary artery from ductus arteriosus
+253637002,Anomalous origin of left pulmonary artery from ascending aorta
+253638007,Anomalous origin of left pulmonary artery from right pulmonary artery
+253642005,Diffuse supravalvar aortic stenosis
+253643000,Ascending aortic atresia
+253644006,Ascending aorta absent
+253646008,Congenital aneurysm of ascending aorta
+253649001,Aortic tunnel
+253650001,Aorta to right ventricle tunnel
+253652009,Right descending aorta
+253656007,Aortic arch centrally descending
+253657003,Cervical aortic arch
+253658008,Persisting fifth aortic arch
+253660005,Double aortic arch with both patent
+253661009,Double aortic arch with unilateral hypoplasia
+253662002,Double aortic arch with unilateral atresia
+253663007,Vascular ring with left aortic arch
+253664001,Vascular ring with right aortic arch
+253668003,Isolation of subclavian artery
+253672004,Preductal aortic stenosis
+253673009,Preductal interruption of aorta
+253674003,Preductal hypoplasia of aorta
+253675002,Juxtaductal aortic coarctation
+253676001,Postductal aortic stenosis
+253677005,Postductal interruption of aorta
+253678000,Thoracic aortic coarctation
+253680006,Postductal hypoplasia of aorta
+253681005,Interrupted aortic arch distal to left subclavian artery
+253682003,Interrupted aortic arch between left subclavian and left common carotid artery
+253683008,Interrupted aortic arch between left common carotid and brachiocephalic artery
+253688004,Collaterals to pulmonary arteries
+253689007,Major aortopulmonary collateral artery
+253690003,Systemic to pulmonary collateral artery
+253691004,Stenosis of systemic to pulmonary artery collateral artery
+253700001,Variant coronary origin from aortic sinus
+253703004,Anomalous origin of coronary artery from non-facing sinus
+253704005,Anomalous origin of left anterior descending from right coronary artery
+253706007,Anomalous origin of coronary artery from pulmonary arterial tree
+253707003,Anomalous origin of coronary artery from right pulmonary artery
+253708008,Anomalous origin of coronary artery from left pulmonary artery
+253710005,Coronary orifice abnormally high
+253711009,Coronary orifice asymmetrical
+253712002,Dual coronary orifice
+253713007,Coronary orifice atresia
+253714001,Abnormal coronary artery course
+253715000,Intramural coronary artery course
+253716004,Aberrant course of left anterior descending coronary artery from right coronary artery crossing right ventricular outflow tract
+253717008,Coronary artery runs between aorta and pulmonary trunk
+253720000,Congenital coronary arteriovenous fistula
+253723003,Coronary fistulae from right ventricle
+253724009,Coronary fistulae from left ventricle
+253725005,Congenital coronary artery calcification
+253732001,Totally absent pericardium
+25472008,Sickle cell-hemoglobin D disease
+2583009,Chiari's network
+26146002,Complete transposition of great vessels
+26201005,Aortic left ventricular tunnel
+2631000119108,History of bone marrow transplant
+263944006,Anterolateral muscle band
+263960005,Bilateral atria
+263961009,Bilateral isomeric atria
+264086008,Malaligned outlet septum
+264162009,Posteromedial muscle band
+264467005,False tendon - heart
+264571006,Septoparietal trabeculations
+26511004,Pneumoconiosis caused by sisal fiber
+266355005,Bullous emphysema with collapse
+266356006,Atrophic (senile) emphysema
+266361008,Non-allergic asthma
+266368002,Post-inflammatory pulmonary fibrosis
+266370006,Trauma and postoperative pulmonary insufficiency
+26780008,Coarctation of pulmonary artery
+268174004,Bulbus cordis and cardiac septal closure anomalies
+268180007,Right hypoplastic heart syndrome
+268184003,Hypoplasia of aorta
+268185002,Supravalvar aortic stenosis
+269476000,Nodular lymphoma
+26950008,Chronic ectopic atrial tachycardia
+270510008,Anomalous coronary artery communication
+271573009,Congenital abnormality of thoracic aorta and pulmonary arteries
+274905008,"Malignant lymphoma - lymphocytic, intermediate differentiation"
+274947007,Divided right atrium
+275828002,Preventing infection of immunocompromised patient
+275830000,Reverse barrier nursing
+27637000,Dextrocardia
+276516009,Myocardial ischemia of newborn
+276517000,Transient myocardial ischemia of newborn
+276518005,Transient tricuspid regurgitation of newborn
+276811008,Gastric lymphoma
+276815004,Lymphoma of intestine
+276836002,Primary cerebral lymphoma
+277473004,B-cell chronic lymphocytic leukemia
+277474005,B-cell chronic lymphocytic leukemia variant
+277543005,Malignant white blood cell disorder
+277545003,T-cell chronic lymphocytic leukemia
+277549009,Chronic lymphocytic prolymphocytic leukemia syndrome
+277550009,Richter's syndrome
+277551008,Splenic lymphoma with villous lymphocytes
+277567002,T-cell prolymphocytic leukemia
+277568007,Hairy cell leukemia variant
+277569004,Large granular lymphocytic leukemia
+277570003,Lymphoma with spill
+277571004,B-cell acute lymphoblastic leukemia
+277572006,Precursor B-cell acute lymphoblastic leukemia
+277573001,Common acute lymphoblastic leukemia
+277574007,Null cell acute lymphoblastic leukemia
+277575008,T-cell acute lymphoblastic leukemia
+277579002,Light chain myeloma
+277580004,Non-secretory myeloma
+277587001,Juvenile chronic myeloid leukemia
+277589003,Atypical chronic myeloid leukemia
+277601005,Acute monoblastic leukemia
+277602003,Acute megakaryoblastic leukemia
+277604002,Acute eosinophilic leukemia
+277609007,"Hodgkin's disease, lymphocytic predominance - diffuse"
+277610002,"Hodgkin's disease, nodular sclerosis - lymphocytic predominance"
+277611003,"Hodgkin's disease, nodular sclerosis - mixed cellularity"
+277612005,"Hodgkin's disease, nodular sclerosis - lymphocytic depletion"
+277613000,Cutaneous/peripheral T-cell lymphoma
+277614006,Prethymic and thymic T-cell lymphoma/leukemia
+277615007,Low grade B-cell lymphoma
+277616008,Diffuse low grade B-cell lymphoma
+277617004,High grade B-cell lymphoma
+277618009,Follicular low grade B-cell lymphoma
+277619001,B-cell prolymphocytic leukemia
+277622004,Mucosa-associated lymphoma
+277623009,Monocytoid B-cell lymphoma
+277624003,Follicular malignant lymphoma - mixed cell type
+277625002,Follicular malignant lymphoma - small cleaved cell
+277626001,Diffuse high grade B-cell lymphoma
+277627005,Nodular high grade B-cell lymphoma
+277628000,Diffuse malignant lymphoma - large cleaved cell
+277629008,Diffuse malignant lymphoma - large non-cleaved cell
+277632006,Diffuse malignant lymphoma - centroblastic polymorphic
+277637000,Large cell anaplastic lymphoma
+277641001,Follicular malignant lymphoma - large cell
+277642008,Low grade T-cell lymphoma
+277643003,High grade T-cell lymphoma
+277651000,Peripheral T-cell lymphoma - pleomorphic small cell
+277653002,Peripheral T-cell lymphoma - pleomorphic medium and large cell
+277654008,Enteropathy-associated T-cell lymphoma
+277664004,Malignant lymphoma of testis
+277844007,Pulmonary lymphangioleiomyomatosis
+278051002,Malignant lymphoma of thyroid gland
+278052009,Malignant lymphoma of breast
+278189009,Hypergranular promyelocytic leukemia
+278453007,Acute biphenotypic leukemia
+278928000,Transient mitral regurgitation of newborn
+281091000,Ischemic myocardial dysfunction
+281093002,Hibernating myocardium
+281239006,Exacerbation of asthma
+282006,Acute myocardial infarction of basal-lateral wall
+28248000,Left anterior descending coronary artery thrombosis
+285251000119101,Dextrotransposition of the great arteries
+285381006,Acute infective exacerbation of chronic obstructive airways disease
+285420006,Immunoglobulin A myeloma
+285421005,Immunoglobulin G myeloma
+285422003,Immunoglobulin D myeloma
+285615003,Metastasis to spleen of unknown primary
+28574005,Congenital anomaly of coronary artery
+285769009,Acute promyelocytic leukemia - hypogranular variant
+285776004,Intermediate grade B-cell lymphoma
+285839005,Acute myelomonocytic leukemia - eosinophilic variant
+28656008,Congenital insufficiency of aortic valve
+286947004,Chronic rheumatic mitral valve
+286950001,Chronic rheumatic aortic valve disease
+2912004,Cystic-bullous disease of the lung
+293241000119100,Acute exacerbation of chronic obstructive bronchitis
+29375001,Abnormal number of cusps
+293991000000106,Very severe chronic obstructive pulmonary disease
+29422001,Coal workers' pneumoconiosis
+29928006,Congenital insufficiency of mitral valve
+302841002,Malignant lymphoma - small lymphocytic
+302842009,Diffuse malignant lymphoma - centroblastic
+302845006,"Nodular malignant lymphoma, lymphocytic - well differentiated"
+302848008,"Nodular malignant lymphoma, lymphocytic - intermediate differentiation"
+302855005,Subacute leukemia
+302856006,Aleukemic leukemia
+30288003,Ventricular septal defect
+302913000,Diffuse pulmonary calcinosis
+302943003,Abnormal number of pulmonary valve cusps
+303017006,"Malignant lymphoma, convoluted cell type"
+303055001,"Malignant lymphoma, follicular center cell"
+303056000,"Malignant lymphoma, follicular center cell, cleaved"
+303057009,"Malignant lymphoma, follicular center cell, non-cleaved"
+30352005,Allergic-infective asthma
+304527002,Acute asthma
+30575002,Fanconi's anemia
+307341004,Atypical hairy cell leukemia
+307592006,Basophilic leukemia
+307617006,Neutrophilic leukemia
+307622006,Prolymphocytic lymphosarcoma
+307623001,Malignant lymphoma - lymphoplasmacytic
+307624007,Diffuse malignant lymphoma - centroblastic-centrocytic
+307625008,Malignant lymphoma - centrocytic
+307633009,"Hodgkin's disease, lymphocytic depletion, diffuse fibrosis"
+307634003,"Hodgkin's disease, lymphocytic depletion, reticular type"
+307635002,"Hodgkin's disease, nodular sclerosis - cellular phase"
+307636001,"Malignant lymphoma, mixed lymphocytic-histiocytic, nodular"
+307637005,"Malignant lymphoma, centroblastic-centrocytic, follicular"
+307646004,"Malignant lymphoma, lymphocytic, poorly differentiated, nodular"
+307647008,"Malignant lymphoma, centroblastic type, follicular"
+307649006,Microglioma
+308121000,Follicular non-Hodgkin's lymphoma
+312453004,Asthma - currently active
+31323000,Severe combined immunodeficiency disease
+313296004,Mild chronic obstructive pulmonary disease
+313297008,Moderate chronic obstructive pulmonary disease
+313299006,Severe chronic obstructive pulmonary disease
+313427003,Lambda light chain myeloma
+31387002,Exercise-induced asthma
+31898008,Paraseptal emphysema
+32139003,Mixed dust pneumoconiosis
+32544004,Chronic obliterative bronchiolitis caused by inhalation of chemical fumes AND/OR vapors
+328301000119102,Pancytopenia due to antineoplastic chemotherapy
+33325001,Compensatory emphysema
+33548005,Anthracosilicosis
+34004002,Siderosilicosis
+34015007,Bakers' asthma
+341751000000103,Congenital dextroposition of heart
+3439009,Severe combined immunodeficiency due to absent peripheral T cell maturation
+35434009,Sickle cell-hemoglobin C disease
+35577008,Holoacardius acephalus
+359631009,"Acute myeloid leukemia, minimal differentiation, FAB M0"
+359640008,"Acute myeloid leukemia without maturation, FAB M1"
+359648001,"Acute myeloid leukemia with maturation, FAB M2"
+360470001,Chronic mucus hypersecretion
+360473004,Congenital muscular subaortic stenosis
+36070007,Wiskott-Aldrich syndrome
+36079008,Double cardiac valve orifice
+36110001,Congenital anomaly of pulmonary artery
+36133000,Abnormal position of cardiac valve
+36138009,Congenital immunodeficiency disease
+36233006,Congenital stenosis of tricuspid valve
+362993009,Autosomal recessive severe combined immunodeficiency disease
+363040003,Congenital immunodeficiency involving the hematopoietic system
+363499005,Malignant tumor of spleen
+36422005,Transposition of pulmonary veins
+36472007,Sickle cell-thalassemia disease
+36599006,Chronic fibrosis of lung
+36696005,Kaolinosis
+36980009,Severe combined immunodeficiency due to absent adenosine deaminase
+370220003,Occasional asthma
+370221004,Severe asthma
+370388006,Patient immunocompromised
+370391006,Patient immunosuppressed
+371012000,"Acute lymphoblastic leukemia, transitional pre-B-cell"
+37104009,Congenital enlargement of coronary sinus
+371067004,Hepatopulmonary syndrome
+371134001,"Malignant lymphoma, large cell, polymorphous, immunoblastic"
+373131000,Non-restrictive ventricular septal defect
+373168002,Reticulosarcoma
+37711000,Cadmium pneumonitis
+378841000000102,Allograft of bone marrow from unmatched unrelated donor
+38013005,Immunosuppression
+38385001,Persistent left posterior cardinal vein
+389145006,Allergic asthma
+38970002,Doan-Wright syndrome
+394934009,Combined pre-operative chemotherapy and radiotherapy
+394935005,Combined post-operative chemotherapy and radiotherapy
+39589002,Hypoplasia of right heart
+398623004,Refractory anemia with excess blasts
+398640008,Rheumatoid pneumoconiosis
+399046008,L - transposition of the great vessels
+399228007,Tetralogy of Fallot with absent pulmonary valve
+399241000000100,[V]Kidney transplanted
+400001003,Primary cutaneous lymphoma
+400122007,Primary cutaneous T-cell lymphoma
+40100001,Obliterative bronchiolitis
+401000119107,Asthma with irreversible airway obstruction
+401193004,Asthma confirmed
+40122008,Pneumoconiosis
+40218008,Carbon electrode makers' pneumoconiosis
+402355000,Acute graft-versus-host disease
+402356004,Chronic graft-versus-host disease
+402357008,Lichenoid chronic graft-versus-host disease
+402358003,Sclerodermoid chronic graft-versus-host disease
+402360001,Materno-fetal graft-versus-host disease
+40272001,Congenital absence of coronary sinus
+402880009,Primary cutaneous large T-cell lymphoma
+402881008,Primary cutaneous B-cell lymphoma
+402882001,Hodgkin's disease affecting skin
+402901009,Oral hairy leukoplakia associated with human immunodeficiency virus disease
+403835002,X-linked hyper-immunoglobulin M syndrome
+403837005,Wiskott-Aldrich autosomal dominant variant syndrome
+403839008,Siccardi syndrome
+404103007,Lymphomatoid papulosis type A (CD-30 positive type)
+404104001,Lymphomatoid papulosis type B - mycosis fungoides-like
+404105000,Lymphomatoid papulosis type C (anaplastic large-cell lymphoma-like)
+404106004,Lymphomatoid papulosis with Hodgkin's disease
+404107008,Patch/plaque stage mycosis fungoides
+404108003,Poikilodermatous mycosis fungoides
+404109006,Follicular mucinosis type mycosis fungoides
+404110001,Hypomelanotic mycosis fungoides
+404111002,Lymphomatoid papulosis-associated mycosis fungoides
+404112009,Granulomatous mycosis fungoides
+404113004,Tumor stage mycosis fungoides
+404114005,Erythrodermic mycosis fungoides
+404115006,Bullous mycosis fungoides
+404116007,Mycosis fungoides with systemic infiltration
+404117003,Spongiotic mycosis fungoides
+404118008,Syringotropic mycosis fungoides
+404119000,Pagetoid reticulosis
+404120006,Localized pagetoid reticulosis
+404121005,Generalized pagetoid reticulosis
+404122003,Leukemic infiltration of skin (chronic T-cell lymphocytic leukemia)
+404123008,Leukemic infiltration of skin (T-cell prolymphocytic leukemia)
+404124002,Leukemic infiltration of skin (T-cell lymphoblastic leukemia)
+404125001,CD-30 positive anaplastic large T-cell cutaneous lymphoma
+404126000,CD-30 positive pleomorphic large T-cell cutaneous lymphoma
+404127009,CD-30 positive T-immunoblastic cutaneous lymphoma
+404128004,CD-30 negative cutaneous T-cell lymphoma
+404129007,CD-30 negative anaplastic large T-cell cutaneous lymphoma
+404130002,CD-30 negative pleomorphic large T-cell cutaneous lymphoma
+404131003,CD-30 negative T-immunoblastic cutaneous lymphoma
+404132005,Pleomorphic small/medium-sized cell cutaneous T-cell lymphoma
+404133000,Subcutaneous panniculitic cutaneous T-cell lymphoma
+404134006,Anaplastic large T-cell systemic malignant lymphoma
+404135007,Angiocentric natural killer/T-cell malignant lymphoma involving skin
+404136008,Aggressive natural killer-cell leukemia involving skin
+404137004,Precursor B-cell lymphoblastic lymphoma involving skin
+404138009,Small lymphocytic B-cell lymphoma involving skin
+404139001,Leukemic infiltration of skin in hairy-cell leukemia
+404140004,Primary cutaneous marginal zone B-cell lymphoma
+404141000,Primary cutaneous immunocytoma
+404142007,Primary cutaneous plasmacytoma
+404143002,Primary cutaneous follicular center B-cell lymphoma
+404144008,Primary cutaneous diffuse large cell B-cell lymphoma
+404145009,Primary cutaneous anaplastic large cell B-cell lymphoma
+404146005,Primary cutaneous diffuse large cell B-cell lymphoma of the leg
+404147001,Follicular center B-cell lymphoma (nodal/systemic with skin involvement)
+404148006,Diffuse large B-cell lymphoma (nodal/systemic with skin involvement)
+404149003,"Lymphoplasmacytic B-cell lymphoma, nodal/systemic with skin involvement"
+404150003,Mantle cell B-cell lymphoma (nodal/systemic with skin involvement)
+404151004,Leukemic infiltration of skin in myeloid leukemia
+404152006,Leukemic infiltration of skin in acute myeloid leukemia
+404153001,Leukemic infiltration of skin in chronic myeloid leukemia
+404154007,Leukemic infiltration of skin in monocytic leukemia
+404157000,Specific skin infiltration in Hodgkin's disease
+404804003,Platinum asthma
+404806001,Cheese-makers' asthma
+404808000,Isocyanate induced asthma
+40527005,Idiopathic pulmonary hemosiderosis
+405752007,Congenital atrial septal defect
+405944004,Asthmatic bronchitis
+40640008,Massive fibrosis of lung co-occurrent and due to silicosis
+407674008,Aspirin-induced asthma
+409663006,Cough variant asthma
+41049003,Holoacardius amorphus
+412787009,"Intellectual disability, congenital heart disease, blepharophimosis, blepharoptosis and hypoplastic teeth"
+413389003,Accelerated phase chronic myeloid leukemia
+413441006,"Acute monocytic leukemia, FAB M5b"
+413442004,Acute monocytic/monoblastic leukemia
+413537009,Angioimmunoblastic T-cell lymphoma
+413567003,Aplastic anemia associated with pregnancy
+413587002,Smoldering myeloma
+413656006,Blastic phase chronic myeloid leukemia
+413842007,Chronic myeloid leukemia in lymphoid blast crisis
+413843002,Chronic myeloid leukemia in myeloid blast crisis
+413847001,Chronic phase chronic myeloid leukemia
+413905004,Congenital absence of heart structure
+414166008,"Extranodal natural killer/T-cell lymphoma, nasal type"
+414376003,Hairy leukoplakia of tongue associated with human immunodeficiency virus disease
+414553000,Kappa light chain myeloma
+414604009,Leukoplakia of tongue associated with human immunodeficiency virus disease
+414780005,Mucosa-associated lymphoid tissue lymphoma of orbit
+414785000,Multiple solitary plasmacytomas
+415112005,Plasmacytoma
+41514002,Congenital supravalvular mitral stenosis
+415287001,Relapsing chronic myeloid leukemia
+41553006,Detergent asthma
+416180004,Hemoglobin SS disease without crisis
+416214006,Sickle cell-hemoglobin D disease without crisis
+416290001,Hemoglobin S sickling disorder without crisis
+416484003,Sickle cell-hemoglobin E disease with crisis
+416638004,Sickle cell-hemoglobin E disease without crisis
+416826005,Sickle cell-thalassemia disease with crisis
+417048006,Sickle cell-thalassemia disease without crisis
+417152008,Langerhans cell histiocytosis of lung
+417279003,Hemoglobin S sickling disorder with crisis
+417357006,Sickling disorder due to hemoglobin S
+417425009,Hemoglobin SS disease with crisis
+417517009,Sickle cell-hemoglobin C disease with crisis
+417683006,Sickle cell-hemoglobin C disease without crisis
+417748003,Sickle cell-hemoglobin D disease with crisis
+418395004,Tea-makers' asthma
+420519005,Malignant lymphoma of the eye region
+420788006,Intraocular non-Hodgkin malignant lymphoma
+421102007,Aplastic anemia associated with acquired immunodeficiency syndrome
+421246008,Precursor T-cell lymphoblastic lymphoma
+421671002,Pneumonia associated with acquired immunodeficiency syndrome
+422853008,Lymphoma of retroperitoneal space
+423889005,Non-immunoglobulin E mediated allergic asthma
+424199006,Substance induced asthma
+424643009,Immunoglobulin E-mediated allergic asthma
+425229001,Chemotherapy-induced neutropenia
+425657001,Osteosclerotic myeloma
+425688002,Philadelphia chromosome-positive acute lymphoblastic leukemia
+425748003,Acute exacerbation of chronic bronchitis
+425969006,Exacerbation of intermittent asthma
+426202004,Immune reconstitution syndrome
+426336007,Solitary osseous myeloma
+426425001,Allograft of bone marrow from sibling donor
+426437004,Familial idiopathic pulmonary fibrosis
+426656000,Severe persistent asthma
+426705001,Diabetes mellitus co-occurrent and due to cystic fibrosis
+426768001,Engraftment syndrome
+426853005,Pneumoconiosis caused by silicate
+426885008,"Hodgkin's disease, lymphocytic depletion of lymph nodes of head"
+427022004,Liver disease due to cystic fibrosis
+427123006,Interstitial lung disease due to collagen vascular disease
+427423003,Allograft of bone marrow from matched unrelated donor
+428501000000108,[V]Chemotherapy session for neoplasm
+430338009,Smoldering chronic lymphocytic leukemia
+431456004,Accelerated rejection of bone marrow transplant
+43176009,Congenital hypoplasia of tricuspid valve
+431862001,Acute rejection of bone marrow transplant
+431953002,Chronic rejection of bone marrow transplant
+432782005,Hyperacute rejection of bone marrow transplant
+4374004,Congenital anomaly of tricuspid valve
+440206000,Hemoglobin SS disease with vasoocclusive crisis
+440422002,Asymptomatic multiple myeloma
+441313008,Indolent multiple myeloma
+441559006,Mantle cell lymphoma of spleen
+441962003,Large cell lymphoma of intrapelvic lymph nodes
+442459007,Combined immunodeficiency disease
+442537007,Non-Hodgkin lymphoma associated with Human immunodeficiency virus infection
+442557006,Grafting of bone marrow using allograft from unmatched unrelated donor
+44274007,Lymphoid interstitial pneumonia
+443379009,Functional single ventricle
+4434006,Bloom syndrome
+443487006,Mantle cell lymphoma
+444108000,Acute sickle cell splenic sequestration crisis
+444547006,Graft versus host disease of skin
+444597005,Extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue of stomach
+444851003,Bifid apex of heart
+444910004,Primary mediastinal (thymic) large B-cell lymphoma
+444911000,Acute myeloid leukemia with t(9:11)(p22;q23); MLLT3-MLL
+444961009,Atrioventricular septal defect with common atrioventricular orifice
+445001003,Left ventricular outflow tract obstruction due to malaligned outlet septum
+445002005,Atrioventricular septal defect with separate atrioventricular orifices
+445003000,Left ventricular outflow tract obstruction due to subpulmonary fibromuscular shelf
+445105005,Blastic plasmacytoid dendritic cell neoplasm
+445131007,Left ventricular outflow tract obstruction due to fibromuscular tunnel
+445176007,Congenital dilation of ascending aorta
+445227008,Juvenile myelomonocytic leukemia
+445235006,Left ventricular outflow tract obstruction due to anterolateral muscle band
+445264002,Atrioventricular septal defect with ventricular imbalance consisting of dominant left ventricle and hypoplastic right ventricle
+445268004,Apex of heart anterior to cardiac base
+445269007,Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue
+445270008,Aortic orifice left side by side with respect to pulmonary orifice
+445298006,Aortic orifice anterior with respect to pulmonary orifice
+445299003,Atrioventricular septal defect with ventricular imbalance consisting of dominant right ventricle and hypoplastic left ventricle
+445310002,Left ventricular outflow tract obstruction due to diaphragm
+445330003,Right atrioventricular valve leaflets absent in double inlet ventricle (unguarded orifice)
+445334007,Atrioventricular septal defect with additional muscular ventricular septal defect
+445373007,Aortic orifice posterior with respect to pulmonary orifice
+445406001,Hepatosplenic T-cell lymphoma
+445427006,Seasonal asthma
+445435009,Apex of heart posterior to cardiac base
+445448008,Acute myeloid leukemia with myelodysplasia-related changes
+445453003,Left ventricular outflow tract obstruction due to aneurysm of membranous septum
+445454009,Left ventricular outflow tract obstruction due to atrioventricular valve
+44547005,Chalicosis
+445607003,Aortic orifice posterior left with respect to pulmonary orifice
+445636003,Aortic orifice anterior right with respect to pulmonary orifice
+445650008,Aortic orifice anterior left with respect to pulmonary orifice
+445757003,Allogeneic bone marrow transplantation without purging
+445898001,Abnormal atrial arrangement
+446253009,Allogeneic bone marrow transplantation with purging
+446326008,Premature restriction of foramen ovale
+446643000,Sarcoma of dendritic cells (accessory cells)
+446657003,Criss-cross heart with rightward rotation
+446659000,Ventricular imbalance with dominant left ventricle and hypoplastic right ventricle
+446667008,Two atrioventricular valves in double inlet ventricle
+446670007,Aortic orifice right side by side with respect to pulmonary orifice
+446909006,Midline apex of heart
+446916007,Functionally univentricular heart
+447100004,Marginal zone lymphoma
+447283008,Solitary ventricle of indeterminate morphology
+447284002,Double outlet right ventricle with intact ventricular septum
+447285001,Ventricular imbalance
+447286000,Ventricular imbalance with dominant right ventricle and hypoplastic left ventricle
+447289007,Criss-cross heart with leftward rotation
+447656001,Lymphoma of pylorus of stomach
+447658000,Lymphoma of fundus of stomach
+447661004,Diverticulum of coronary sinus
+447665008,Interatrial communication through coronary sinus orifice
+447666009,Divided left atrium with all pulmonary veins to proximal chamber and then to left atrium
+447667000,Divided left atrium with all pulmonary veins to proximal chamber without communication to left atrium
+447669002,Hypoplasia of left heart without intrinsic valve stenosis and without atresia
+447670001,Ventricular septal defect with anterior malaligned outlet septum with overriding pulmonary valve
+447671002,Ventricular septal defect with posterior malaligned outlet septum with overriding aortic valve
+447672009,Ventricular septal defect with posterior malaligned outlet septum with overriding pulmonary valve
+447673004,Right ventricle to left of left ventricle
+447681003,Continuity between mitral valve and pulmonary valve
+447683000,Discontinuity between mitral valve and pulmonary valve
+447696004,Unicommissural unicuspid aortic valve
+447697008,Unicommissural unicuspid pulmonary valve
+447698003,Ventricular septal defect with anterior malaligned outlet septum with overriding aortic valve
+447766003,Lymphoma of pyloric antrum of stomach
+447774002,Congenital midvalvar ring of mitral leaflet
+447780005,Restrictive interatrial communication with obligatory shunt
+447805007,Lymphoma of greater curvature of stomach
+447806008,Lymphoma of cardia of stomach
+447822009,Congenital prolapse of aortic valve
+447824005,Congenital abnormality of left atrium
+447829000,Congenital abnormality of tricuspid chordae tendinae
+447830005,Congenital abnormality of tricuspid leaflet
+447838003,Pulmonary atresia and ventricular septal defect with aorta from left ventricle
+447839006,Pulmonary atresia and ventricular septal defect with aorta from right ventricle
+447845003,Right ventricle posterior to left ventricle
+447849009,Double aortic arch with right arch dominant and atresia of left arch
+447852001,Ventricular septal defect of inlet of right aspect of ventricular septum
+447874007,Congenital abnormality of atrial septum
+447875008,Congenital mass of mitral leaflet
+447876009,Congenital aneurysm of subaortic left ventricle
+447913009,Completely unroofed coronary sinus defect in left atrium
+447915002,Ebstein's anomaly of left sided tricuspid valve with discordant atrioventricular connections
+447919008,Univentricular atrioventricular connection with absent right sided atrioventricular connection
+447932003,Double outlet ventriculoarterial connections
+447933008,Nonfenestrated interatrial communication within oval fossa
+447937009,Congenital abnormality of aortic valve cusp
+447938004,Congenital abnormality of cardiac vein
+447941008,Residual ventricular septal defect
+447962009,Divided left atrium with restrictive outlet of proximal chamber to left atrium
+447970004,Double aortic arch with left arch dominant and atresia of right arch
+447988007,Common arterial trunk with pulmonary arteries arising from trunk and unobstructed aortic arch
+447989004,Non-Hodgkin's lymphoma of extranodal site
+447998001,Single ventricular outlet above right ventricle
+447999009,Single ventricular outlet above left ventricle
+448001004,Right ventricular outflow tract obstruction due to aneurysm of membranous septum
+448004007,Acommissural unicuspid pulmonary valve
+448007000,Atrioventricular septal defect associated with tetralogy of Fallot
+448028009,Congenital left ventricular submitral valve aneurysm
+448062009,Ventricular septal defect with malaligned outlet septum
+448063004,Congenital abnormality of posterior cardiac vein of left ventricle
+448064005,Congenital abnormality of right atrium
+448066007,Divided left atrium with nonrestrictive outlet of proximal chamber to left atrium
+448072007,Single inlet ventricle with absent atrioventricular connection
+448073002,Congenital abnormality of tricuspid papillary muscle
+448074008,Ebstein's anomaly with functional tricuspid stenosis
+448075009,Uniatrial biventricular connection with absent right sided atrioventricular connection with straddling valve
+448080000,Single ventricular outlet above ventricle of indeterminate morphology
+448081001,Hepatic vein to coronary sinus
+448082008,Right ventricular outflow tract obstruction due to prolapse of Eustachian valve
+448083003,Right ventricular outflow tract obstruction due to prolapsed arterial valve
+448085005,Acommissural unicuspid aortic valve
+448095003,Aortic left ventricular tunnel with right coronary artery from tunnel
+448103004,Right ventricle inferior to left ventricle
+448114001,Aberrant course of coronary artery between aorta and pulmonary trunk
+448118003,Atrioventricular septal defect with atrial and ventricular components and separate atrioventricular valves
+448119006,Atrioventricular septal defect with atrioventricular valve regurgitation
+448120000,Common arterial trunk with crossed over pulmonary arteries
+448155003,Pulmonary atresia with ventricular septal defect of Fallot type
+448161000,Aortic valve overriding ventricular septum
+448162007,Bipartite right ventricle
+448181004,Anomalous coronary venous return
+448182006,Atrioventricular septal defect with ventricular component and interchordal shunting under inferior bridging leaflet
+448183001,Atrioventricular septal defect with ventricular component and interchordal shunting under superior bridging leaflet
+448184007,Atrioventricular septal defect with ventricular component and shunting under connecting tongue with separate orifices
+448212009,Anaplastic lymphoma kinase negative anaplastic large cell lymphoma
+448213004,Diffuse non-Hodgkin's lymphoma of prostate
+448217003,Follicular non-Hodgkin's lymphoma of prostate
+448220006,Non-Hodgkin's lymphoma of bone
+448231003,Follicular non-Hodgkin's lymphoma of nose
+448254007,Non-Hodgkin's lymphoma of central nervous system
+448269008,Lymphoma of lesser curvature of stomach
+448277007,Midline posterior apex of heart
+448278002,Coronary sinus drainage cephalad to left superior vena cava
+448280008,Malalignment of aortic sinus in relation to pulmonary sinus
+448308000,Right ventricular outflow tract obstruction due to common atrioventricular valve
+448309008,Right ventricular outflow tract obstruction due to fibromuscular shelf
+448310003,Right ventricular outflow tract obstruction due to malaligned outlet septum
+448317000,Follicular non-Hodgkin's lymphoma of soft tissue
+448319002,Diffuse non-Hodgkin's lymphoma of nasopharynx
+448320008,Divided left atrium with some pulmonary veins to proximal chamber
+448331000,Atrioventricular septal defect with restrictive ventricular component
+448354009,Non-Hodgkin's lymphoma of intestine
+448356006,Coronary sinus drainage cephalad to right superior vena cava
+448357002,Midline anterior apex of heart
+448371005,Non-Hodgkin's lymphoma of nasopharynx
+448372003,Non-Hodgkin's lymphoma of lung
+448376000,Non-Hodgkin's lymphoma of ovary
+448384001,Non-Hodgkin's lymphoma of nose
+448386004,Non-Hodgkin's lymphoma of oral cavity
+448387008,Non-Hodgkin's lymphoma of testis
+448415009,Subaortic stenosis due to common atrioventricular valve
+448447004,Non-Hodgkin's lymphoma of skin
+448465000,Diffuse non-Hodgkin's lymphoma of testis
+448468003,Diffuse non-Hodgkin's lymphoma of oral cavity
+448475002,Absent pulmonary valve syndrome with ventricular septal defect of non Fallot type
+448477005,Superior to inferior ventricular relationship
+448497000,Congenital deformity of mitral valve annulus
+448516008,Double outlet right ventricle with doubly committed ventricular septal defect and pulmonary stenosis
+448553002,Lymphoma of pelvis
+448555009,Lymphoma of body of stomach
+448560008,Diffuse non-Hodgkin's lymphoma of extranodal site
+448561007,Follicular non-Hodgkin's lymphoma of extranodal site
+448575000,Fenestrated interatrial communication within oval fossa
+448604006,Congenital abnormality of pulmonary valve cusp
+448607004,Diffuse non-Hodgkin's lymphoma of uterine cervix
+448609001,Diffuse non-Hodgkin's lymphoma of ovary
+448612003,Single ventricular outlet above both ventricles
+448619007,Anterior deviation of infundibular septum of Fallot type
+448624005,Uniatrial biventricular connection with absent left sided atrioventricular connection with straddling valve
+448625006,Univentricular atrioventricular connection with absent left sided atrioventricular connection
+448632002,Left inferior vena cava connecting to left atrium and right atrium
+448633007,Right ventricular outflow tract obstruction due to atrioventricular valve
+448634001,Absent aortic valve cusp
+448663003,Diffuse non-Hodgkin's lymphoma of stomach
+448666006,Follicular non-Hodgkin's lymphoma of bone
+448672006,Follicular non-Hodgkin's lymphoma of lung
+448681000,Indeterminate atrial arrangement
+448709005,Non-Hodgkin's lymphoma of stomach
+448729006,Common atrioventricular valve in functionally univentricular heart
+448738008,Non-Hodgkin's lymphoma of soft tissue
+448747000,Common arterial trunk with pulmonary origin from truncal valve sinus
+448774004,Non-Hodgkin's lymphoma of uterine cervix
+448778001,Obstruction of right ventricular outflow tract due to aortico-left ventricular tunnel
+448780007,Ventricular septal defect with absent outlet septum and overriding truncal valve with extension of membranous septum
+448790004,Anterior-posterior orientation of bicuspid aortic valve
+448793002,Bicuspid truncal valve
+448794008,Double outlet right ventricle with subpulmonary ventricular septal defect
+448809003,Common arterial trunk with obstruction of aortic arch
+448819009,Right-left orientation of bicuspid aortic valve
+448823001,Left ventricular outflow tract obstruction due to prolapse of Eustachian valve
+448824007,Left ventricular myocardial sinusoids
+448827000,Ventricular septal defect with absent outlet septum and overriding truncal valve with inferior muscular rim
+448842002,Aortico-left ventricular tunnel of simple type
+448843007,Aortico-left ventricular tunnel with aneurysm of intracardiac septal wall and aneurysm of extracardiac aortic wall
+448844001,Multiple mitral papillary muscles with hammock valve
+448865007,Follicular non-Hodgkin's lymphoma of skin
+448867004,Diffuse non-Hodgkin's lymphoma of lung
+448876006,Subarterial ventricular septal defect
+448887003,Common arterial trunk with isolated pulmonary artery
+448919005,Atrioventricular septal defect with ventricular component under superior bridging leaflet without chordal attachment to ventricular septal crest
+448920004,Congenital abnormality of mitral subvalvular apparatus
+448923002,Hypoplasia of infundibular septum
+448946000,Anterior-posterior orientation of bicuspid pulmonary valve
+448947009,Congenital abnormality of left atrioventricular valve in double inlet ventricle
+448948004,Overriding ventriculoarterial valve
+448966009,Hypoplasia of trabecular portion of right ventricle
+448995000,Follicular non-Hodgkin's lymphoma of central nervous system
+449005003,Absence of mitral chordae tendinae
+449014008,Hepatic vein to left sided atrium
+449015009,Hepatic vein to right sided atrium
+449016005,Hepatic vein to left atrium and right atrium
+449029005,Imperforate ventriculoarterial valve
+449031001,Congenital abnormality of right atrioventricular valve leaflet in double inlet ventricle
+449032008,Congenital abnormality of right atrioventricular valve papillary muscle in double inlet ventricle
+449053004,Lymphoma of lower esophagus
+449058008,Follicular non-Hodgkin's lymphoma of tonsil
+449059000,Follicular non-Hodgkin's lymphoma of uterine cervix
+449063007,Follicular non-Hodgkin's lymphoma of oral cavity
+449065000,Diffuse non-Hodgkin's lymphoma of nose
+449072004,Lymphoma of gastrointestinal tract
+449074003,Lymphoma of small intestine
+449075002,Lymphoma of cardioesophageal junction
+449086000,Ebstein's anomaly of left atrioventricular valve in functionally univentricular heart
+449087009,Ebstein's anomaly of right atrioventricular valve in functionally univentricular heart
+449098005,Congenital abnormality of left atrioventricular valve chordae tendinae in double inlet ventricle
+449108003,Philadelphia chromosome positive chronic myelogenous leukemia
+449110001,Congenital billowing of mitral valve leaflet
+449118008,Left ventricular outflow tract obstruction due to prolapsed arterial valve
+449123008,Eccentric opening of tricuspid aortic valve
+449124002,Eccentric opening of tricuspid pulmonary valve
+449133000,Absence of pulmonary valve cusp
+449138009,Right ventricular outflow tract obstruction due to septal hypertrophy
+449139001,Commissural fusion of truncal valve
+449140004,Right-left orientation of bicuspid pulmonary valve
+449158005,Ebstein's anomaly of tricuspid valve with atrialization of right ventricular chamber
+449173006,Diffuse non-Hodgkin's lymphoma of tonsil
+449176003,Diffuse non-Hodgkin's lymphoma of intestine
+449177007,Diffuse non-Hodgkin's lymphoma of bone
+449178002,Doubly committed ventricular septal defect in double outlet ventriculoarterial connection
+449190000,Muscular ventricular septal defect in trabecular septum
+449216004,Diffuse non-Hodgkin's lymphoma of soft tissue
+449217008,Diffuse non-Hodgkin's lymphoma of skin
+449218003,Lymphoma of sigmoid colon
+449219006,Follicular non-Hodgkin's lymphoma of nasopharynx
+449220000,Diffuse follicle center lymphoma
+449221001,Diffuse non-Hodgkin's lymphoma of central nervous system
+449222008,Follicular non-Hodgkin's lymphoma of stomach
+449270002,Hypoplasia of mitral valve annulus
+449292003,Non-Hodgkin's lymphoma of tonsil
+449307001,Follicular non-Hodgkin's lymphoma of ovary
+449315003,Congenital abnormality of right atrioventricular valve chordae tendinae in double inlet ventricle
+449316002,Congenital abnormality of right atrioventricular valve in double inlet ventricle
+449318001,Non-Hodgkin's lymphoma of prostate
+449352003,Right ventricular outflow tract obstruction due to abnormal cardiac muscle bands
+449353008,Hypoplasia of trabecular portion of left ventricle
+449354002,Hypoplasia of pulmonary cusps of absent pulmonary valve type
+449379004,Atrioventricular septal defect with ventricular component under inferior bridging leaflet with chords to crest ventricular septum
+449382009,Congenital abnormality of atrioventricular valve leaflet in atrioventricular septal defect
+449383004,Congenital abnormality of atrioventricular valve papillary muscle in atrioventricular septal defect
+449385006,Confluent muscular ventricular septal defect
+449386007,Philadelphia chromosome negative chronic myelogenous leukemia
+449398002,Aortico-left ventricular tunnel with intracardiac aneurysm of septal portion
+449418000,Follicular non-Hodgkin's lymphoma of testis
+449419008,Follicular non-Hodgkin's lymphoma of intestine
+449428009,Divided left atrium with all pulmonary veins to proximal chamber and then to left atrium with additional pulmonary venous chamber communication
+449429001,Divided left atrium with some pulmonary veins to proximal chamber draining to right atrium
+449436000,Divided left atrium with some pulmonary veins to proximal chamber draining to left atrium
+449440009,Divided left atrium with all pulmonary veins to proximal chamber without communication to left atrium with extracardiac pulmonary venous chamber communication
+449441008,Divided left atrium with all pulmonary veins to proximal chamber without communication to left atrium with pulmonary venous chamber communication to right atrium
+449442001,Congenital abnormality of great cardiac vein
+449455000,Abnormal attachment of tricuspid chordae tendinae
+449456004,Atrioventricular septal defect with atrioventricular valve regurgitation through left septal commissure
+449457008,Atrioventricular septal defect with atrioventricular valve regurgitation through left superior bridging leaflet lateral mural commissure
+449459006,Atrioventricular septal defect with atrioventricular valve regurgitation through left inferior bridging leaflet lateral mural commissure
+449479003,Malattachment of atrial septum
+449490008,Atrioventricular septal defect with atrioventricular valve regurgitation through right septal commissure
+449492000,Divided left atrium with all pulmonary veins to proximal chamber and then to left atrium with additional pulmonary venous chamber communication to right atrium
+449511008,Imperforate left ventriculoarterial valve
+449512001,Imperforate right ventriculoarterial valve
+449520004,Right ventricular outflow tract obstruction due to septoparietal trabeculation
+449532000,Congenital abnormality of anterior cardiac vein
+449537006,Atrioventricular septal defect with atrioventricular valve regurgitation through right anterosuperior inferior mural commissure
+449538001,Atrioventricular septal defect with atrioventricular valve regurgitation through right anterosuperior superior bridging leaflet commissure
+449539009,Atrioventricular septal defect with atrioventricular valve regurgitation through right inferior bridging leaflet inferior mural commissure
+449563001,Absence of primary mitral chordae tendinae
+449567000,Overriding left ventriculoarterial valve
+449568005,Overriding right ventriculoarterial valve
+449587004,Divided left atrium with all pulmonary veins to proximal chamber and then to left atrium with additional pulmonary venous chamber extracardiac communication
+449593007,Divided left atrium with some pulmonary veins to proximal chamber draining to left atrium and others connecting directly to left atrium
+449594001,Divided left atrium with some pulmonary veins to proximal chamber draining to left atrium and others connecting anomalously
+449595000,Divided left atrium with some pulmonary veins to proximal chamber draining to right atrium and others connecting anomalously
+449596004,Divided left atrium with some pulmonary veins to proximal chamber draining to right atrium and others connecting directly to left atrium
+449599006,Malattachment of atrial septum with posterior aspect of septum primum to left
+449600009,Malattachment of atrial septum with superior aspect of septum primum to left and posterior
+450300002,Anomalous origin of right coronary artery from pulmonary artery
+450301003,Anomalous origin of left coronary artery from pulmonary artery
+450302005,Anomalous origin of left anterior descending coronary artery from pulmonary artery
+450312003,Coarctation of aorta between subclavian artery and common carotid artery
+450313008,Coarctation of aorta between left common carotid artery and right common carotid artery
+45145000,Unilateral emphysema
+45237002,Congenital dilatation of aorta
+45390000,Severe combined immunodeficiency due to absent interleukin-2 production
+45492009,Congenital stenosis of superior vena cava
+458039003,Anomalous origin of left circumflex coronary artery from pulmonary artery
+459062008,Fatal congenital nonlysosomal heart glycogenosis
+459065005,Congenital atresia of left main stem coronary artery
+459066006,Anomalous origin of accessory coronary artery from pulmonary artery
+460437005,Anomalous origin of dual left anterior descending coronary arteries from right coronary artery and left coronary artery
+460438000,Anomalous origin of large conus artery from right coronary artery
+460471001,Anomalous origin of conus artery from separate aortic sinus orifice
+460510005,Anomalous origin of coronary arteries from anterior aortic sinus
+460517008,Anomalous origin of coronary arteries from both aortic sinuses of bicuspid valve
+460524009,Anomalous origin of right coronary artery from left anterior descending coronary artery
+460531008,Anomalous origin of right coronary artery from left circumflex coronary artery
+460538002,Anomalous origin of left coronary artery from right coronary artery
+460545002,Congenital atresia of right coronary artery orifice
+460581004,Anomalous origin of accessory coronary artery from aortic sinus
+460582006,Anomalous origin of left coronary artery and right coronary artery from pulmonary artery
+460583001,Anomalous origin of sinus node coronary artery from separate aortic sinus orifice
+460584007,Anomalous course of coronary artery posterior to pulmonary trunk
+460585008,Anomalous course of coronary artery posterior to aorta
+460586009,Anomalous origin of right coronary artery from left coronary artery
+460587000,Anomalous origin of single coronary artery from left coronary artery aortic sinus
+460588005,Anomalous origin of left circumflex coronary artery from right coronary aortic sinus
+460923005,Anomalous origin of right coronary artery from left coronary artery aortic sinus
+460930004,Anomalous origin of left coronary artery from right coronary aortic sinus
+460937001,Anomalous origin of single coronary artery from right coronary artery aortic sinus
+460944005,Anomalous origin of right coronary artery from left coronary artery aortic sinus and anomalous origin of left coronary artery from right coronary artery aortic sinus
+461105005,Anomalous origin of coronary artery from aorta
+461107002,Single coronary artery dividing into right coronary artery and left coronary artery
+461109004,Anomalous course of coronary artery anterior to pulmonary trunk and aorta
+461110009,Anomalous course of coronary artery posterior to pulmonary trunk and aorta
+461111008,Anomalous course of coronary artery anterior to aorta
+461112001,Anomalous course of coronary artery anterior to pulmonary trunk
+461331004,Malposition of coronary artery orifice
+461345005,Coronary artery orifice abnormally low
+461381008,Anomalous intramural course of proximal portion of coronary artery within aortic sinus
+461382001,Anomalous intramural course of proximal portion of coronary artery across commissure of aortic valve
+461383006,Anomalous intramural course of proximal portion of coronary artery above aortic sinus
+461384000,Anomalous course of coronary artery across right ventricular outflow tract
+461385004,Anomalous course of coronary artery through infundibular septum
+461420008,Anomalous coronary artery with acute angulation of less than 45 degrees relative to aorta
+461421007,Anomalous coronary artery without acute angulation of less than 45 degrees relative to aorta
+461435009,Anomalous origin of left anterior descending coronary artery from right coronary artery aortic sinus
+461436005,Anomalous origin of dual left anterior descending coronary arteries
+461438006,Double barrel dual coronary artery orifices within aortic sinus
+461439003,Widely spaced right coronary artery and left coronary artery orifices within single aortic sinus
+46280001,Autologous bone marrow transplant with purging
+47024008,Sickle cell-hemoglobin E disease
+470752003,Progression of fetal right ventricular outflow tract obstruction
+470753008,Progression of fetal left ventricular outflow tract obstruction
+471276003,Single left coronary artery supplying all of heart with usual distribution of right coronary artery derived from distal left coronary artery
+471277007,Single right coronary artery supplying all of heart with usual distribution of left coronary artery derived from distal right coronary artery
+471279005,Recurrent atrial component of atrioventricular septal defect after prior cardiovascular surgical procedure
+471280008,Recurrent ventricular component of atrioventricular septal defect after prior cardiovascular surgical procedure
+471285003,Anomalous origin of coronary artery from aortic sinus to left of nonfacing aortic sinus
+471286002,Anomalous origin of coronary artery from aortic sinus to right of nonfacing aortic sinus
+471287006,Anomalous origin of left coronary artery and right coronary artery with dual orifices from aortic sinus to left of nonfacing aortic sinus
+471288001,Anomalous origin of left coronary artery and right coronary artery with dual orifices from aortic sinus to right of nonfacing aortic sinus
+471289009,Anomalous origin of circumflex artery from aortic sinus to right of nonfacing aortic sinus and anomalous origin of left anterior descending coronary artery and right coronary artery from aortic sinus to left of nonfacing aortic sinus
+471290000,Anomalous origin of left anterior descending artery from aortic sinus to right of nonfacing aortic sinus and anomalous origin of circumflex artery and right coronary artery from aortic sinus to left of nonfacing aortic sinus
+471291001,Anomalous origin of right coronary artery from aortic sinus to right of nonfacing aortic sinus and anomalous origin of left coronary artery from aortic sinus to left of nonfacing aortic sinus
+471292008,Anomalous origin of right coronary artery and circumflex artery from aortic sinus to right of nonfacing aortic sinus and anomalous origin of left anterior descending artery from aortic sinus to left on nonfacing aortic sinus
+471293003,Anomalous origin of left anterior descending artery and right coronary artery from aortic sinus to right of nonfacing aortic sinus and anomalous origin of circumflex artery from aortic sinus to left of nonfacing aortic sinus
+471297002,Anomalous origin of single coronary artery from nonfacing aortic sinus
+471298007,Anomalous origin of single coronary artery from aortic sinus to left of nonfacing aortic sinus
+471299004,Anomalous origin of single coronary artery from aortic sinus to right of nonfacing aortic sinus
+472703008,Pseudoacardia
+472785004,Right ventricular outflow tract obstruction due to neoplasm
+472786003,Right ventricular outflow tract obstruction due to foreign body
+472787007,Left ventricular outflow tract obstruction due to neoplasm
+472796007,Congenital subaortic stenosis due to restrictive ventricular septal defect associated with functionally univentricular heart
+472801002,Congenital subpulmonary stenosis due to restrictive ventricular defect associated with functionally univentricular heart
+472803004,Acquired abnormality of atrioventricular (not morphologically mitral or tricuspid) valve associated with atrioventricular septal defect
+472807003,Ventricular septal defect due to and following infective endocarditis
+472820000,Abnormal ventriculoarterial connection with usual origin of left coronary artery from aortic sinus to right of nonfacing aortic sinus and usual origin of right coronary artery from aortic sinus to left of nonfacing aortic sinus
+472852000,Regurgitation of fetal common atrioventricular valve
+473393007,Congenital occlusion of coronary sinus
+473443007,Anomalous origin of right coronary artery
+473444001,Anomalous origin of left coronary artery
+47515009,Simple silicosis
+47895001,Congenital emphysema
+47938003,Chronic obliterative bronchiolitis
+48119005,Dysplasia of thymus gland with immunodeficiency
+48121000,Congenital cardiomegaly
+48520006,Congenital atresia of cardiac vein
+49555001,Severe combined immunodeficiency due to absent T cell receptor
+49691004,Occupational bronchitis
+4981000,Panacinar emphysema
+49840000,Complicated silicosis
+50589003,Silver polishers' lung disease
+51277007,Stannosis
+51442005,Congenital atresia of aortic valve
+51615001,Fibrosis of lung
+51789008,Congenital malposition of cardiac apex
+5230009,Congenital absence of coronary artery
+52571006,Chronic tracheobronchitis
+526071000000104,Arthropathy in cystic fibrosis
+526091000000100,Cystic fibrosis with distal intestinal obstruction syndrome
+54073003,Monocuspid cardiac valve
+54160000,Congenital aneurysm of sinus of Valsalva
+54682008,Congenital hypoplasia of pulmonary artery
+55510008,Cor triatriatum
+55546004,Anomalous origin of left circumflex artery from right coronary artery
+56309007,Congenital subaortic stenosis of tunnel type
+56968009,Asthma caused by wood dust
+57488007,Chronic pulmonary fibrosis due to inhalation of chemical fumes AND/OR vapors
+57607007,Occupational asthma
+57686001,Emphysematous bleb of lung
+58390007,Allogeneic bone marrow transplantation
+58691003,Antimony pneumoconiosis
+58776007,Autologous bone marrow transplant
+58961005,Lethal midline granuloma
+59494005,Congenital septal defect of heart
+59554006,Holoacardius acormus
+59631007,Anomalous pulmonary venous drainage
+59786004,Weavers' cough
+59877000,Congenital anomaly of aorta
+60232001,Cleft leaflet of tricuspid valve
+60732002,"Atrial septal defect with endocardial cushion defect, partial type"
+60787001,Congenital hypoplasia of aortic arch
+60805002,Hemolytic anemia with emphysema AND cutis laxa
+61251000119108,Long-term current use of tacrolimus
+61261000119105,Long-term current use of sirolimus
+61301000119102,Disorder of central nervous system co-occurrent and due to acute lymphoid leukemia
+61937009,Simple chronic bronchitis
+62067003,Hypoplastic left heart syndrome
+62335009,Congenital stenosis of inferior vena cava
+62371005,Pulmonary siderosis
+62479008,Acquired immune deficiency syndrome
+63042009,Congenital atresia of tricuspid valve
+63088003,Allergic asthma without status asthmaticus
+63480004,Chronic bronchitis
+63934006,Overriding aorta
+641000119106,Intermittent asthma well controlled
+64631008,Fullers' earth disease
+6471000179103,Transplantation of kidney and pancreas
+64862009,Congenital rhabdomyoma of heart
+65880007,X-linked agammaglobulinemia
+66110007,Chronic diffuse emphysema caused by inhalation of chemical fumes AND/OR vapors
+66403007,Vascular ring of aorta
+66987001,Congenital lobar emphysema
+67278007,Congenital stenosis of pulmonary valve
+67569000,Bronchopulmonary dysplasia of newborn
+67682002,Coronary artery atheroma
+68092007,Anomalous origin of pulmonary artery
+68237008,Partial anomalous pulmonary venous connection
+68328006,Centriacinar emphysema
+697923008,Pulmonary hypertension in lymphangioleiomyomatosis
+698296002,Acute exacerbation of chronic congestive heart failure
+698303004,Awaiting transplantation of bone marrow
+69921001,Broncholithiasis
+699297004,Blepharophimosis-intellectual disability syndrome Maat-Kievit-Brunner type
+699298009,"Blepharophimosis-mental retardation syndrome, Say-Barber-Biesecker-Young-Simpson type"
+6996004,Congenital absence of pulmonary valve
+699657009,Hepatosplenic gamma-delta cell lymphoma
+699818003,T-cell large granular lymphocytic leukemia
+700250006,Idiopathic pulmonary fibrosis
+700251005,Chronic idiopathic pulmonary fibrosis
+70142008,Atrial septal defect
+70195006,Congenital anomaly of superior vena cava
+702446006,Core binding factor acute myeloid leukemia
+702785000,Large cell anaplastic lymphoma T cell and Null cell type
+702786004,Follicular non-Hodgkin's lymphoma diffuse follicle center sub-type grade 1
+702977001,Follicular non-Hodgkin's lymphoma diffuse follicle center cell sub-type grade 2
+70320004,Congenital anomaly of heart valve
+703387000,Acute myeloid leukemia with normal karyotype
+703626001,"Anaplastic large cell lymphoma, T/Null cell, primary systemic type"
+703953004,Allergic asthma caused by Dermatophagoides pteronyssinus
+703954005,Allergic asthma caused by Dermatophagoides farinae
+704345008,Chronic interstitial pneumonia
+70536003,Transplant of kidney
+70602002,Pseudocoarctation of aorta
+707311008,Immunosuppressant drug therapy
+707433009,Lymphangioleiomyomatosis due to tuberous sclerosis syndrome
+707444001,Uncomplicated asthma
+707447008,Exacerbation of severe persistent asthma
+707513007,Uncomplicated severe persistent asthma
+707979007,Acute severe exacerbation of severe persistent asthma
+707980005,Acute severe exacerbation of moderate persistent asthma
+707981009,Acute severe exacerbation of mild persistent asthma
+708030004,Pulmonary emphysema co-occurrent with fibrosis of lung
+708038006,Acute exacerbation of asthma
+708090002,Acute severe exacerbation of asthma
+708093000,Acute exacerbation of immunoglobulin E-mediated allergic asthma
+708094006,Acute exacerbation of intrinsic asthma
+708095007,Acute severe exacerbation of immunoglobin E-mediated allergic asthma
+708096008,Acute severe exacerbation of intrinsic asthma
+709465004,Periodontitis co-occurrent with Chédiak-Higashi syndrome
+709471005,Periodontitis co-occurrent with leukemia
+709535007,Periodontitis co-occurrent with infantile genetic agranulocytosis
+710159007,Long-term current use of immunosuppressive drug
+711379004,Interstitial lung disease due to connective tissue disease
+711411006,Allotransplantation of kidney from beating heart cadaver
+711413009,Allotransplantation of kidney from non-beating heart cadaver
+71193007,Fibrosis of lung caused by radiation
+713483007,Reticulosarcoma co-occurrent with human immunodeficiency virus infection
+713516007,Primary effusion lymphoma
+713718006,Diffuse non-Hodgkin immunoblastic lymphoma co-occurrent with human immunodeficiency virus infection
+713897006,Burkitt lymphoma co-occurrent with human immunodeficiency virus infection
+713964006,Multidermatomal infection caused by Herpes zoster co-occurrent with human immunodeficiency virus infection
+714251006,Philadelphia chromosome-negative precursor B-cell acute lymphoblastic leukemia
+714463003,Primary effusion lymphoma co-occurrent with infection caused by Human herpesvirus 8
+715865008,Familial isolated arrhythmogenic right ventricular dysplasia
+715950008,Anaplastic lymphoma kinase positive large B-cell lymphoma
+715982006,Severe combined immunodeficiency due to deoxyribonucleic acid cross-link repair protein 1c deficiency
+715987000,Congenital heart defect with round face and developmental delay syndrome
+716088000,Follicular hamartoma with alopecia and cystic fibrosis syndrome
+716193004,Short stature with valvular heart disease and characteristic facies syndrome
+716740009,Potter sequence cleft lip and palate cardiopathy syndrome
+716773002,Familial idiopathic dilatation of right atrium
+716788007,Epstein-Barr virus positive diffuse large B-cell lymphoma of elderly
+716872004,Antineoplastic chemotherapy regimen
+7169009,Congenital supravalvular aortic stenosis
+717859007,"Hydrocephalus, cardiac malformation, dense bone syndrome"
+717943008,"Brain malformation, congenital heart disease, postaxial polydactyly syndrome"
+718128009,Congenital dysplasia of cardiac valve
+718135001,Isolated right ventricular hypoplasia
+718181001,Congenital cardiac diverticulum
+718200007,Primary pulmonary lymphoma
+718216009,Partial defect of atrioventricular canal
+718556007,Cranio-cerebello-cardiac dysplasia syndrome
+718882006,X-linked severe congenital neutropenia
+71904008,Severe combined immunodeficiency due to absent class II human leukocyte antigens
+719156006,X-linked intellectual disability with hypogammaglobulinemia and progressive neurological deterioration syndrome
+719379001,Microcephalus with cardiac defect and lung malsegmentation syndrome
+719395001,Microcephalus facio-cardio-skeletal syndrome Hadziselimovic type
+719400000,Lethal faciocardiomelic dysplasia
+719814009,X-linked mendelian susceptibility to mycobacterial disease
+719827008,X-linked immunoneurologic disorder
+720520009,Attenuated Chédiak-Higashi syndrome
+720567008,Bosley Salih Alorainy syndrome
+720606005,Cardiocranial syndrome Pfeiffer type
+720639008,"Coloboma, congenital heart disease, ichthyosiform dermatosis, intellectual disability ear anomaly syndrome"
+720748007,Aural atresia with multiple congenital anomalies and intellectual disability syndrome
+720858001,Ehlers-Danlos syndrome cardiac valvular type
+721009008,Heart defect and limb shortening syndrome
+721010003,Heart-hand syndrome type 2
+721013001,Heart-hand syndrome type 3
+721073008,Short stature with webbed neck and congenital heart disease syndrome
+721305008,Acute myeloid leukemia due to recurrent genetic abnormality
+721306009,Therapy related acute myeloid leukemia and myelodysplastic syndrome
+721308005,Acute leukemia of ambiguous lineage
+721310007,Aggressive natural killer-cell leukemia
+721555001,Follicular lymphoma of small intestine
+721762007,Adult T-cell leukemia/lymphoma of skin
+721976003,Lung agenesis with heart defect and thumb anomaly syndrome
+721978002,"Lymphedema, atrial septal defect, facial changes syndrome"
+722027009,Kallman syndrome with heart disease
+722067005,Severe combined immunodeficiency with hypereosinophilia
+722206009,"Pancreatic hypoplasia, diabetes mellitus, congenital heart disease syndrome"
+72242008,Postductal coarctation of aorta
+722461004,Meacham syndrome
+72252007,Congenital hypoplasia of cardiac vein
+72270005,Collagenous pneumoconiosis
+722795004,Meningeal leukemia
+722953004,B-cell lymphoma unclassifiable with features intermediate between Burkitt lymphoma and diffuse large B-cell lymphoma
+722954005,B-cell lymphoma unclassifiable with features intermediate between classical Hodgkin lymphoma and diffuse large B-cell lymphoma
+72301000119103,Asthma in pregnancy
+723304001,"Microcephaly, seizure, intellectual disability, heart disease syndrome"
+723333000,Faciocardiorenal syndrome
+723336008,Fallot complex with intellectual disability and growth delay syndrome
+723448007,Polyvalvular heart disease syndrome
+72352009,Bicuspid aortic valve
+723867002,Coarctation of aortic arch
+723889003,B lymphoblastic leukemia lymphoma with t(9:22) (q34;q11.2); BCR-ABL 1
+724066002,Polysyndactyly and cardiac malformation syndrome
+724641002,Primary hemophagocytic lymphohistiocytosis
+724644005,Myeloid leukemia co-occurrent with Down syndrome
+724645006,T-cell histiocyte rich large B-cell lymphoma
+724647003,Diffuse large B-cell lymphoma co-occurrent with chronic inflammation caused by Epstein-Barr virus
+724648008,Plasmablastic lymphoma
+725135004,Combined immunodeficiency due to CD3gamma deficiency
+725145002,"Atrial septal defect, atrioventricular conduction defect syndrome"
+725390002,Acute myeloid leukemia with t(8;16)(p11;p13) translocation
+725437002,Chronic lymphocytic leukemia genetic mutation variant
+726083008,Congenital sacral meningocele with conotruncal heart defect syndrome
+726571000000105,Absent right sided atrioventricular connection with straddling valve
+726581000000107,Absent left sided atrioventricular connection with straddling valve
+726704006,"Cataract, congenital heart disease, neural tube defect syndrome"
+726721002,Nodal marginal zone B-cell lymphoma
+727071000000103,Malaligned atrial septum with flap valve to muscular rim of oval fossa
+728371000000102,Divided left atrium with all pulmonary veins to proximal chamber draining to left atrium
+728381000000100,Divided left atrium with all pulmonary veins to proximal chamber draining to left atrium with pulmonary venous chamber communication
+728391000000103,Divided left atrium with all pulmonary veins to proximal chamber draining to left atrium with pulmonary venous chamber communication to right atrium
+728401000000100,Divided left atrium with all pulmonary veins to proximal chamber draining to left atrium with pulmonary venous chamber extracardiac communication
+728461000000101,Non-fenestrated atrial septal defect within oval fossa
+728471000000108,Fenestrated atrial septal defect within oval fossa
+728481000000105,Non-restrictive interatrial communication septal defect
+728491000000107,Restrictive interatrial communication septal defect
+7305005,Coarctation of aorta
+73144008,Pneumoconiosis caused by talc
+733598001,Acute myeloid leukemia with t(6;9)(p23;q34) translocation
+733627006,Primary cutaneous gamma-delta-positive T-cell lymphoma
+733834006,Invasive carcinoma of uterine cervix co-occurrent with human immunodeficiency virus infection
+733858005,Acute severe refractory exacerbation of asthma
+734066005,Diffuse large B-cell lymphoma of central nervous system
+7343008,Liparitosis
+734522002,Acute myeloid leukemia with FMS-like tyrosine kinase-3 mutation
+734904007,Life threatening acute exacerbation of asthma
+735332000,Primary cutaneous diffuse large cell B-cell lymphoma of lower extremity
+735569003,Acquired abnormality of atrium
+735571003,Acquired ventricular septal defect
+735587000,Acute severe exacerbation of asthma co-occurrent and due to allergic asthma
+735588005,Uncomplicated allergic asthma
+735589002,Uncomplicated non-allergic asthma
+736024007,Pancytopenia caused by medication
+736322001,Pediatric follicular lymphoma
+73660006,Congenital subaortic stenosis
+7368005,Double outlet left ventricle
+736962007,Bypass of four or more coronary arteries with prosthesis
+736963002,Bypass of one coronary artery with prosthesis
+736964008,Bypass of three coronary arteries with prosthesis
+736965009,Bypass of two coronary arteries with prosthesis
+737155005,Congenital anomaly of atrioventricular valve
+737156006,Congenital anomaly of atrioventricular septum
+737297006,Transplanted liver present
+738770003,Anaplastic lymphoma kinase positive anaplastic large cell lymphoma
+739024006,Transplanted heart present
+739301006,Osteoporosis co-occurrent and due to multiple myeloma
+74034002,Isolated dextrocardia
+7438000,Congenital atresia of aorta
+74417001,Mucopurulent chronic bronchitis
+7447008,Immunosuppressive therapy for transplant
+74561007,Kommerell's diverticulum
+7484005,Double outlet right ventricle
+75270000,Congenital diverticulum of left ventricle
+75372006,Congenital anomaly of mitral valve
+75398000,Anomalous origin of coronary artery
+759461000000109,Congenital abnormality of leaflet of mitral valve
+759521000000100,Congenital abnormality of mitral papillary muscle
+759551000000105,Atrioventricular septal defect with balanced ventricles
+759561000000108,Atrioventricular septal defect with ventricular imbalance
+759731000000107,Anomalous anterolateral muscle bands of left ventricle
+759741000000103,Anomalous false tendon of muscle bands of left ventricle
+759751000000100,Anomalous posteromedial muscle bands of left ventricle
+759761000000102,Left ventricular outflow tract obstruction due to septal hypertrophy
+759771000000109,Subaortic left ventricular outflow tract obstruction
+759781000000106,Subpulmonary left ventricular outflow tract obstruction
+759851000000108,Subpulmonary right ventricular outflow tract obstruction
+759861000000106,Subaortic right ventricular outflow tract obstruction
+759871000000104,Two chambered right ventricle with ventricular septal defect above obstruction
+759881000000102,Two chambered right ventricle with ventricular septal defect below obstruction
+759891000000100,Two chambered right ventricle with ventricular septal defect above and below obstruction
+759931000000105,Congenital abnormality of left atrioventricular valve papillary muscle
+759941000000101,Congenital subvalvar mitral stenosis
+762251008,Double outlet right ventricle with subaortic or doubly committed ventricular septal defect without pulmonary stenosis - ventricular septal defect type
+762252001,Common arterial trunk with aortic dominance
+762253006,Common arterial trunk with pulmonary dominance co-occurrent with interrupted aortic arch
+762254000,Congenital dysplasia of tricuspid valve
+762315004,Therapy related acute myeloid leukemia due to and following administration of antineoplastic agent
+762316003,Polymorphic lymphoproliferative disorder following transplant
+762433009,Tetralogy of Fallot with pulmonary atresia co-occurrent with systemic-to-pulmonary collateral artery
+762460002,Hemodynamically insignificant ventricular septal defect
+762521001,Exacerbation of allergic asthma
+76257003,Bicuspid cardiac valve
+762690000,Classical Hodgkin lymphoma
+763066009,"Atrioventricular septal defect, blepharophimosis, radial and anal defect syndrome"
+763309005,Acute myeloid leukemia with nucleophosmin 1 somatic mutation
+763316006,Congenital patent ductus arteriosus aneurysm
+763477007,Primary lymphoma of conjunctiva
+763615003,"Aortic arch anomaly, facial dysmorphism, intellectual disability syndrome"
+763623001,Severe combined immunodeficiency due to cytidine 5-prime triphosphate synthetase 1 deficiency
+763666008,Splenic marginal zone B-cell lymphoma
+763719001,Hydroa vacciniforme-like lymphoma
+763747002,Congenital aneurysm of membranous portion of interventricular septum
+763796007,Megakaryoblastic acute myeloid leukemia with t(1;22)(p13;q13)
+763884007,Splenic diffuse red pulp small B-cell lymphoma
+764521002,Encircling double aortic arch
+764855007,Acute myeloid leukemia with CCAAT/enhancer binding protein alpha somatic mutation
+764940002,Inherited acute myeloid leukemia
+764955006,Laubry Pezzi syndrome
+765136002,Primary cutaneous CD8 positive aggressive epidermotropic cytotoxic T-cell lymphoma
+765145001,T cell negative B cell positive severe combined immunodeficiency due to gamma chain deficiency
+765188009,Severe combined immunodeficiency due to complete recombination-activating gene 1 and/or recombination-activating gene 2 deficiency
+765328000,Classic mycosis fungoides
+766045006,Acute myeloid leukemia and myelodysplastic syndrome related to alkylating agent
+766046007,Acute myeloid leukemia and myelodysplastic syndrome related to topoisomerase type 2 inhibitor
+766048008,Acute myeloid leukemia and myelodysplastic syndrome related to radiation
+766751007,Neuhauser anomaly
+766752000,Neurolymphomatosis
+766935007,Primary bone lymphoma
+766976003,"Pulmonary valve agenesis, tetralogy of Fallot, absence of ductus arteriosus syndrome"
+767309006,Double aortic arch with dominant left arch and hypoplasia of right arch
+767311002,Double aortic arch with dominant right arch and hypoplasia of left arch
+767658000,Neutropenia due to and following chemotherapy
+768552007,Congenital ventricular septal defect
+77121009,X-linked lymphoproliferative syndrome
+77386006,Pregnant
+77593006,Congenital bronchiectasis
+77690003,Interstitial emphysema of lung
+77696009,Double aortic valve
+776981000000103,Cirrhosis associated with cystic fibrosis
+78196008,Double mitral valve
+78250005,Ectopia cordis
+78320000,Quadricuspid cardiac valve
+78485007,Acyanotic congenital heart disease
+78495000,Cleft leaflet of mitral valve
+78643003,Postcardiotomy syndrome
+78723001,Cannabinosis
+79439001,Congenital anomaly of aortic arch
+7991000119102,Congenital dilatation of aortic root
+80387009,Roger's disease
+805002,Pneumoconiosis caused by silica
+81423003,Cystic fibrosis without meconium ileus
+815011000000107,Anaplastic lymphoma kinase positive anaplastic large cell lymphoma
+815361000000107,Acute myeloid leukaemia with 11q23 abnormality
+81577001,Congenital anomaly of inferior vena cava
+81990004,Cor biloculare
+8239009,Primary endocardial fibroelastosis
+82458004,Congenital stenosis of mitral valve
+8247009,Berylliosis
+83119008,Congenital insufficiency of tricuspid valve
+83130006,Eisenmenger's defect
+83270006,Neoplastic pleural effusion
+83799000,Corrected transposition of great vessels
+84409004,Fetid chronic bronchitis
+84648007,Acardius
+847091000000104,Acute non-infective exacerbation of chronic obstructive pulmonary disease
+847481000000109,Follicular lymphoma grade 1
+847631000000107,Follicular lymphoma grade 2
+847651000000100,Follicular lymphoma grade 3
+847691000000108,Follicular lymphoma grade 3a
+847701000000108,Follicular lymphoma grade 3b
+847741000000106,Diffuse large B-cell lymphoma
+85438006,Diatomaceous earth disease
+8549006,Desquamative interstitial pneumonia
+85761009,Byssinosis
+859041000000103,Exacerbation of cystic fibrosis
+86092005,Cystic fibrosis with meconium ileus
+86252004,Agenesis of pulmonary artery
+86263001,Cobaltosis
+86299006,Tetralogy of Fallot
+863741000000108,Clinical stage A chronic lymphocytic leukaemia
+863761000000109,Clinical stage B chronic lymphocytic leukaemia
+863781000000100,Clinical stage C chronic lymphocytic leukaemia
+86553008,Immunosuppressive therapy
+86555001,Cystic fibrosis of the lung
+86680006,Ruptured emphysematous bleb of lung
+866881000000101,Chronic asthma with fixed airflow obstruction
+8712002,Congenital subaortic stenosis due to fibromuscular shelf
+87153008,Pulmonary alveolar microlithiasis
+87433001,Pulmonary emphysema
+87909002,Hard metal pneumoconiosis
+88445007,Anomalous muscle bands of right ventricle
+89099002,Chronic allergic bronchitis
+89549007,Catarrhal bronchitis
+90383006,Congenital absence of aorta
+90623003,Aluminosis of lung
+91634006,Fused commissures of mitral valve
+91855006,"Acute leukemia, disease"
+91857003,"Acute lymphoid leukemia, disease"
+91861009,"Acute myeloid leukemia, disease"
+91948008,Asymptomatic human immunodeficiency virus infection in pregnancy
+92508006,Burkitt's tumor of intra-abdominal lymph nodes
+92509003,Burkitt's tumor of intrapelvic lymph nodes
+92510008,Burkitt's tumor of intrathoracic lymph nodes
+92511007,Burkitt's tumor of lymph nodes of axilla AND/OR upper limb
+92512000,"Burkitt's tumor of lymph nodes of head, face AND/OR neck"
+92513005,Burkitt's tumor of lymph nodes of inguinal region AND/OR lower limb
+92514004,Burkitt's tumor of lymph nodes of multiple sites
+92515003,Burkitt's tumor of spleen
+92516002,Burkitt's tumor of extranodal AND/OR solid organ site
+92754004,Carcinoma in situ of spleen
+92807009,Chemical-induced asthma
+92812005,"Chronic leukemia, disease"
+92814006,"Chronic lymphoid leukemia, disease"
+92818009,"Chronic myeloid leukemia, disease"
+92830003,Combined valvular-subvalvular pulmonic stenosis
+92888002,Congenital abnormal shape of aortic valve
+92923008,Congenital abnormal shape of mitral valve
+92941000,Congenital abnormal shape of pulmonary valve
+92944008,Congenital abnormal shape of tricuspid valve
+92960007,Congenital absence of aortic valve
+92963009,Congenital absence of chordae tendineae
+92969008,Congenital absence of mitral valve
+92974000,Congenital absence of papillary muscle
+92976003,Congenital absence of tricuspid valve
+93031005,Congenital atresia of inferior vena cava
+93051009,Congenital dilatation of atrium
+93053007,Congenital dilatation of cardiac ventricle
+93059006,Congenital dilatation of pulmonary artery
+93069000,Congenital hypertrophy of aortic valve
+93075009,Congenital hypertrophy of pulmonary valve
+93076005,Congenital hypertrophy of tricuspid valve
+93078006,Congenital hypertrophy of cardiac ventricle
+93143009,"Leukemia, disease"
+93144003,Leukemic reticuloendotheliosis of intra-abdominal lymph nodes
+93145002,Leukemic reticuloendotheliosis of intrapelvic lymph nodes
+93146001,Leukemic reticuloendotheliosis of intrathoracic lymph nodes
+93147005,Leukemic reticuloendotheliosis of lymph nodes of axilla AND/OR upper limb
+93148000,"Leukemic reticuloendotheliosis of lymph nodes of head, face AND/OR neck"
+93149008,Leukemic reticuloendotheliosis of lymph nodes of inguinal region AND/OR lower limb
+93150008,Leukemic reticuloendotheliosis of lymph nodes of multiple sites
+93151007,Hairy cell leukemia of spleen
+93152000,Leukemic reticuloendotheliosis of extranodal AND/OR solid organ site
+93189002,Malignant histiocytosis of spleen
+93191005,Malignant lymphoma of intra-abdominal lymph nodes
+93192003,Malignant lymphoma of intrapelvic lymph nodes
+93193008,Malignant lymphoma of intrathoracic lymph nodes
+93194002,Malignant lymphoma of lymph nodes of axilla AND/OR upper limb
+93195001,"Malignant lymphoma of lymph nodes of head, face AND/OR neck"
+93196000,Malignant lymphoma of lymph nodes of inguinal region AND/OR lower limb
+93197009,Malignant lymphoma of lymph nodes of multiple sites
+93198004,Malignant lymphoma of spleen
+93199007,Malignant lymphoma of extranodal AND/OR solid organ site
+93234006,Congenital hypertrophy of mitral valve
+93237004,Congenital hypoplasia of aortic valve
+93247001,Congenital hypoplasia of cardiac ventricle
+93262004,Congenital hypoplasia of heart
+93271008,Congenital hypoplasia of mitral valve
+93287006,Congenital hypoplasia of pulmonary valve
+93353003,Congenital malposition of subclavian artery
+93384001,Congenital stenosis of aortic arch
+93432008,Drug-induced asthma
+93451002,"Erythroleukemia, FAB M6"
+93487009,"Hodgkin's disease, lymphocytic depletion of lymph nodes of axilla AND/OR upper limb"
+93488004,"Hodgkin's disease, lymphocytic depletion of lymph nodes of head, face AND/OR neck"
+93489007,"Hodgkin's disease, lymphocytic depletion of lymph nodes of inguinal region AND/OR lower limb"
+93492006,"Hodgkin's disease, lymphocytic depletion of extranodal AND/OR solid organ site"
+93493001,"Hodgkin's disease, lymphocytic-histiocytic predominance of intra-abdominal lymph nodes"
+93494007,"Hodgkin's disease, lymphocytic-histiocytic predominance of intrapelvic lymph nodes"
+93495008,"Hodgkin's disease, lymphocytic-histiocytic predominance of intrathoracic lymph nodes"
+93496009,"Hodgkin's disease, lymphocytic-histiocytic predominance of lymph nodes of axilla AND/OR upper limb"
+93497000,"Hodgkin's disease, lymphocytic-histiocytic predominance of lymph nodes of head, face AND/OR neck"
+93498005,"Hodgkin's disease, lymphocytic-histiocytic predominance of lymph nodes of inguinal region AND/OR lower limb"
+93500006,"Hodgkin's disease, lymphocytic-histiocytic predominance of spleen"
+93501005,"Hodgkin's disease, lymphocytic-histiocytic predominance of extranodal AND/OR solid organ site"
+93505001,"Hodgkin's disease, mixed cellularity of lymph nodes of axilla AND/OR upper limb"
+93506000,"Hodgkin's disease, mixed cellularity of lymph nodes of head, face AND/OR neck"
+93507009,"Hodgkin's disease, mixed cellularity of lymph nodes of inguinal region AND/OR lower limb"
+93509007,"Hodgkin's disease, mixed cellularity of spleen"
+93510002,"Hodgkin's disease, mixed cellularity of extranodal AND/OR solid organ site"
+93514006,"Hodgkin's disease, nodular sclerosis of lymph nodes of axilla AND/OR upper limb"
+93515007,"Hodgkin's disease, nodular sclerosis of lymph nodes of head, face AND/OR neck"
+93516008,"Hodgkin's disease, nodular sclerosis of lymph nodes of inguinal region AND/OR lower limb"
+93518009,"Hodgkin's disease, nodular sclerosis of spleen"
+93519001,"Hodgkin's disease, nodular sclerosis of extranodal AND/OR solid organ site"
+93520007,Hodgkin's disease of intra-abdominal lymph nodes
+93521006,Hodgkin's disease of intrapelvic lymph nodes
+93522004,Hodgkin's disease of intrathoracic lymph nodes
+93523009,Hodgkin's disease of lymph nodes of axilla AND/OR upper limb
+93524003,"Hodgkin's disease of lymph nodes of head, face AND/OR neck"
+93525002,Hodgkin's disease of lymph nodes of inguinal region AND/OR lower limb
+93526001,Hodgkin's disease of lymph nodes of multiple sites
+93527005,Hodgkin's disease of spleen
+93528000,Hodgkin's disease of extranodal AND/OR solid organ site
+93530003,Hodgkin's granuloma of intrapelvic lymph nodes
+93531004,Hodgkin's granuloma of intrathoracic lymph nodes
+93532006,Hodgkin's granuloma of lymph nodes of axilla AND/OR upper limb
+93533001,"Hodgkin's granuloma of lymph nodes of head, face AND/OR neck"
+93534007,Hodgkin's granuloma of lymph nodes of inguinal region AND/OR lower limb
+93536009,Hodgkin's granuloma of spleen
+93537000,Hodgkin's granuloma of extranodal AND/OR solid organ site
+93541001,Hodgkin's paragranuloma of lymph nodes of axilla AND/OR upper limb
+93542008,"Hodgkin's paragranuloma of lymph nodes of head, face AND/OR neck"
+93543003,Hodgkin's paragranuloma of lymph nodes of inguinal region AND/OR lower limb
+93545005,Hodgkin's paragranuloma of spleen
+93546006,Hodgkin's paragranuloma of extranodal AND/OR solid organ site
+93547002,Hodgkin's sarcoma of intra-abdominal lymph nodes
+93548007,Hodgkin's sarcoma of intrapelvic lymph nodes
+93549004,Hodgkin's sarcoma of intrathoracic lymph nodes
+93550004,Hodgkin's sarcoma of lymph nodes of axilla AND/OR upper limb
+93551000,"Hodgkin's sarcoma of lymph nodes of head, face AND/OR neck"
+93552007,Hodgkin's sarcoma of lymph nodes of inguinal region AND/OR lower limb
+93554008,Hodgkin's sarcoma of spleen
+93555009,Hodgkin's sarcoma of extranodal AND/OR solid organ site
+94071006,Primary malignant neoplasm of spleen
+94150003,Membranous ventricular septum defect
+94603006,Secondary malignant neoplasm of spleen
+94686001,Mixed cell type lymphosarcoma of intra-abdominal lymph nodes
+94687005,Mixed cell type lymphosarcoma of intrapelvic lymph nodes
+94688000,Mixed cell type lymphosarcoma of intrathoracic lymph nodes
+94690004,"Mixed cell type lymphosarcoma of lymph nodes of head, face, and neck"
+94702005,Multiple congenital cardiac defects
+94703000,Multiple intracardiac shunts
+94706008,Muscular ventricular septum defect
+94707004,Mycosis fungoides of intra-abdominal lymph nodes
+94708009,Mycosis fungoides of intrapelvic lymph nodes
+94709001,Mycosis fungoides of intrathoracic lymph nodes
+94710006,Mycosis fungoides of lymph nodes of axilla AND/OR upper limb
+94711005,"Mycosis fungoides of lymph nodes of head, face AND/OR neck"
+94712003,Mycosis fungoides of lymph nodes of inguinal region AND/OR lower limb
+94714002,Mycosis fungoides of spleen
+94715001,Mycosis fungoides of extranodal AND/OR solid organ site
+94719007,"Myeloid sarcoma, disease"
+95111006,Neoplasm of uncertain behavior of spleen
+95186006,Nodular lymphoma of intra-abdominal lymph nodes
+95187002,Nodular lymphoma of intrapelvic lymph nodes
+95188007,Nodular lymphoma of intrathoracic lymph nodes
+95192000,Nodular lymphoma of lymph nodes of multiple sites
+95193005,Nodular lymphoma of spleen
+95194004,Nodular lymphoma of extranodal AND/OR solid organ site
+95210003,"Plasma cell leukemia, disease"
+95224004,Reticulosarcoma of intra-abdominal lymph nodes
+95225003,Reticulosarcoma of intrapelvic lymph nodes
+95226002,Reticulosarcoma of intrathoracic lymph nodes
+95230004,Reticulosarcoma of lymph nodes of multiple sites
+95231000,Reticulosarcoma of spleen
+95234008,Retroesophageal aortic arch
+95237001,Retroesophageal subclavian artery
+95260009,"Sézary's disease of lymph nodes of head, face AND/OR neck"
+95261008,Sézary's disease of lymph nodes of inguinal region AND/OR lower limb
+95263006,Sézary's disease of spleen
+95264000,Sézary's disease of extranodal AND/OR solid organ site
+95268002,Sinus venosus atrial septal defect
+95441000,Pulmonary artery stenosis
+968171000000104,Provision of high dose inhaled corticosteroid safety card
+9893005,Immunodeficiency with thymoma
+99031000119107,Acute exacerbation of asthma co-occurrent with allergic rhinitis

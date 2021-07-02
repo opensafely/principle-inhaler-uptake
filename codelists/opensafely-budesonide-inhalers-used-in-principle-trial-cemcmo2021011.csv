@@ -1,0 +1,19 @@
+dmd_type,dmd_id,dmd_name,bnf_code
+VMP,35912511000001101,Budesonide 200micrograms/dose inhaler,0302000K0AAADAD
+VMP,35912411000001100,Budesonide 200micrograms/dose dry powder inhaler,0302000K0AAAGAG
+VMP,35912711000001106,Budesonide 400micrograms/dose dry powder inhaler,0302000K0AAAHAH
+VMP,3432911000001109,Budesonide 200microgram inhalation powder capsules,0302000K0AAARAR
+VMP,3433011000001101,Budesonide 400microgram inhalation powder capsules,0302000K0AAASAS
+VMP,4864911000001104,Budesonide 200micrograms/dose inhaler with spacer,0302000K0AAATAT
+VMP,8024611000001102,Budesonide 200micrograms/dose dry powder inhalation cartridge with device,0302000K0AAAVAV
+VMP,9117811000001107,Budesonide 200micrograms/dose dry powder inhalation cartridge,0302000K0AAAWAW
+VMP,15374611000001106,Budesonide 200micrograms/dose inhaler CFC free,0302000K0AABABA
+AMP,2924111000001109,Pulmicort 200micrograms/dose inhaler,0302000K0BBADAD
+AMP,3112411000001105,Pulmicort 200 Turbohaler,0302000K0BBAHAG
+AMP,3228711000001106,Pulmicort 400 Turbohaler,0302000K0BBAIAH
+AMP,4860811000001104,Pulmicort 200micrograms/dose inhaler with Nebuchamber,0302000K0BBALAT
+AMP,15358411000001102,Pulmicort 200micrograms/dose inhaler CFC free,0302000K0BBANBA
+AMP,8031811000001102,Budelin Novolizer 200micrograms/dose inhalation powder,0302000K0BFAAAV
+AMP,9111811000001100,Budelin Novolizer 200micrograms/dose inhalation powder refill,0302000K0BFABAW
+AMP,10074611000001102,Easyhaler Budesonide 200micrograms/dose dry powder inhaler,0302000K0BGABAG
+AMP,10074411000001100,Easyhaler Budesonide 400micrograms/dose dry powder inhaler,0302000K0BGACAH

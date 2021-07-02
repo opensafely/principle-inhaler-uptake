@@ -1,0 +1,34 @@
+{
+  "files": {
+    "opensafely-covid-identification.csv": {
+      "id": "opensafely/covid-identification/2020-06-03",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/covid-identification/2020-06-03/",
+      "downloaded_at": "2021-06-24 11:35:17.664552Z",
+      "sha": "124db6929439379b7dacd55ba26ae4f2ed9370bc"
+    },
+    "opensafely-budesonide-inhalers-used-in-principle-trial-cemcmo2021011.csv": {
+      "id": "opensafely/budesonide-inhalers-used-in-principle-trial-cemcmo2021011/0d9a862c",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/budesonide-inhalers-used-in-principle-trial-cemcmo2021011/0d9a862c/",
+      "downloaded_at": "2021-06-24 11:35:17.954496Z",
+      "sha": "f81526708e814f280e70be4bacc08a3569978af3"
+    },
+    "opensafely-inhaled-or-systemic-corticosteroids.csv": {
+      "id": "opensafely/inhaled-or-systemic-corticosteroids/6ae56bf6",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/inhaled-or-systemic-corticosteroids/6ae56bf6/",
+      "downloaded_at": "2021-06-24 11:35:18.302188Z",
+      "sha": "066fe1eddd08fe70038589d780caae6369b16f2d"
+    },
+    "opensafely-ethnicity.csv": {
+      "id": "opensafely/ethnicity/2020-04-27",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/ethnicity/2020-04-27/",
+      "downloaded_at": "2021-06-24 11:35:18.549394Z",
+      "sha": "3d2f3998b71863a80b24d60f6f4282e14191ae13"
+    },
+    "user-jon_massey-shielding-patient-list-spl-flu-risk-based-codes.csv": {
+      "id": "user/jon_massey/shielding-patient-list-spl-flu-risk-based-codes/7f5612ce",
+      "url": "https://codelists.opensafely.org/codelist/user/jon_massey/shielding-patient-list-spl-flu-risk-based-codes/7f5612ce/",
+      "downloaded_at": "2021-06-24 11:35:19.047612Z",
+      "sha": "89081e6728c7e8f6134586155e5c2d6255c29918"
+    }
+  }
+}
