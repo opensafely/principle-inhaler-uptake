@@ -34,15 +34,16 @@ df = df[(df.sex == 'M') | (df.sex == 'F')]
 out_dict['sex_M_or_F'] = len(df.index)
 for r in df.groupby('first_positive_test_type')['patient_id'].count().reset_index().iterrows():
     out_dict[f'first_positive_test_type__{r[1].first_positive_test_type}'] = r[1].patient_id
-
-out_dict['first_positive_test_date_notna'] = len(
-    df.first_positive_test_date.notna())
+df = df[df.has_previous_steroid_prescription==0]
+out_dict['NOT_has_previous_steroid_prescription'] = len(df.index)
 out_dict['with_consultation'] = len(df[df.with_consultation == 1].index)
 out_dict['hospitalised'] = len(
     df[(df.covid_admission == 0) & (df.covid_emergency_admission == 0)].index)
+
+## todo: has_previous_steroid_prescription 
 
 for r in df.groupby('budesonide_prescription')['patient_id'].count().reset_index().iterrows():
     out_dict[f'has_budesonide_prescription__{r[1].budesonide_prescription}'] = r[1].patient_id
 
 with open('output/exclusioncounts.txt', 'w+') as wf:
-    wf.writelines([f'{k}:{v}\n' for k, v in out_dict.items()])
+    wf.writelines([f'{k}:{v if v>10 else '<10'}\n' for k, v in out_dict.items()])
