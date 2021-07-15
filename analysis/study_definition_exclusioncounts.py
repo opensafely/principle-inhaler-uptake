@@ -66,6 +66,7 @@ study = StudyDefinition(
         test_result="positive",
         on_or_after=ix_dt,
         find_first_match_in_period=True,
+        #restrict_to_earliest_specimen_date=False,
         returning="date",
         date_format="YYYY-MM-DD",
         return_expectations={
@@ -79,6 +80,7 @@ study = StudyDefinition(
         test_result="positive",
         on_or_after=ix_dt,
         find_first_match_in_period=True,
+        #restrict_to_earliest_specimen_date=False,
         returning="case_category",
         return_expectations={
             "rate":"universal",
@@ -138,7 +140,8 @@ study = StudyDefinition(
     ),
   
     age = patients.age_as_of(
-        "first_positive_test_date - 3 months",
+        #"first_positive_test_date - 3 months",
+        ix_dt,
         return_expectations = {
             "rate": "universal",
             "int": {"distribution": "population_ages"},
