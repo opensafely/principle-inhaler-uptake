@@ -46,4 +46,4 @@ for r in df.groupby('budesonide_prescription')['patient_id'].count().reset_index
     out_dict[f'has_budesonide_prescription__{r[1].budesonide_prescription}'] = r[1].patient_id
 
 with open('output/exclusioncounts.txt', 'w+') as wf:
-    wf.writelines([f'{k}:{v if v>10 else "<10"}' for k,v in out_dict.items()])
+    wf.writelines([f'{k}:{v if v>10 else "<10"}\n' for k,v in out_dict.items()])
