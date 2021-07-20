@@ -42,7 +42,8 @@ out_dict['sex_M_or_F'] = len(df.index)
 out_dict['first_positive_test_date_notna'] = len(
     df.first_positive_test_date.notna())
 
-for r in df.groupby('first_positive_test_type',dropna=False)['patient_id'].count().reset_index().iterrows():
+df.first_positive_test_type=df.first_positive_test_type.fillna('NA')
+for r in df.groupby('first_positive_test_type')['patient_id'].count().reset_index().iterrows():
     out_dict[f'first_positive_test_type__{r[1].first_positive_test_type}'] = r[1].patient_id
 
 df = df[df.has_previous_steroid_prescription==0]
