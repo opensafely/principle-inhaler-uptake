@@ -1,4 +1,4 @@
-from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv
+from cohortextractor import StudyDefinition, patients
 from codelists import *
 from datetime import date, timedelta
 
@@ -240,4 +240,18 @@ study = StudyDefinition(
         with_these_diagnoses=covid_codelist,
         on_or_after="first_positive_test_date",
         return_expectations = {"incidence": 0.05}),
+    
+    primis_shield = patients.with_these_clinical_events(
+        primis_shield,
+        returning='binary_flag',
+        on_or_after='index_date - 1 year',
+        return_expectations = {"incidence": 0.1}
+    ),
+
+    primis_nonshield = patients.with_these_clinical_events(
+        primis_nonshield,
+        returning='binary_flag',
+        on_or_after='index_date - 1 year',
+        return_expectations = {"incidence": 0.1}
+    )
 )
