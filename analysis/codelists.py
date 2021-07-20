@@ -36,3 +36,13 @@ ethnicity_codes_16 = codelist_from_csv(
     column="Code",
     category_column="Grouping_16",
 )
+primis_shield = codelist_from_csv(
+    "codelists/primis-covid19-vacc-uptake-shield.csv",
+    system="snomed",
+    column="code"
+)
+primis_nonshield = codelist_from_csv(
+    "codelists/primis-covid19-vacc-uptake-nonshield.csv",
+    system="snomed",
+    column="code"
+)

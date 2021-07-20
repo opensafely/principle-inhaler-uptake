@@ -29,6 +29,18 @@
       "url": "https://codelists.opensafely.org/codelist/user/jon_massey/shielding-patient-list-spl-flu-risk-based-codes/7f5612ce/",
       "downloaded_at": "2021-06-24 11:35:19.047612Z",
       "sha": "89081e6728c7e8f6134586155e5c2d6255c29918"
+    },
+    "primis-covid19-vacc-uptake-shield.csv": {
+      "id": "primis-covid19-vacc-uptake/shield/v1",
+      "url": "https://codelists.opensafely.org/codelist/primis-covid19-vacc-uptake/shield/v1/",
+      "downloaded_at": "2021-07-20 08:27:21.929811Z",
+      "sha": "7edf08877d201478d4f794edb4d4dfe1353cb095"
+    },
+    "primis-covid19-vacc-uptake-nonshield.csv": {
+      "id": "primis-covid19-vacc-uptake/nonshield/v1",
+      "url": "https://codelists.opensafely.org/codelist/primis-covid19-vacc-uptake/nonshield/v1/",
+      "downloaded_at": "2021-07-20 08:27:22.132365Z",
+      "sha": "fb1e019781d5a58c5512d71e9cd6cf47c05e72c5"
     }
   }
 }
