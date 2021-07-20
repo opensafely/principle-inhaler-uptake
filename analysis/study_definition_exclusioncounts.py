@@ -75,24 +75,24 @@ study = StudyDefinition(
         },
     ),
     
-    # first_positive_test_type=patients.with_test_result_in_sgss(
-    #     pathogen="SARS-CoV-2",
-    #     test_result="positive",
-    #     on_or_after=ix_dt,
-    #     find_first_match_in_period=True,
-    #     #restrict_to_earliest_specimen_date=False,
-    #     returning="case_category",
-    #     return_expectations={
-    #         "rate":"universal",
-    #         "category": {
-    #             "ratios": {
-    #                 "LFT_Only":0, 
-    #                 "PCR_Only":0.8, 
-    #                 "LFT_WithPCR":0.2
-    #             }
-    #         }
-    #     },
-    # ),
+    first_positive_test_type=patients.with_test_result_in_sgss(
+        pathogen="SARS-CoV-2",
+        test_result="positive",
+        on_or_after=ix_dt,
+        find_first_match_in_period=True,
+        #restrict_to_earliest_specimen_date=False,
+        returning="case_category",
+        return_expectations={
+            "rate":"universal",
+            "category": {
+                "ratios": {
+                    "LFT_Only":0, 
+                    "PCR_Only":0.8, 
+                    "LFT_WithPCR":0.2
+                }
+            }
+        },
+    ),
   
     has_comorbidities = patients.with_these_clinical_events(
         flu_comorb, 
