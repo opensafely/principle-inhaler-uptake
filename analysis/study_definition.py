@@ -31,7 +31,7 @@ study = StudyDefinition(
             AND
             registered
             AND
-            (age >= 65 OR ((age >=55 AND age <65) AND (primis_shield OR primis_nonshield))) 
+            (age_band = "65_plus" OR (age_band = "55_65" AND (primis_shield OR primis_nonshield))) 
             AND
             (sex = "M" OR sex = "F")
             AND 
@@ -126,17 +126,23 @@ study = StudyDefinition(
             },
         },
     ),
-  
-    age = patients.age_as_of(
-        #"first_positive_test_date - 3 months",
-        ix_dt,
-        return_expectations = {
-            "rate": "universal",
-            "int": {"distribution": "population_ages"},
-            "incidence" : 0.001
+    age_band = patients.categorised_as(
+        {
+            "65_plus": "age >= 65",
+            "55_65": "age >=55 AND age <65",
+            "lt_55": "DEFAULT"
         },
+        age = patients.age_as_of("first_positive_test_date - 3 months"),
+        return_expectations={
+            "category":{
+                "ratios": {
+                    "lt_55":0.85,
+                    "55_65":0.05,
+                    "65_plus":0.1,
+                    }
+                }
+        }
     ),
-  
     region = patients.registered_practice_as_of(
         ix_dt,
         returning='nuts1_region_name',
