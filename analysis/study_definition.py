@@ -35,23 +35,16 @@ study = StudyDefinition(
             AND
             (sex = "M" OR sex = "F")
             AND 
-            (first_positive_test_type = "PCR_Only" OR first_positive_test_type = "LFT_WithPCR")
+            (first_positive_test_type = "PCR_Only" OR first_positive_test_type = "LFT_WithPCR" OR first_positive_test_type ="")
            
             AND
             NOT has_previous_steroid_prescription
         """,
-        #  AND
-        #     NOT corticosteroid_contraindicated
 
         has_died=patients.died_from_any_cause(
             on_or_before = "index_date",
             returning = "binary_flag",
         ),
-
-        # corticosteroid_contraindicated = patients.with_these_clinical_events(
-        #     corticosteroid_contraindications, 
-        #     returning='binary_flag'
-        # ),
 
         has_previous_steroid_prescription = patients.with_these_medications(
             inhaled_or_systemic_corticosteroids,
@@ -66,7 +59,7 @@ study = StudyDefinition(
    
 
 # would be nice to use "all tests" as this may exlude pts with initial +ve LFT followed by PCR
-    first_positive_test_date=patients.with_test_result_in_sgss(
+     first_positive_test_date=patients.with_test_result_in_sgss(
         pathogen="SARS-CoV-2",
         test_result="positive",
         on_or_after=ix_dt,
@@ -90,21 +83,13 @@ study = StudyDefinition(
             "category": {
                 "ratios": {
                     "LFT_Only":0, 
-                    "PCR_Only":0.8, 
-                    "LFT_WithPCR":0.2
+                    "PCR_Only":0.1, 
+                    "LFT_WithPCR":0.05,
+                    "":0.85
                 }
             }
         },
     ),
-  
-    # has_comorbidities = patients.with_these_clinical_events(
-    #     flu_comorb, 
-    #     on_or_after= "index_date - 2 years",
-    #     returning='binary_flag', 
-    #     return_expectations={
-    #             "incidence": 0.05
-    #         }
-    # ),
 
     sex = patients.sex(
         return_expectations = {
