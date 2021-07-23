@@ -28,17 +28,14 @@ study = StudyDefinition(
 
         """
             NOT has_died
-            AND
-            registered
+            AND registered
             AND
             (age_band = "65_plus" OR (age_band = "55_65" AND (primis_shield OR primis_nonshield))) 
             AND
             (sex = "M" OR sex = "F")
-            AND 
-            (first_positive_test_type = "PCR_Only" OR first_positive_test_type = "LFT_WithPCR" OR first_positive_test_type ="")
-           
-            AND
-            NOT has_previous_steroid_prescription
+            AND NOT covid_admission
+            AND NOT covid_emergency_admission
+            AND NOT has_previous_steroid_prescription
         """,
 
         has_died=patients.died_from_any_cause(
