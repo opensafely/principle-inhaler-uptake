@@ -31,7 +31,7 @@ study = StudyDefinition(
             AND
             registered
             AND
-            (age >= 65 OR ((age >=55 AND age <65) AND has_comorbidities)) 
+            (age >= 65 OR ((age >=55 AND age <65) AND (primis_shield OR primis_nonshield))) 
             AND
             (sex = "M" OR sex = "F")
             AND 
@@ -97,14 +97,14 @@ study = StudyDefinition(
         },
     ),
   
-    has_comorbidities = patients.with_these_clinical_events(
-        flu_comorb, 
-        on_or_after= "index_date - 2 years",
-        returning='binary_flag', 
-        return_expectations={
-                "incidence": 0.05
-            }
-    ),
+    # has_comorbidities = patients.with_these_clinical_events(
+    #     flu_comorb, 
+    #     on_or_after= "index_date - 2 years",
+    #     returning='binary_flag', 
+    #     return_expectations={
+    #             "incidence": 0.05
+    #         }
+    # ),
 
     sex = patients.sex(
         return_expectations = {
@@ -143,7 +143,8 @@ study = StudyDefinition(
     ),
   
     age = patients.age_as_of(
-        "first_positive_test_date - 3 months",
+        #"first_positive_test_date - 3 months",
+        ix_dt,
         return_expectations = {
             "rate": "universal",
             "int": {"distribution": "population_ages"},
@@ -242,4 +243,18 @@ study = StudyDefinition(
         with_these_diagnoses=covid_codelist,
         on_or_after="first_positive_test_date",
         return_expectations = {"incidence": 0.05}),
+    
+    primis_shield = patients.with_these_clinical_events(
+        primis_shield,
+        returning='binary_flag',
+        on_or_after='index_date - 1 year',
+        return_expectations = {"incidence": 0.1}
+    ),
+
+    primis_nonshield = patients.with_these_clinical_events(
+        primis_nonshield,
+        returning='binary_flag',
+        on_or_after='index_date - 1 year',
+        return_expectations = {"incidence": 0.1}
+    )
 )
