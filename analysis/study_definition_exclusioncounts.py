@@ -140,8 +140,8 @@ study = StudyDefinition(
     ),
   
     age = patients.age_as_of(
-        #"first_positive_test_date - 3 months",
-        ix_dt,
+        "first_positive_test_date - 3 months",
+        #ix_dt,
         return_expectations = {
             "rate": "universal",
             "int": {"distribution": "population_ages"},
