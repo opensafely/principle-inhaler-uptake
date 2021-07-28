@@ -13142,12 +13142,28 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#exclude LFT tests, include unknowns</span>
-<span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_type</span><span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_type</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;Unknown&#39;</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_type</span><span class="o">!=</span><span class="s2">&quot;LFT&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Total input row count: {len(df.index)}&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total input row count: 2248
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13157,11 +13173,80 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#add cohort label [over 65s, over 55s with shielding flag, over 55s with non-shielding flag]</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;cohort&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">&#39;65_plus&#39;</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age_band</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;H&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">primis_shield</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;L&#39;</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#include only where positive test date is populated</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_date</span><span class="o">.</span><span class="n">notna</span><span class="p">()]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Patients with positive test: {len(df.index)}&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Patients with positive test: 2248
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#add cohort label [over 65s, over 55s with shielding flag, over 55s with non-shielding flag]</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;cohort&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">&#39;65_plus&#39;</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age_band</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;H&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">primis_shield</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;L&#39;</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_cohort_counts</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cohort&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;patient_id&#39;</span><span class="p">:</span><span class="s1">&#39;Patient count&#39;</span><span class="p">,</span><span class="s2">&quot;cohort&quot;</span><span class="p">:</span><span class="s2">&quot;Cohort&quot;</span><span class="p">})</span>
+<span class="n">suppressed_df_cohort_counts</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df_cohort_counts</span><span class="p">,[</span><span class="s1">&#39;Patient count&#39;</span><span class="p">])</span>
+<span class="n">suppressed_df_cohort_counts</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide_index</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<style  type="text/css" >
+</style><table id="T_94f39802_ef82_11eb_83be_f3119d87a817" ><thead>    <tr>        <th class="col_heading level0 col0" >Cohort</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
+                <tr>
+                                <td id="T_94f39802_ef82_11eb_83be_f3119d87a817row0_col0" class="data row0 col0" >55_65H</td>
+                        <td id="T_94f39802_ef82_11eb_83be_f3119d87a817row0_col1" class="data row0 col1" >172</td>
+            </tr>
+            <tr>
+                                <td id="T_94f39802_ef82_11eb_83be_f3119d87a817row1_col0" class="data row1 col0" >55_65L</td>
+                        <td id="T_94f39802_ef82_11eb_83be_f3119d87a817row1_col1" class="data row1 col1" >99</td>
+            </tr>
+            <tr>
+                                <td id="T_94f39802_ef82_11eb_83be_f3119d87a817row2_col0" class="data row2 col0" >65_plus</td>
+                        <td id="T_94f39802_ef82_11eb_83be_f3119d87a817row2_col1" class="data row2 col1" >1977</td>
+            </tr>
+    </tbody></table>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13175,26 +13260,34 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_test_counts</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;first_positive_test_type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;patient_id&#39;</span><span class="p">:</span><span class="s1">&#39;Patient count&#39;</span><span class="p">,</span><span class="s2">&quot;first_positive_test_type&quot;</span><span class="p">:</span><span class="s2">&quot;Type of first recorded positive test&quot;</span><span class="p">})</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">supressed_test_type_counts</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df_test_counts</span><span class="p">,[</span><span class="s1">&#39;Patient count&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#exclude LFT tests, include unknowns</span>
+<span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_type</span><span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_type</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;Unknown&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_type</span><span class="o">!=</span><span class="s2">&quot;LFT_Only&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Patients with non-LFT_Only test: {len(df.index)}&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Patients with non-LFT_Only test: 1738
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13204,7 +13297,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">supressed_test_type_counts</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide_index</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_test_counts</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;first_positive_test_type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;patient_id&#39;</span><span class="p">:</span><span class="s1">&#39;Patient count&#39;</span><span class="p">,</span><span class="s2">&quot;first_positive_test_type&quot;</span><span class="p">:</span><span class="s2">&quot;Type of first recorded positive test&quot;</span><span class="p">})</span>
+<span class="n">supressed_test_type_counts</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df_test_counts</span><span class="p">,[</span><span class="s1">&#39;Patient count&#39;</span><span class="p">])</span>
+<span class="n">supressed_test_type_counts</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide_index</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13223,18 +13318,14 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_f7e37f96_ee0a_11eb_b69d_3bec8e67d5ca" ><thead>    <tr>        <th class="col_heading level0 col0" >Type of first recorded positive test</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
+</style><table id="T_94fbcfc2_ef82_11eb_83be_f3119d87a817" ><thead>    <tr>        <th class="col_heading level0 col0" >Type of first recorded positive test</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_f7e37f96_ee0a_11eb_b69d_3bec8e67d5carow0_col0" class="data row0 col0" >LFT_Only</td>
-                        <td id="T_f7e37f96_ee0a_11eb_b69d_3bec8e67d5carow0_col1" class="data row0 col1" >510</td>
+                                <td id="T_94fbcfc2_ef82_11eb_83be_f3119d87a817row0_col0" class="data row0 col0" >LFT_WithPCR</td>
+                        <td id="T_94fbcfc2_ef82_11eb_83be_f3119d87a817row0_col1" class="data row0 col1" >230</td>
             </tr>
             <tr>
-                                <td id="T_f7e37f96_ee0a_11eb_b69d_3bec8e67d5carow1_col0" class="data row1 col0" >LFT_WithPCR</td>
-                        <td id="T_f7e37f96_ee0a_11eb_b69d_3bec8e67d5carow1_col1" class="data row1 col1" >230</td>
-            </tr>
-            <tr>
-                                <td id="T_f7e37f96_ee0a_11eb_b69d_3bec8e67d5carow2_col0" class="data row2 col0" >PCR_Only</td>
-                        <td id="T_f7e37f96_ee0a_11eb_b69d_3bec8e67d5carow2_col1" class="data row2 col1" >1508</td>
+                                <td id="T_94fbcfc2_ef82_11eb_83be_f3119d87a817row1_col0" class="data row1 col0" >PCR_Only</td>
+                        <td id="T_94fbcfc2_ef82_11eb_83be_f3119d87a817row1_col1" class="data row1 col1" >1508</td>
             </tr>
     </tbody></table>
 </div>
@@ -13277,14 +13368,14 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_f7e928b0_ee0a_11eb_b69d_3bec8e67d5ca" ><thead>    <tr>        <th class="col_heading level0 col0" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col1" >Count of patients</th>    </tr></thead><tbody>
+</style><table id="T_9500b4e2_ef82_11eb_83be_f3119d87a817" ><thead>    <tr>        <th class="col_heading level0 col0" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col1" >Count of patients</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_f7e928b0_ee0a_11eb_b69d_3bec8e67d5carow0_col0" class="data row0 col0" >0</td>
-                        <td id="T_f7e928b0_ee0a_11eb_b69d_3bec8e67d5carow0_col1" class="data row0 col1" >2243</td>
+                                <td id="T_9500b4e2_ef82_11eb_83be_f3119d87a817row0_col0" class="data row0 col0" >0</td>
+                        <td id="T_9500b4e2_ef82_11eb_83be_f3119d87a817row0_col1" class="data row0 col1" >1735</td>
             </tr>
             <tr>
-                                <td id="T_f7e928b0_ee0a_11eb_b69d_3bec8e67d5carow1_col0" class="data row1 col0" >1</td>
-                        <td id="T_f7e928b0_ee0a_11eb_b69d_3bec8e67d5carow1_col1" class="data row1 col1" ><10</td>
+                                <td id="T_9500b4e2_ef82_11eb_83be_f3119d87a817row1_col0" class="data row1 col0" >1</td>
+                        <td id="T_9500b4e2_ef82_11eb_83be_f3119d87a817row1_col1" class="data row1 col1" ><10</td>
             </tr>
     </tbody></table>
 </div>
@@ -13320,37 +13411,50 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5ca" ><thead>    <tr>        <th class="col_heading level0 col0" >cohort</th>        <th class="col_heading level0 col1" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col2" >Count of patients</th>    </tr></thead><tbody>
+</style><table id="T_950618f6_ef82_11eb_83be_f3119d87a817" ><thead>    <tr>        <th class="col_heading level0 col0" >cohort</th>        <th class="col_heading level0 col1" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col2" >Count of patients</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow0_col0" class="data row0 col0" >55_65H</td>
-                        <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow0_col1" class="data row0 col1" >0</td>
-                        <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow0_col2" class="data row0 col2" >171</td>
+                                <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row0_col0" class="data row0 col0" >55_65H</td>
+                        <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row0_col1" class="data row0 col1" >0</td>
+                        <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row0_col2" class="data row0 col2" >147</td>
             </tr>
             <tr>
-                                <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow1_col0" class="data row1 col0" >55_65H</td>
-                        <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow1_col1" class="data row1 col1" >1</td>
-                        <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow1_col2" class="data row1 col2" ><10</td>
+                                <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row1_col0" class="data row1 col0" >55_65H</td>
+                        <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row1_col1" class="data row1 col1" >1</td>
+                        <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row1_col2" class="data row1 col2" ><10</td>
             </tr>
             <tr>
-                                <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow2_col0" class="data row2 col0" >55_65L</td>
-                        <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow2_col1" class="data row2 col1" >0</td>
-                        <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow2_col2" class="data row2 col2" >99</td>
+                                <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row2_col0" class="data row2 col0" >55_65L</td>
+                        <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row2_col1" class="data row2 col1" >0</td>
+                        <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row2_col2" class="data row2 col2" >75</td>
             </tr>
             <tr>
-                                <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow3_col0" class="data row3 col0" >65_plus</td>
-                        <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow3_col1" class="data row3 col1" >0</td>
-                        <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow3_col2" class="data row3 col2" >1973</td>
+                                <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row3_col0" class="data row3 col0" >65_plus</td>
+                        <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row3_col1" class="data row3 col1" >0</td>
+                        <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row3_col2" class="data row3 col2" >1513</td>
             </tr>
             <tr>
-                                <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow4_col0" class="data row4 col0" >65_plus</td>
-                        <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow4_col1" class="data row4 col1" >1</td>
-                        <td id="T_f7ef4916_ee0a_11eb_b69d_3bec8e67d5carow4_col2" class="data row4 col2" ><10</td>
+                                <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row4_col0" class="data row4 col0" >65_plus</td>
+                        <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row4_col1" class="data row4 col1" >1</td>
+                        <td id="T_950618f6_ef82_11eb_83be_f3119d87a817row4_col2" class="data row4 col2" ><10</td>
             </tr>
     </tbody></table>
 </div>
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
