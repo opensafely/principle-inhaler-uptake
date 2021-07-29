@@ -46,3 +46,9 @@ primis_nonshield = codelist_from_csv(
     system="snomed",
     column="code"
 )
+#from https://github.com/opensafely/vaccine-effectiveness-hospital-admissions-validation/
+covid_codes_ae = codelist_from_csv(
+    "analysis/covid_codes_ae.csv",
+    system="snomed",
+    column="snomed_id",
+)
