@@ -48,19 +48,36 @@ study = StudyDefinition(
             on_or_before = "index_date",
             returning = "binary_flag",
         ),
-
-
         
-        
-        registered = patients.registered_as_of("index_date"),
-   has_previous_steroid_prescription = patients.with_these_medications(
+    registered = patients.registered_as_of("index_date"),
+
+    has_previous_steroid_prescription = patients.with_these_medications(
             inhaled_or_systemic_corticosteroids,
-            on_or_before = "index_date - 3 months",
+            on_or_before = "index_date - 12 weeks",
             returning = "binary_flag",
             return_expectations = {"incidence": 0.5}
         ),
 
-# would be nice to use "all tests" as this may exlude pts with initial +ve LFT followed by PCR
+
+    first_positive_test_type=patients.with_test_result_in_sgss(
+        pathogen="SARS-CoV-2",
+        test_result="positive",
+        on_or_after=ix_dt,
+        find_first_match_in_period=True,
+        #restrict_to_earliest_specimen_date=False,
+        returning="case_category",
+        return_expectations={
+            "rate":"universal",
+            "category": {
+                "ratios": {
+                    "LFT_Only":0, 
+                    "PCR_Only":0.8, 
+                    "LFT_WithPCR":0.2
+                }
+            }
+        },
+    ),
+
     first_positive_test_date=patients.with_test_result_in_sgss(
         pathogen="SARS-CoV-2",
         test_result="positive",
@@ -140,7 +157,7 @@ study = StudyDefinition(
     ),
   
     age = patients.age_as_of(
-        "first_positive_test_date - 3 months",
+        "first_positive_test_date - 12 weeks",
         #ix_dt,
         return_expectations = {
             "rate": "universal",
