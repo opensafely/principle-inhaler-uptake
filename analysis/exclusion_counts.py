@@ -32,9 +32,11 @@ out_dict['over_65'] = len(df[df.age >= 65].index)
 #     df[((df.age < 65) & (df.age >= 55)) & (df.has_comorbidities == 1)].index)
 # df = df[(df.age >= 65) | (((df.age < 65) & (df.age >= 55))
 #                           & (df.has_comorbidities == 1))]
-out_dict['over_55_no_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55))   & (df.primis_shield == 0)& (df.primis_nonshield == 0)].index)
+#out_dict['over_55_no_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55))   & (df.primis_shield == 0)& (df.primis_nonshield == 0)].index)
 out_dict['over_55_low_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55))  & (df.primis_shield == 0)& (df.primis_nonshield == 1)].index)
 out_dict['over_55_high_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55)) & (df.primis_shield == 1)].index)
+
+df.drop((df[((df.age < 65) & (df.age >= 55)) & (df.primis_shield == 1)].index))
 
 df = df[(df.sex == 'M') | (df.sex == 'F')]
 out_dict['sex_M_or_F'] = len(df.index)
@@ -48,20 +50,21 @@ for r in df.groupby('first_positive_test_type')['patient_id'].count().reset_inde
     out_dict[f'first_positive_test_type__{r[1].first_positive_test_type}'] = r[1].patient_id
 
 out_dict['+ve_over_65'] = len(df[df.age >= 65].index)
-out_dict['+ve_over_55_no_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55))   & (df.primis_shield == 0)& (df.primis_nonshield == 0)].index)
+#out_dict['+ve_over_55_no_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55))   & (df.primis_shield == 0)& (df.primis_nonshield == 0)].index)
 out_dict['+ve_over_55_low_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55))  & (df.primis_shield == 0)& (df.primis_nonshield == 1)].index)
 out_dict['+ve_over_55_high_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55)) & (df.primis_shield == 1)].index)
 
+df.has_previous_steroid_prescription = df.has_previous_steroid_prescription.fillna(0)
 df = df[df.has_previous_steroid_prescription==0]
 out_dict['NOT_has_previous_steroid_prescription'] = len(df.index)
 
+df.covid_admission= df.covid_admission.fillna(0)
+df.covid_emergency_admission = df.covid_emergency_admission.fillna(0)
 
 df[(df.covid_admission == 0) & (df.covid_emergency_admission == 0)]
 out_dict['NOT_hospitalised'] = len(df.index)
 
 out_dict['with_consultation'] = len(df[df.with_consultation == 1].index)
-
-
 
 for r in df.groupby('budesonide_prescription')['patient_id'].count().reset_index().iterrows():
     out_dict[f'has_budesonide_prescription__{r[1].budesonide_prescription}'] = r[1].patient_id
