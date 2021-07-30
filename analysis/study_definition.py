@@ -36,6 +36,7 @@ study = StudyDefinition(
             AND NOT covid_admission
             AND NOT covid_emergency_admission
             AND NOT has_previous_steroid_prescription
+            AND NOT primary_covid_hospital_admission
         """,
 
         has_died=patients.died_from_any_cause(
@@ -220,6 +221,16 @@ study = StudyDefinition(
         ),
     ),
     
+    primary_covid_hospital_admission=patients.admitted_to_hospital(
+        returning= "binary_flag",
+        with_these_primary_diagnoses=covid_codelist,
+        on_or_after="first_positive_test_date",
+        find_last_match_in_period=True,
+        return_expectations={
+            "incidence": 0.3,
+        },
+    ),
+
     covid_admission=patients.admitted_to_hospital(
         returning= "binary_flag",
         with_these_diagnoses=covid_codelist,
@@ -228,7 +239,7 @@ study = StudyDefinition(
 
     covid_emergency_admission=patients.attended_emergency_care(
         returning= "binary_flag",
-        with_these_diagnoses=covid_codelist,
+        with_these_diagnoses=covid_codes_ae,
         on_or_after="first_positive_test_date",
         return_expectations = {"incidence": 0.05}),
     
