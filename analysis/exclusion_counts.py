@@ -36,8 +36,8 @@ out_dict['over_55_low_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55)) & (
 out_dict['over_55_high_covid_risk'] = len(
     df[((df.age < 65) & (df.age >= 55)) & (df.primis_shield == 1)].index)
 
-df.drop((df[((df.age < 65) & (df.age >= 55)) & (df.primis_shield == 0)& (df.primis_nonshield == 0)].index))
-df.drop(df[df.age < 55].index)
+df = df[df.age >= 55]
+df = df[(df.age >= 65) | (df.primis_shield == 1) | (df.primis_nonshield == 1)]
 
 df = df[(df.sex == 'M') | (df.sex == 'F')]
 out_dict['sex_M_or_F'] = len(df.index)
