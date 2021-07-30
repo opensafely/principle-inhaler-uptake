@@ -8,7 +8,7 @@ out_dict['totalrows'] = len(df.index)
 
 df.covid_admission = df.covid_admission.fillna(0)
 for r in df.groupby('covid_admission')['patient_id'].count().reset_index().iterrows():
-    out_dict[f'initial_covid_emergency_admission__{r[1].covid_admission}'] = r[1].patient_id
+    out_dict[f'initial_covid_admission__{r[1].covid_admission}'] = r[1].patient_id
 
 df.primary_covid_hospital_admission = df.primary_covid_hospital_admission.fillna(
     0)
@@ -36,7 +36,7 @@ out_dict['over_55_low_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55)) & (
 out_dict['over_55_high_covid_risk'] = len(
     df[((df.age < 65) & (df.age >= 55)) & (df.primis_shield == 1)].index)
 
-df.drop((df[((df.age < 65) & (df.age >= 55)) & (df.primis_shield == 1)].index))
+df.drop((df[((df.age < 65) & (df.age >= 55)) & (df.primis_shield == 0)& (df.primis_nonshield == 0)].index))
 df.drop(df[df.age < 55].index)
 
 df = df[(df.sex == 'M') | (df.sex == 'F')]
