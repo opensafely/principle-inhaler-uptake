@@ -37,6 +37,7 @@ study = StudyDefinition(
             AND NOT covid_emergency_admission
             AND NOT has_previous_steroid_prescription
             AND NOT primary_covid_hospital_admission
+            AND NOT first_positive_test_date = "LFT_Only"
         """,
 
         has_died=patients.died_from_any_cause(
@@ -46,7 +47,7 @@ study = StudyDefinition(
 
         has_previous_steroid_prescription = patients.with_these_medications(
             inhaled_or_systemic_corticosteroids,
-            on_or_before = "index_date - 3 months",
+            on_or_before = "index_date - 90 days",
             returning = "binary_flag",
             return_expectations = {"incidence": 0.5}
         ),
@@ -130,7 +131,7 @@ study = StudyDefinition(
             "55_65": "age >=55 AND age <65",
             "lt_55": "DEFAULT"
         },
-        age = patients.age_as_of("first_positive_test_date - 3 months"),
+        age = patients.age_as_of("first_positive_test_date - 90 days"),
         return_expectations={
             "category":{
                 "ratios": {
