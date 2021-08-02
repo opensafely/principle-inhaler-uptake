@@ -38,3 +38,10 @@ actions:
       outputs:
         moderately_sensitive:
           cohort: output/exclusioncounts.txt
+  
+  generate_exclusion_notebook:
+    run: jupyter:latest jupyter nbconvert  /workspace/analysis/exclusion_counts.ipynb --execute --to html --output-dir=/workspace/output --ExecutePreprocessor.timeout=86400
+    needs: [generate_study_population_all]
+    outputs:
+      moderately_sensitive:
+        notebook: output/exclusion_counts.html
