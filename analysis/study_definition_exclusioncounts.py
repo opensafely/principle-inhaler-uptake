@@ -22,27 +22,6 @@ study = StudyDefinition(
 
     index_date = ix_dt,
     population = patients.all(),
-    # population=patients.satisfying(
-        
-    #     # AND had_covid_symtoms
-
-    #     """
-    #         NOT has_died
-    #         AND
-    #         registered
-    #         AND
-    #         (age >= 65 OR ((age >=55 AND age <65) AND has_comorbidities)) 
-    #         AND
-    #         (sex = "M" OR sex = "F")
-    #         AND 
-    #         (first_positive_test_type = "PCR_Only" OR first_positive_test_type = "LFT_WithPCR")
-           
-    #         AND
-    #         NOT has_previous_steroid_prescription
-    #     """,
- 
-        
-    # ),
     
     has_died=patients.died_from_any_cause(
             on_or_before = "index_date",
@@ -93,15 +72,6 @@ study = StudyDefinition(
             }
         },
     ),
-  
-    has_comorbidities = patients.with_these_clinical_events(
-        flu_comorb, 
-        on_or_after= "index_date - 2 years",
-        returning='binary_flag', 
-        return_expectations={
-                "incidence": 0.05
-            }
-    ),
 
     sex = patients.sex(
         return_expectations = {
@@ -110,35 +80,6 @@ study = StudyDefinition(
         }
     ),
     
-    imd = patients.categorised_as(
-        {
-            "0": "DEFAULT",
-            "1": """index_of_multiple_deprivation >=1 AND index_of_multiple_deprivation < 32844*1/5""",
-            "2": """index_of_multiple_deprivation >= 32844*1/5 AND index_of_multiple_deprivation < 32844*2/5""",
-            "3": """index_of_multiple_deprivation >= 32844*2/5 AND index_of_multiple_deprivation < 32844*3/5""",
-            "4": """index_of_multiple_deprivation >= 32844*3/5 AND index_of_multiple_deprivation < 32844*4/5""",
-            "5": """index_of_multiple_deprivation >= 32844*4/5 """,
-        },
-        index_of_multiple_deprivation = patients.address_as_of(
-            "index_date",
-            returning = "index_of_multiple_deprivation",
-            round_to_nearest = 100,
-            ),
-        return_expectations = {
-            "rate": "universal",
-            "category": {
-                "ratios": {
-                    "0": 0.01,
-                    "1": 0.20,
-                    "2": 0.20,
-                    "3": 0.20,
-                    "4": 0.20,
-                    "5": 0.19
-                }
-            },
-        },
-    ),
-  
     age = patients.age_as_of(
         "first_positive_test_date - 90 days",
         #ix_dt,
@@ -147,44 +88,6 @@ study = StudyDefinition(
             "int": {"distribution": "population_ages"},
             "incidence" : 0.001
         },
-    ),
-  
-    region = patients.registered_practice_as_of(
-        ix_dt,
-        returning='nuts1_region_name',
-        return_expectations={
-            "rate": "universal",
-            "category": {
-                "ratios": {
-                    "North East": 0.1,
-                    "North West": 0.1,
-                    "Yorkshire and the Humber": 0.1,
-                    "East Midlands": 0.1,
-                    "West Midlands": 0.1,
-                    "East of England": 0.1,
-                    "London": 0.2,
-                    "South East": 0.2,
-                },
-            },
-        },
-    ),
-    ethnicity=patients.with_these_clinical_events(
-        ethnicity_codes,
-        returning="category",
-        find_last_match_in_period=True,
-        return_expectations={
-            "category": {"ratios": {"1": 0.2, "2": 0.2, "3": 0.2, "4": 0.2, "5": 0.2}},
-            "incidence": 0.75,
-        }
-    ),
-    ethnicity_16=patients.with_these_clinical_events(
-        ethnicity_codes_16,
-        returning="category",
-        find_last_match_in_period=True,
-        return_expectations={
-            "category": {"ratios": {"1": 0.2, "2": 0.2, "3": 0.2, "4": 0.2, "5": 0.2}},
-            "incidence": 0.75,
-        }
     ),
 
     budesonide_prescription = patients.with_these_medications(
@@ -199,36 +102,6 @@ study = StudyDefinition(
         returning='binary_flag',
         return_expectations = {"incidence": 0.5}
     ),
-
-    post_budesonide_hospitalisation = patients.satisfying(
-        """
-        budesonide_prescription>0 AND (
-            covid_admission_date > budesonide_prescription_date OR 
-            covid_emergency_admission_date > budesonide_prescription_date)
-        """,
-        budesonide_prescription_date = patients.with_these_medications(
-            budeonside_inhalers,
-            between = ["first_positive_test_date","first_positive_test_date + 14 days"],
-            returning = "date"
-        ),
-
-        covid_admission_date=patients.admitted_to_hospital(
-            returning= "date_admitted",
-            with_these_diagnoses=covid_codelist,
-            on_or_after="first_positive_test_date",
-            find_first_match_in_period=True,
-            date_format="YYYY-MM-DD"
-        ),
-
-        covid_emergency_admission_date=patients.attended_emergency_care(
-            returning= "date_arrived",
-            with_these_diagnoses=covid_codes_ae,
-            on_or_after="first_positive_test_date",
-            find_first_match_in_period=True,
-            date_format="YYYY-MM-DD",
-        ),
-    ),
-
     primary_covid_hospital_admission=patients.admitted_to_hospital(
         returning= "binary_flag",
         with_these_primary_diagnoses=covid_codelist,
