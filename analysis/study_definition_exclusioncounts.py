@@ -53,7 +53,10 @@ study = StudyDefinition(
 
     has_previous_steroid_prescription = patients.with_these_medications(
             inhaled_or_systemic_corticosteroids,
-            on_or_before = "index_date - 90 days",
+            between = [
+                "index_date - 90 days",
+                "index_date",
+            ],
             returning = "binary_flag",
             return_expectations = {"incidence": 0.5}
         ),
