@@ -47,11 +47,14 @@ study = StudyDefinition(
             returning="binary_flag",
         ),
 
-        has_previous_steroid_prescription=patients.with_these_medications(
+        has_previous_steroid_prescription = patients.with_these_medications(
             inhaled_or_systemic_corticosteroids,
-            on_or_before="index_date - 90 days",
-            returning="binary_flag",
-            return_expectations={"incidence": 0.5}
+            between = [
+                "index_date - 90 days",
+                "index_date",
+            ],
+            returning = "binary_flag",
+            return_expectations = {"incidence": 0.5}
         ),
 
         registered=patients.registered_as_of("index_date"),
@@ -96,34 +99,7 @@ study = StudyDefinition(
         }
     ),
 
-    imd=patients.categorised_as(
-        {
-            "0": "DEFAULT",
-            "1": """index_of_multiple_deprivation >=1 AND index_of_multiple_deprivation < 32844*1/5""",
-            "2": """index_of_multiple_deprivation >= 32844*1/5 AND index_of_multiple_deprivation < 32844*2/5""",
-            "3": """index_of_multiple_deprivation >= 32844*2/5 AND index_of_multiple_deprivation < 32844*3/5""",
-            "4": """index_of_multiple_deprivation >= 32844*3/5 AND index_of_multiple_deprivation < 32844*4/5""",
-            "5": """index_of_multiple_deprivation >= 32844*4/5 """,
-        },
-        index_of_multiple_deprivation=patients.address_as_of(
-            "index_date",
-            returning="index_of_multiple_deprivation",
-            round_to_nearest=100,
-        ),
-        return_expectations={
-            "rate": "universal",
-            "category": {
-                "ratios": {
-                    "0": 0.01,
-                    "1": 0.20,
-                    "2": 0.20,
-                    "3": 0.20,
-                    "4": 0.20,
-                    "5": 0.19
-                }
-            },
-        },
-    ),
+   
     age_band=patients.categorised_as(
         {
             "65_plus": "age >= 65",
@@ -160,25 +136,7 @@ study = StudyDefinition(
             },
         },
     ),
-    ethnicity=patients.with_these_clinical_events(
-        ethnicity_codes,
-        returning="category",
-        find_last_match_in_period=True,
-        return_expectations={
-            "category": {"ratios": {"1": 0.2, "2": 0.2, "3": 0.2, "4": 0.2, "5": 0.2}},
-            "incidence": 0.75,
-        }
-    ),
-    ethnicity_16=patients.with_these_clinical_events(
-        ethnicity_codes_16,
-        returning="category",
-        find_last_match_in_period=True,
-        return_expectations={
-            "category": {"ratios": {"1": 0.2, "2": 0.2, "3": 0.2, "4": 0.2, "5": 0.2}},
-            "incidence": 0.75,
-        }
-    ),
-
+    
     budesonide_prescription=patients.with_these_medications(
         budeonside_inhalers,
         between=["first_positive_test_date",
@@ -194,37 +152,7 @@ study = StudyDefinition(
         returning='binary_flag',
         return_expectations={"incidence": 0.5}
     ),
-
-    post_budesonide_hospitalisation=patients.satisfying(
-        """
-        budesonide_prescription>0 AND (
-            covid_admission_date > budesonide_prescription_date OR 
-            covid_emergency_admission_date > budesonide_prescription_date)
-        """,
-        budesonide_prescription_date=patients.with_these_medications(
-            budeonside_inhalers,
-            between=["first_positive_test_date",
-                     "first_positive_test_date + 14 days"],
-            returning="date"
-        ),
-
-        covid_admission_date=patients.admitted_to_hospital(
-            returning="date_admitted",
-            with_these_diagnoses=covid_codelist,
-            on_or_after="first_positive_test_date",
-            find_first_match_in_period=True,
-            date_format="YYYY-MM-DD"
-        ),
-
-        covid_emergency_admission_date=patients.attended_emergency_care(
-            returning="date_arrived",
-            with_these_diagnoses=covid_codelist,
-            on_or_after="first_positive_test_date",
-            find_first_match_in_period=True,
-            date_format="YYYY-MM-DD",
-        ),
-    ),
-
+    
     primary_covid_hospital_admission=patients.admitted_to_hospital(
         returning="binary_flag",
         with_these_primary_diagnoses=covid_codelist,
