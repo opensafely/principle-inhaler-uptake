@@ -13180,7 +13180,38 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total input row count: 7567
+<pre>Total input row count: 10725
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Most recent positive test date: {pd.to_datetime(df.first_positive_test_date).max()}&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Most recent positive test date: 2021-07-22 00:00:00
 </pre>
 </div>
 </div>
@@ -13207,7 +13238,7 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;cohort&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">&#39;65_plus&#39;</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age_band</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;H&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">primis_shield</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;L&#39;</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -13226,24 +13257,24 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_1b42d1bc_f379_11eb_99b1_c7c1f1b353d1" ><thead>    <tr>        <th class="col_heading level0 col0" >Cohort</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
+</style><table id="T_24b17eac_f468_11eb_a1c1_31015947037c" ><thead>    <tr>        <th class="col_heading level0 col0" >Cohort</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_1b42d1bc_f379_11eb_99b1_c7c1f1b353d1row0_col0" class="data row0 col0" >55_65H</td>
-                        <td id="T_1b42d1bc_f379_11eb_99b1_c7c1f1b353d1row0_col1" class="data row0 col1" >574</td>
+                                <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow0_col0" class="data row0 col0" >55_65H</td>
+                        <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow0_col1" class="data row0 col1" >953</td>
             </tr>
             <tr>
-                                <td id="T_1b42d1bc_f379_11eb_99b1_c7c1f1b353d1row1_col0" class="data row1 col0" >55_65L</td>
-                        <td id="T_1b42d1bc_f379_11eb_99b1_c7c1f1b353d1row1_col1" class="data row1 col1" >360</td>
+                                <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow1_col0" class="data row1 col0" >55_65L</td>
+                        <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow1_col1" class="data row1 col1" >532</td>
             </tr>
             <tr>
-                                <td id="T_1b42d1bc_f379_11eb_99b1_c7c1f1b353d1row2_col0" class="data row2 col0" >65_plus</td>
-                        <td id="T_1b42d1bc_f379_11eb_99b1_c7c1f1b353d1row2_col1" class="data row2 col1" >6633</td>
+                                <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow2_col0" class="data row2 col0" >65_plus</td>
+                        <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow2_col1" class="data row2 col1" >9240</td>
             </tr>
     </tbody></table>
 </div>
@@ -13271,7 +13302,7 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_test_counts</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;first_positive_test_type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;patient_id&#39;</span><span class="p">:</span><span class="s1">&#39;Patient count&#39;</span><span class="p">,</span><span class="s2">&quot;first_positive_test_type&quot;</span><span class="p">:</span><span class="s2">&quot;Type of first recorded positive test&quot;</span><span class="p">})</span>
@@ -13289,20 +13320,20 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_1b482f4a_f379_11eb_99b1_c7c1f1b353d1" ><thead>    <tr>        <th class="col_heading level0 col0" >Type of first recorded positive test</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
+</style><table id="T_24b6d6b8_f468_11eb_a1c1_31015947037c" ><thead>    <tr>        <th class="col_heading level0 col0" >Type of first recorded positive test</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_1b482f4a_f379_11eb_99b1_c7c1f1b353d1row0_col0" class="data row0 col0" >LFT_WithPCR</td>
-                        <td id="T_1b482f4a_f379_11eb_99b1_c7c1f1b353d1row0_col1" class="data row0 col1" >1461</td>
+                                <td id="T_24b6d6b8_f468_11eb_a1c1_31015947037crow0_col0" class="data row0 col0" >LFT_WithPCR</td>
+                        <td id="T_24b6d6b8_f468_11eb_a1c1_31015947037crow0_col1" class="data row0 col1" >2053</td>
             </tr>
             <tr>
-                                <td id="T_1b482f4a_f379_11eb_99b1_c7c1f1b353d1row1_col0" class="data row1 col0" >PCR_Only</td>
-                        <td id="T_1b482f4a_f379_11eb_99b1_c7c1f1b353d1row1_col1" class="data row1 col1" >6106</td>
+                                <td id="T_24b6d6b8_f468_11eb_a1c1_31015947037crow1_col0" class="data row1 col0" >PCR_Only</td>
+                        <td id="T_24b6d6b8_f468_11eb_a1c1_31015947037crow1_col1" class="data row1 col1" >8672</td>
             </tr>
     </tbody></table>
 </div>
@@ -13322,7 +13353,7 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">supressed_bd_prescriptions_all</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;budesonide_prescription&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;budesonide_prescription&quot;</span><span class="p">:</span><span class="s2">&quot;Count of budesonide prescriptions&quot;</span><span class="p">,</span><span class="s2">&quot;patient_id&quot;</span><span class="p">:</span><span class="s2">&quot;Count of patients&quot;</span><span class="p">}),[</span><span class="s2">&quot;Count of patients&quot;</span><span class="p">])</span>
@@ -13343,62 +13374,62 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1" ><thead>    <tr>        <th class="col_heading level0 col0" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col1" >Count of patients</th>        <th class="col_heading level0 col2" >cohort</th>    </tr></thead><tbody>
+</style><table id="T_24beab68_f468_11eb_a1c1_31015947037c" ><thead>    <tr>        <th class="col_heading level0 col0" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col1" >Count of patients</th>        <th class="col_heading level0 col2" >cohort</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row0_col0" class="data row0 col0" >0</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row0_col1" class="data row0 col1" >7536</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row0_col2" class="data row0 col2" >All</td>
+                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow0_col0" class="data row0 col0" >0</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow0_col1" class="data row0 col1" >10684</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow0_col2" class="data row0 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row1_col0" class="data row1 col0" >1</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row1_col1" class="data row1 col1" >29</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row1_col2" class="data row1 col2" >All</td>
+                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow1_col0" class="data row1 col0" >1</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow1_col1" class="data row1 col1" >39</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow1_col2" class="data row1 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row2_col0" class="data row2 col0" >2</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row2_col1" class="data row2 col1" ><10</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row2_col2" class="data row2 col2" >All</td>
+                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow2_col0" class="data row2 col0" >2</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow2_col1" class="data row2 col1" ><10</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow2_col2" class="data row2 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row3_col0" class="data row3 col0" >0</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row3_col1" class="data row3 col1" >572</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row3_col2" class="data row3 col2" >55_65H</td>
+                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow3_col0" class="data row3 col0" >0</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow3_col1" class="data row3 col1" >950</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow3_col2" class="data row3 col2" >55_65H</td>
             </tr>
             <tr>
-                                <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row4_col0" class="data row4 col0" >1</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row4_col1" class="data row4 col1" ><10</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row4_col2" class="data row4 col2" >55_65H</td>
+                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow4_col0" class="data row4 col0" >1</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow4_col1" class="data row4 col1" ><10</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow4_col2" class="data row4 col2" >55_65H</td>
             </tr>
             <tr>
-                                <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row5_col0" class="data row5 col0" >0</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row5_col1" class="data row5 col1" >356</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row5_col2" class="data row5 col2" >55_65L</td>
+                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow5_col0" class="data row5 col0" >0</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow5_col1" class="data row5 col1" >526</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow5_col2" class="data row5 col2" >55_65L</td>
             </tr>
             <tr>
-                                <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row6_col0" class="data row6 col0" >1</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row6_col1" class="data row6 col1" ><10</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row6_col2" class="data row6 col2" >55_65L</td>
+                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow6_col0" class="data row6 col0" >1</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow6_col1" class="data row6 col1" ><10</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow6_col2" class="data row6 col2" >55_65L</td>
             </tr>
             <tr>
-                                <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row7_col0" class="data row7 col0" >0</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row7_col1" class="data row7 col1" >6608</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row7_col2" class="data row7 col2" >65_plus</td>
+                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow7_col0" class="data row7 col0" >0</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow7_col1" class="data row7 col1" >9208</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow7_col2" class="data row7 col2" >65_plus</td>
             </tr>
             <tr>
-                                <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row8_col0" class="data row8 col0" >1</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row8_col1" class="data row8 col1" >23</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row8_col2" class="data row8 col2" >65_plus</td>
+                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow8_col0" class="data row8 col0" >1</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow8_col1" class="data row8 col1" >30</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow8_col2" class="data row8 col2" >65_plus</td>
             </tr>
             <tr>
-                                <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row9_col0" class="data row9 col0" >2</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row9_col1" class="data row9 col1" ><10</td>
-                        <td id="T_1b506afc_f379_11eb_99b1_c7c1f1b353d1row9_col2" class="data row9 col2" >65_plus</td>
+                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow9_col0" class="data row9 col0" >2</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow9_col1" class="data row9 col1" ><10</td>
+                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow9_col2" class="data row9 col2" >65_plus</td>
             </tr>
     </tbody></table>
 </div>
@@ -13418,7 +13449,7 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">supressed_bd_prescriptions_by_region</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;region&#39;</span><span class="p">,</span><span class="s1">&#39;budesonide_prescription&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;budesonide_prescription&quot;</span><span class="p">:</span><span class="s2">&quot;Count of budesonide prescriptions&quot;</span><span class="p">,</span><span class="s2">&quot;patient_id&quot;</span><span class="p">:</span><span class="s2">&quot;Count of patients&quot;</span><span class="p">}),[</span><span class="s1">&#39;Count of patients&#39;</span><span class="p">])</span>
@@ -13436,117 +13467,122 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1" ><thead>    <tr>        <th class="col_heading level0 col0" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col1" >Count of patients</th>        <th class="col_heading level0 col2" >region</th>    </tr></thead><tbody>
+</style><table id="T_24c4ab4e_f468_11eb_a1c1_31015947037c" ><thead>    <tr>        <th class="col_heading level0 col0" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col1" >Count of patients</th>        <th class="col_heading level0 col2" >region</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row0_col0" class="data row0 col0" >0</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row0_col1" class="data row0 col1" >7536</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row0_col2" class="data row0 col2" >All</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow0_col0" class="data row0 col0" >0</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow0_col1" class="data row0 col1" >10684</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow0_col2" class="data row0 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row1_col0" class="data row1 col0" >1</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row1_col1" class="data row1 col1" >29</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row1_col2" class="data row1 col2" >All</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow1_col0" class="data row1 col0" >1</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow1_col1" class="data row1 col1" >39</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow1_col2" class="data row1 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row2_col0" class="data row2 col0" >2</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row2_col1" class="data row2 col1" ><10</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row2_col2" class="data row2 col2" >All</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow2_col0" class="data row2 col0" >2</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow2_col1" class="data row2 col1" ><10</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow2_col2" class="data row2 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row3_col0" class="data row3 col0" >0</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row3_col1" class="data row3 col1" >1170</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row3_col2" class="data row3 col2" >East</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow3_col0" class="data row3 col0" >0</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow3_col1" class="data row3 col1" >1717</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow3_col2" class="data row3 col2" >East</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row4_col0" class="data row4 col0" >1</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row4_col1" class="data row4 col1" ><10</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row4_col2" class="data row4 col2" >East</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow4_col0" class="data row4 col0" >1</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow4_col1" class="data row4 col1" ><10</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow4_col2" class="data row4 col2" >East</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row5_col0" class="data row5 col0" >0</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row5_col1" class="data row5 col1" >1093</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row5_col2" class="data row5 col2" >East Midlands</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow5_col0" class="data row5 col0" >0</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow5_col1" class="data row5 col1" >1518</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow5_col2" class="data row5 col2" >East Midlands</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row6_col0" class="data row6 col0" >1</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row6_col1" class="data row6 col1" ><10</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row6_col2" class="data row6 col2" >East Midlands</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow6_col0" class="data row6 col0" >1</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow6_col1" class="data row6 col1" ><10</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow6_col2" class="data row6 col2" >East Midlands</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row7_col0" class="data row7 col0" >0</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row7_col1" class="data row7 col1" >350</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row7_col2" class="data row7 col2" >London</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow7_col0" class="data row7 col0" >0</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow7_col1" class="data row7 col1" >451</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow7_col2" class="data row7 col2" >London</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row8_col0" class="data row8 col0" >1</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row8_col1" class="data row8 col1" ><10</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row8_col2" class="data row8 col2" >London</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow8_col0" class="data row8 col0" >1</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow8_col1" class="data row8 col1" ><10</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow8_col2" class="data row8 col2" >London</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row9_col0" class="data row9 col0" >0</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row9_col1" class="data row9 col1" >503</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row9_col2" class="data row9 col2" >North East</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow9_col0" class="data row9 col0" >0</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow9_col1" class="data row9 col1" >675</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow9_col2" class="data row9 col2" >North East</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row10_col0" class="data row10 col0" >1</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row10_col1" class="data row10 col1" ><10</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row10_col2" class="data row10 col2" >North East</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow10_col0" class="data row10 col0" >1</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow10_col1" class="data row10 col1" ><10</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow10_col2" class="data row10 col2" >North East</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row11_col0" class="data row11 col0" >0</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row11_col1" class="data row11 col1" >1314</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row11_col2" class="data row11 col2" >North West</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow11_col0" class="data row11 col0" >0</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow11_col1" class="data row11 col1" >1979</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow11_col2" class="data row11 col2" >North West</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row12_col0" class="data row12 col0" >1</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row12_col1" class="data row12 col1" ><10</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row12_col2" class="data row12 col2" >North West</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow12_col0" class="data row12 col0" >1</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow12_col1" class="data row12 col1" ><10</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow12_col2" class="data row12 col2" >North West</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row13_col0" class="data row13 col0" >0</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row13_col1" class="data row13 col1" >415</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row13_col2" class="data row13 col2" >South East</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow13_col0" class="data row13 col0" >0</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow13_col1" class="data row13 col1" >543</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow13_col2" class="data row13 col2" >South East</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row14_col0" class="data row14 col0" >0</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row14_col1" class="data row14 col1" >825</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row14_col2" class="data row14 col2" >South West</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow14_col0" class="data row14 col0" >0</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow14_col1" class="data row14 col1" >1170</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow14_col2" class="data row14 col2" >South West</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row15_col0" class="data row15 col0" >1</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row15_col1" class="data row15 col1" >23</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row15_col2" class="data row15 col2" >South West</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow15_col0" class="data row15 col0" >1</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow15_col1" class="data row15 col1" >29</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow15_col2" class="data row15 col2" >South West</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row16_col0" class="data row16 col0" >2</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row16_col1" class="data row16 col1" ><10</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row16_col2" class="data row16 col2" >South West</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow16_col0" class="data row16 col0" >2</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow16_col1" class="data row16 col1" ><10</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow16_col2" class="data row16 col2" >South West</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row17_col0" class="data row17 col0" >0</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row17_col1" class="data row17 col1" >391</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row17_col2" class="data row17 col2" >West Midlands</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow17_col0" class="data row17 col0" >0</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow17_col1" class="data row17 col1" >531</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow17_col2" class="data row17 col2" >West Midlands</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row18_col0" class="data row18 col0" >0</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row18_col1" class="data row18 col1" >1469</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row18_col2" class="data row18 col2" >Yorkshire and The Humber</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow18_col0" class="data row18 col0" >1</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow18_col1" class="data row18 col1" ><10</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow18_col2" class="data row18 col2" >West Midlands</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row19_col0" class="data row19 col0" >1</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row19_col1" class="data row19 col1" ><10</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row19_col2" class="data row19 col2" >Yorkshire and The Humber</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow19_col0" class="data row19 col0" >0</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow19_col1" class="data row19 col1" >2092</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow19_col2" class="data row19 col2" >Yorkshire and The Humber</td>
             </tr>
             <tr>
-                                <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row20_col0" class="data row20 col0" >2</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row20_col1" class="data row20 col1" ><10</td>
-                        <td id="T_1b56c6ea_f379_11eb_99b1_c7c1f1b353d1row20_col2" class="data row20 col2" >Yorkshire and The Humber</td>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow20_col0" class="data row20 col0" >1</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow20_col1" class="data row20 col1" ><10</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow20_col2" class="data row20 col2" >Yorkshire and The Humber</td>
+            </tr>
+            <tr>
+                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow21_col0" class="data row21 col0" >2</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow21_col1" class="data row21 col1" ><10</td>
+                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow21_col2" class="data row21 col2" >Yorkshire and The Humber</td>
             </tr>
     </tbody></table>
 </div>
