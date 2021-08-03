@@ -18,18 +18,6 @@
       "downloaded_at": "2021-06-24 11:35:18.302188Z",
       "sha": "066fe1eddd08fe70038589d780caae6369b16f2d"
     },
-    "opensafely-ethnicity.csv": {
-      "id": "opensafely/ethnicity/2020-04-27",
-      "url": "https://codelists.opensafely.org/codelist/opensafely/ethnicity/2020-04-27/",
-      "downloaded_at": "2021-06-24 11:35:18.549394Z",
-      "sha": "3d2f3998b71863a80b24d60f6f4282e14191ae13"
-    },
-    "user-jon_massey-shielding-patient-list-spl-flu-risk-based-codes.csv": {
-      "id": "user/jon_massey/shielding-patient-list-spl-flu-risk-based-codes/7f5612ce",
-      "url": "https://codelists.opensafely.org/codelist/user/jon_massey/shielding-patient-list-spl-flu-risk-based-codes/7f5612ce/",
-      "downloaded_at": "2021-06-24 11:35:19.047612Z",
-      "sha": "89081e6728c7e8f6134586155e5c2d6255c29918"
-    },
     "primis-covid19-vacc-uptake-shield.csv": {
       "id": "primis-covid19-vacc-uptake/shield/v1",
       "url": "https://codelists.opensafely.org/codelist/primis-covid19-vacc-uptake/shield/v1/",
