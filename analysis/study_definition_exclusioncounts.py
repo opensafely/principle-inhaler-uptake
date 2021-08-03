@@ -6,15 +6,6 @@ from datetime import date, timedelta
 Guidance issued 2021-04-12, with inclusion criteria of symptom onset within 14 days, therefore index date of 2021-03-29
 '''
 
-#todo:
-
-ix_dt = "2021-03-29"
-
-
-def indexoffset(ndays):
-    return (date.fromisoformat(ix_dt) + timedelta(days=ndays)).strftime('%Y-%m-%d')
-
-
 study = StudyDefinition(
     default_expectations={
         "date": {"earliest": "1900-01-01", "latest": "today"},
@@ -22,7 +13,7 @@ study = StudyDefinition(
         "incidence": 0.5,
     },
 
-    index_date=ix_dt,
+    index_date="2021-03-29",
     population=patients.all(),
 
     has_died=patients.died_from_any_cause(
@@ -45,13 +36,13 @@ study = StudyDefinition(
     first_positive_test_date=patients.with_test_result_in_sgss(
         pathogen="SARS-CoV-2",
         test_result="positive",
-        on_or_after=ix_dt,
+        on_or_after="index_date",
         find_first_match_in_period=True,
         #restrict_to_earliest_specimen_date=False,
         returning="date",
         date_format="YYYY-MM-DD",
         return_expectations={
-            "date": {"earliest": ix_dt},
+            "date": {"earliest": "index_date"},
             "rate": "exponential_increase"
         },
     ),
@@ -59,7 +50,7 @@ study = StudyDefinition(
     first_positive_test_type=patients.with_test_result_in_sgss(
         pathogen="SARS-CoV-2",
         test_result="positive",
-        on_or_after=ix_dt,
+        on_or_after="index_date",
         find_first_match_in_period=True,
         #restrict_to_earliest_specimen_date=False,
         returning="case_category",
