@@ -47,11 +47,14 @@ study = StudyDefinition(
             returning="binary_flag",
         ),
 
-        has_previous_steroid_prescription=patients.with_these_medications(
+        has_previous_steroid_prescription = patients.with_these_medications(
             inhaled_or_systemic_corticosteroids,
-            on_or_before="index_date - 90 days",
-            returning="binary_flag",
-            return_expectations={"incidence": 0.5}
+            between = [
+                "index_date - 90 days",
+                "index_date",
+            ],
+            returning = "binary_flag",
+            return_expectations = {"incidence": 0.5}
         ),
 
         registered=patients.registered_as_of("index_date"),
