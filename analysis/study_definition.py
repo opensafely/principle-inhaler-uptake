@@ -6,15 +6,6 @@ from datetime import date, timedelta
 Guidance issued 2021-04-12, with inclusion criteria of symptom onset within 14 days, therefore index date of 2021-03-29
 '''
 
-#todo:
-
-ix_dt = "2021-03-29"
-
-
-def indexoffset(ndays):
-    return (date.fromisoformat(ix_dt) + timedelta(days=ndays)).strftime('%Y-%m-%d')
-
-
 study = StudyDefinition(
     default_expectations={
         "date": {"earliest": "1900-01-01", "latest": "today"},
@@ -22,19 +13,28 @@ study = StudyDefinition(
         "incidence": 0.5,
     },
 
-    index_date=ix_dt,
+    index_date="2021-03-29",
 
     population=patients.satisfying(
-
-        # AND had_covid_symtoms
-
         """
             NOT has_died
             AND registered
-            AND
-            (age_band = "65_plus" OR (age_band = "55_65" AND (primis_shield OR primis_nonshield))) 
-            AND
-            (sex = "M" OR sex = "F")
+            AND (
+                age_band = "65_plus" 
+                OR (
+                    age_band = "55_65" 
+                    AND (
+                        primis_shield 
+                        OR 
+                        primis_nonshield
+                        )
+                    )
+                ) 
+            AND (
+                sex = "M" 
+                OR 
+                sex = "F"
+                )
             AND NOT covid_admission
             AND NOT covid_emergency_admission
             AND NOT has_previous_steroid_prescription
@@ -47,14 +47,14 @@ study = StudyDefinition(
             returning="binary_flag",
         ),
 
-        has_previous_steroid_prescription = patients.with_these_medications(
+        has_previous_steroid_prescription=patients.with_these_medications(
             inhaled_or_systemic_corticosteroids,
-            between = [
+            between=[
                 "index_date - 90 days",
                 "index_date",
             ],
-            returning = "binary_flag",
-            return_expectations = {"incidence": 0.5}
+            returning="binary_flag",
+            return_expectations={"incidence": 0.5}
         ),
 
         registered=patients.registered_as_of("index_date"),
@@ -63,12 +63,12 @@ study = StudyDefinition(
     first_positive_test_date=patients.with_test_result_in_sgss(
         pathogen="SARS-CoV-2",
         test_result="positive",
-        on_or_after=ix_dt,
+        on_or_after="index_date",
         find_first_match_in_period=True,
         returning="date",
         date_format="YYYY-MM-DD",
         return_expectations={
-            "date": {"earliest": ix_dt},
+            "date": {"earliest": "index_date"},
             "rate": "exponential_increase"
         },
     ),
@@ -76,7 +76,7 @@ study = StudyDefinition(
     first_positive_test_type=patients.with_test_result_in_sgss(
         pathogen="SARS-CoV-2",
         test_result="positive",
-        on_or_after=ix_dt,
+        on_or_after="index_date",
         find_first_match_in_period=True,
         returning="case_category",
         return_expectations={
@@ -99,7 +99,6 @@ study = StudyDefinition(
         }
     ),
 
-   
     age_band=patients.categorised_as(
         {
             "65_plus": "age >= 65",
@@ -118,7 +117,7 @@ study = StudyDefinition(
         }
     ),
     region=patients.registered_practice_as_of(
-        ix_dt,
+        "index_date",
         returning='nuts1_region_name',
         return_expectations={
             "rate": "universal",
@@ -136,9 +135,9 @@ study = StudyDefinition(
             },
         },
     ),
-    
+
     budesonide_prescription=patients.with_these_medications(
-        budeonside_inhalers,
+        budesonide_inhalers,
         between=["first_positive_test_date",
                  "first_positive_test_date + 14 days"],
         returning="number_of_matches_in_period",
@@ -152,7 +151,6 @@ study = StudyDefinition(
         returning='binary_flag',
         return_expectations={"incidence": 0.5}
     ),
-    
     primary_covid_hospital_admission=patients.admitted_to_hospital(
         returning="binary_flag",
         with_these_primary_diagnoses=covid_codelist,

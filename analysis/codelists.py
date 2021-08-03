@@ -6,7 +6,7 @@ covid_codelist = codelist_from_csv(
     system="icd10",
     column="icd10_code",
 )
-budeonside_inhalers = codelist_from_csv(
+budesonide_inhalers = codelist_from_csv(
     "codelists/opensafely-budesonide-inhalers-used-in-principle-trial-cemcmo2021011.csv",
     system="snomed",
     column='dmd_id'
