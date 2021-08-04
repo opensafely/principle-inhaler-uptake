@@ -13140,7 +13140,7 @@ AND NOT covid_emergency_admission
 AND NOT has_previous_steroid_prescription
 AND NOT primary_covid_hospital_admission
 AND first_positive_test_type != "LFT_Only"</code></pre>
-<p>Expected row count is c.26000 (as of 2021-08-03)</p>
+<p>Expected row count is c.8000 (as of 2021-07-30)</p>
 
 </div>
 </div>
@@ -13263,18 +13263,18 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_24b17eac_f468_11eb_a1c1_31015947037c" ><thead>    <tr>        <th class="col_heading level0 col0" >Cohort</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
+</style><table id="T_3fd600da_f473_11eb_97b8_e91e2c4586f9" ><thead>    <tr>        <th class="col_heading level0 col0" >Cohort</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow0_col0" class="data row0 col0" >55_65H</td>
-                        <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow0_col1" class="data row0 col1" >953</td>
+                                <td id="T_3fd600da_f473_11eb_97b8_e91e2c4586f9row0_col0" class="data row0 col0" >55_65H</td>
+                        <td id="T_3fd600da_f473_11eb_97b8_e91e2c4586f9row0_col1" class="data row0 col1" >953</td>
             </tr>
             <tr>
-                                <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow1_col0" class="data row1 col0" >55_65L</td>
-                        <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow1_col1" class="data row1 col1" >532</td>
+                                <td id="T_3fd600da_f473_11eb_97b8_e91e2c4586f9row1_col0" class="data row1 col0" >55_65L</td>
+                        <td id="T_3fd600da_f473_11eb_97b8_e91e2c4586f9row1_col1" class="data row1 col1" >532</td>
             </tr>
             <tr>
-                                <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow2_col0" class="data row2 col0" >65_plus</td>
-                        <td id="T_24b17eac_f468_11eb_a1c1_31015947037crow2_col1" class="data row2 col1" >9240</td>
+                                <td id="T_3fd600da_f473_11eb_97b8_e91e2c4586f9row2_col0" class="data row2 col0" >65_plus</td>
+                        <td id="T_3fd600da_f473_11eb_97b8_e91e2c4586f9row2_col1" class="data row2 col1" >9240</td>
             </tr>
     </tbody></table>
 </div>
@@ -13326,14 +13326,14 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_24b6d6b8_f468_11eb_a1c1_31015947037c" ><thead>    <tr>        <th class="col_heading level0 col0" >Type of first recorded positive test</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
+</style><table id="T_3fdb6d90_f473_11eb_97b8_e91e2c4586f9" ><thead>    <tr>        <th class="col_heading level0 col0" >Type of first recorded positive test</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_24b6d6b8_f468_11eb_a1c1_31015947037crow0_col0" class="data row0 col0" >LFT_WithPCR</td>
-                        <td id="T_24b6d6b8_f468_11eb_a1c1_31015947037crow0_col1" class="data row0 col1" >2053</td>
+                                <td id="T_3fdb6d90_f473_11eb_97b8_e91e2c4586f9row0_col0" class="data row0 col0" >LFT_WithPCR</td>
+                        <td id="T_3fdb6d90_f473_11eb_97b8_e91e2c4586f9row0_col1" class="data row0 col1" >2053</td>
             </tr>
             <tr>
-                                <td id="T_24b6d6b8_f468_11eb_a1c1_31015947037crow1_col0" class="data row1 col0" >PCR_Only</td>
-                        <td id="T_24b6d6b8_f468_11eb_a1c1_31015947037crow1_col1" class="data row1 col1" >8672</td>
+                                <td id="T_3fdb6d90_f473_11eb_97b8_e91e2c4586f9row1_col0" class="data row1 col0" >PCR_Only</td>
+                        <td id="T_3fdb6d90_f473_11eb_97b8_e91e2c4586f9row1_col1" class="data row1 col1" >8672</td>
             </tr>
     </tbody></table>
 </div>
@@ -13380,56 +13380,56 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_24beab68_f468_11eb_a1c1_31015947037c" ><thead>    <tr>        <th class="col_heading level0 col0" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col1" >Count of patients</th>        <th class="col_heading level0 col2" >cohort</th>    </tr></thead><tbody>
+</style><table id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9" ><thead>    <tr>        <th class="col_heading level0 col0" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col1" >Count of patients</th>        <th class="col_heading level0 col2" >cohort</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow0_col0" class="data row0 col0" >0</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow0_col1" class="data row0 col1" >10684</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow0_col2" class="data row0 col2" >All</td>
+                                <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row0_col0" class="data row0 col0" >0</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row0_col1" class="data row0 col1" >10684</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row0_col2" class="data row0 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow1_col0" class="data row1 col0" >1</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow1_col1" class="data row1 col1" >39</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow1_col2" class="data row1 col2" >All</td>
+                                <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row1_col0" class="data row1 col0" >1</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row1_col1" class="data row1 col1" >39</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row1_col2" class="data row1 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow2_col0" class="data row2 col0" >2</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow2_col1" class="data row2 col1" ><10</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow2_col2" class="data row2 col2" >All</td>
+                                <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row2_col0" class="data row2 col0" >2</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row2_col1" class="data row2 col1" ><10</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row2_col2" class="data row2 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow3_col0" class="data row3 col0" >0</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow3_col1" class="data row3 col1" >950</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow3_col2" class="data row3 col2" >55_65H</td>
+                                <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row3_col0" class="data row3 col0" >0</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row3_col1" class="data row3 col1" >950</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row3_col2" class="data row3 col2" >55_65H</td>
             </tr>
             <tr>
-                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow4_col0" class="data row4 col0" >1</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow4_col1" class="data row4 col1" ><10</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow4_col2" class="data row4 col2" >55_65H</td>
+                                <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row4_col0" class="data row4 col0" >1</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row4_col1" class="data row4 col1" ><10</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row4_col2" class="data row4 col2" >55_65H</td>
             </tr>
             <tr>
-                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow5_col0" class="data row5 col0" >0</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow5_col1" class="data row5 col1" >526</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow5_col2" class="data row5 col2" >55_65L</td>
+                                <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row5_col0" class="data row5 col0" >0</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row5_col1" class="data row5 col1" >526</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row5_col2" class="data row5 col2" >55_65L</td>
             </tr>
             <tr>
-                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow6_col0" class="data row6 col0" >1</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow6_col1" class="data row6 col1" ><10</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow6_col2" class="data row6 col2" >55_65L</td>
+                                <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row6_col0" class="data row6 col0" >1</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row6_col1" class="data row6 col1" ><10</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row6_col2" class="data row6 col2" >55_65L</td>
             </tr>
             <tr>
-                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow7_col0" class="data row7 col0" >0</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow7_col1" class="data row7 col1" >9208</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow7_col2" class="data row7 col2" >65_plus</td>
+                                <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row7_col0" class="data row7 col0" >0</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row7_col1" class="data row7 col1" >9208</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row7_col2" class="data row7 col2" >65_plus</td>
             </tr>
             <tr>
-                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow8_col0" class="data row8 col0" >1</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow8_col1" class="data row8 col1" >30</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow8_col2" class="data row8 col2" >65_plus</td>
+                                <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row8_col0" class="data row8 col0" >1</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row8_col1" class="data row8 col1" >30</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row8_col2" class="data row8 col2" >65_plus</td>
             </tr>
             <tr>
-                                <td id="T_24beab68_f468_11eb_a1c1_31015947037crow9_col0" class="data row9 col0" >2</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow9_col1" class="data row9 col1" ><10</td>
-                        <td id="T_24beab68_f468_11eb_a1c1_31015947037crow9_col2" class="data row9 col2" >65_plus</td>
+                                <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row9_col0" class="data row9 col0" >2</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row9_col1" class="data row9 col1" ><10</td>
+                        <td id="T_3fe496ae_f473_11eb_97b8_e91e2c4586f9row9_col2" class="data row9 col2" >65_plus</td>
             </tr>
     </tbody></table>
 </div>
@@ -13473,116 +13473,116 @@ AND first_positive_test_type != "LFT_Only"</code></pre>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_24c4ab4e_f468_11eb_a1c1_31015947037c" ><thead>    <tr>        <th class="col_heading level0 col0" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col1" >Count of patients</th>        <th class="col_heading level0 col2" >region</th>    </tr></thead><tbody>
+</style><table id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9" ><thead>    <tr>        <th class="col_heading level0 col0" >Count of budesonide prescriptions</th>        <th class="col_heading level0 col1" >Count of patients</th>        <th class="col_heading level0 col2" >region</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow0_col0" class="data row0 col0" >0</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow0_col1" class="data row0 col1" >10684</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow0_col2" class="data row0 col2" >All</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row0_col0" class="data row0 col0" >0</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row0_col1" class="data row0 col1" >10684</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row0_col2" class="data row0 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow1_col0" class="data row1 col0" >1</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow1_col1" class="data row1 col1" >39</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow1_col2" class="data row1 col2" >All</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row1_col0" class="data row1 col0" >1</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row1_col1" class="data row1 col1" >39</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row1_col2" class="data row1 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow2_col0" class="data row2 col0" >2</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow2_col1" class="data row2 col1" ><10</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow2_col2" class="data row2 col2" >All</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row2_col0" class="data row2 col0" >2</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row2_col1" class="data row2 col1" ><10</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row2_col2" class="data row2 col2" >All</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow3_col0" class="data row3 col0" >0</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow3_col1" class="data row3 col1" >1717</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow3_col2" class="data row3 col2" >East</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row3_col0" class="data row3 col0" >0</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row3_col1" class="data row3 col1" >1717</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row3_col2" class="data row3 col2" >East</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow4_col0" class="data row4 col0" >1</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow4_col1" class="data row4 col1" ><10</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow4_col2" class="data row4 col2" >East</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row4_col0" class="data row4 col0" >1</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row4_col1" class="data row4 col1" ><10</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row4_col2" class="data row4 col2" >East</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow5_col0" class="data row5 col0" >0</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow5_col1" class="data row5 col1" >1518</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow5_col2" class="data row5 col2" >East Midlands</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row5_col0" class="data row5 col0" >0</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row5_col1" class="data row5 col1" >1518</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row5_col2" class="data row5 col2" >East Midlands</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow6_col0" class="data row6 col0" >1</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow6_col1" class="data row6 col1" ><10</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow6_col2" class="data row6 col2" >East Midlands</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row6_col0" class="data row6 col0" >1</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row6_col1" class="data row6 col1" ><10</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row6_col2" class="data row6 col2" >East Midlands</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow7_col0" class="data row7 col0" >0</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow7_col1" class="data row7 col1" >451</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow7_col2" class="data row7 col2" >London</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row7_col0" class="data row7 col0" >0</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row7_col1" class="data row7 col1" >451</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row7_col2" class="data row7 col2" >London</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow8_col0" class="data row8 col0" >1</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow8_col1" class="data row8 col1" ><10</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow8_col2" class="data row8 col2" >London</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row8_col0" class="data row8 col0" >1</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row8_col1" class="data row8 col1" ><10</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row8_col2" class="data row8 col2" >London</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow9_col0" class="data row9 col0" >0</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow9_col1" class="data row9 col1" >675</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow9_col2" class="data row9 col2" >North East</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row9_col0" class="data row9 col0" >0</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row9_col1" class="data row9 col1" >675</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row9_col2" class="data row9 col2" >North East</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow10_col0" class="data row10 col0" >1</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow10_col1" class="data row10 col1" ><10</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow10_col2" class="data row10 col2" >North East</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row10_col0" class="data row10 col0" >1</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row10_col1" class="data row10 col1" ><10</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row10_col2" class="data row10 col2" >North East</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow11_col0" class="data row11 col0" >0</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow11_col1" class="data row11 col1" >1979</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow11_col2" class="data row11 col2" >North West</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row11_col0" class="data row11 col0" >0</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row11_col1" class="data row11 col1" >1979</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row11_col2" class="data row11 col2" >North West</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow12_col0" class="data row12 col0" >1</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow12_col1" class="data row12 col1" ><10</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow12_col2" class="data row12 col2" >North West</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row12_col0" class="data row12 col0" >1</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row12_col1" class="data row12 col1" ><10</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row12_col2" class="data row12 col2" >North West</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow13_col0" class="data row13 col0" >0</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow13_col1" class="data row13 col1" >543</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow13_col2" class="data row13 col2" >South East</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row13_col0" class="data row13 col0" >0</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row13_col1" class="data row13 col1" >543</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row13_col2" class="data row13 col2" >South East</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow14_col0" class="data row14 col0" >0</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow14_col1" class="data row14 col1" >1170</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow14_col2" class="data row14 col2" >South West</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row14_col0" class="data row14 col0" >0</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row14_col1" class="data row14 col1" >1170</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row14_col2" class="data row14 col2" >South West</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow15_col0" class="data row15 col0" >1</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow15_col1" class="data row15 col1" >29</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow15_col2" class="data row15 col2" >South West</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row15_col0" class="data row15 col0" >1</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row15_col1" class="data row15 col1" >29</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row15_col2" class="data row15 col2" >South West</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow16_col0" class="data row16 col0" >2</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow16_col1" class="data row16 col1" ><10</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow16_col2" class="data row16 col2" >South West</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row16_col0" class="data row16 col0" >2</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row16_col1" class="data row16 col1" ><10</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row16_col2" class="data row16 col2" >South West</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow17_col0" class="data row17 col0" >0</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow17_col1" class="data row17 col1" >531</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow17_col2" class="data row17 col2" >West Midlands</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row17_col0" class="data row17 col0" >0</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row17_col1" class="data row17 col1" >531</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row17_col2" class="data row17 col2" >West Midlands</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow18_col0" class="data row18 col0" >1</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow18_col1" class="data row18 col1" ><10</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow18_col2" class="data row18 col2" >West Midlands</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row18_col0" class="data row18 col0" >1</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row18_col1" class="data row18 col1" ><10</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row18_col2" class="data row18 col2" >West Midlands</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow19_col0" class="data row19 col0" >0</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow19_col1" class="data row19 col1" >2092</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow19_col2" class="data row19 col2" >Yorkshire and The Humber</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row19_col0" class="data row19 col0" >0</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row19_col1" class="data row19 col1" >2092</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row19_col2" class="data row19 col2" >Yorkshire and The Humber</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow20_col0" class="data row20 col0" >1</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow20_col1" class="data row20 col1" ><10</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow20_col2" class="data row20 col2" >Yorkshire and The Humber</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row20_col0" class="data row20 col0" >1</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row20_col1" class="data row20 col1" ><10</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row20_col2" class="data row20 col2" >Yorkshire and The Humber</td>
             </tr>
             <tr>
-                                <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow21_col0" class="data row21 col0" >2</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow21_col1" class="data row21 col1" ><10</td>
-                        <td id="T_24c4ab4e_f468_11eb_a1c1_31015947037crow21_col2" class="data row21 col2" >Yorkshire and The Humber</td>
+                                <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row21_col0" class="data row21 col0" >2</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row21_col1" class="data row21 col1" ><10</td>
+                        <td id="T_3feb4e68_f473_11eb_97b8_e91e2c4586f9row21_col2" class="data row21 col2" >Yorkshire and The Humber</td>
             </tr>
     </tbody></table>
 </div>
