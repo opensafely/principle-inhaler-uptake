@@ -13289,7 +13289,7 @@ Remaining people: 24206366
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;age_band&#39;</span><span class="p">]</span> <span class="o">=</span>  <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;65_plus&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="o">&gt;=</span><span class="mi">65</span> <span class="k">else</span> <span class="s1">&#39;55_65&#39;</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="o">&gt;=</span><span class="mi">55</span> <span class="ow">and</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="o">&lt;</span><span class="mi">65</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;lt_55&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;cohort&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">&#39;65_plus&#39;</span> <span class="k">else</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">&#39;lt_55&#39;</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age_band</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;H&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">primis_shield</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;L&#39;</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;cohort&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">&#39;65_plus&#39;</span> <span class="k">else</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">&#39;lt_55&#39;</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age_band</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;H&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">primis_shield</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;L&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">primis_nonshield</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;N&#39;</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">df_cohort_counts</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cohort&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;patient_id&#39;</span><span class="p">:</span><span class="s1">&#39;Patient count&#39;</span><span class="p">,</span><span class="s2">&quot;cohort&quot;</span><span class="p">:</span><span class="s2">&quot;Cohort&quot;</span><span class="p">})</span>
 <span class="n">suppressed_df_cohort_counts</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df_cohort_counts</span><span class="p">,[</span><span class="s1">&#39;Patient count&#39;</span><span class="p">])</span>
 <span class="n">suppressed_df_cohort_counts</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide_index</span><span class="p">()</span>
@@ -13311,22 +13311,26 @@ Remaining people: 24206366
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_610910f0_f3c7_11eb_a4bc_05f3231d7fa6" ><thead>    <tr>        <th class="col_heading level0 col0" >Cohort</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
+</style><table id="T_544d6206_f54f_11eb_8d80_0242ac110005" ><thead>    <tr>        <th class="col_heading level0 col0" >Cohort</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_610910f0_f3c7_11eb_a4bc_05f3231d7fa6row0_col0" class="data row0 col0" >55_65H</td>
-                        <td id="T_610910f0_f3c7_11eb_a4bc_05f3231d7fa6row0_col1" class="data row0 col1" >1526</td>
+                                <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row0_col0" class="data row0 col0" >55_65H</td>
+                        <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row0_col1" class="data row0 col1" >1526</td>
             </tr>
             <tr>
-                                <td id="T_610910f0_f3c7_11eb_a4bc_05f3231d7fa6row1_col0" class="data row1 col0" >55_65L</td>
-                        <td id="T_610910f0_f3c7_11eb_a4bc_05f3231d7fa6row1_col1" class="data row1 col1" >20186</td>
+                                <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row1_col0" class="data row1 col0" >55_65L</td>
+                        <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row1_col1" class="data row1 col1" >735</td>
             </tr>
             <tr>
-                                <td id="T_610910f0_f3c7_11eb_a4bc_05f3231d7fa6row2_col0" class="data row2 col0" >65_plus</td>
-                        <td id="T_610910f0_f3c7_11eb_a4bc_05f3231d7fa6row2_col1" class="data row2 col1" >13153</td>
+                                <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row2_col0" class="data row2 col0" >55_65N</td>
+                        <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row2_col1" class="data row2 col1" >19451</td>
             </tr>
             <tr>
-                                <td id="T_610910f0_f3c7_11eb_a4bc_05f3231d7fa6row3_col0" class="data row3 col0" >lt_55</td>
-                        <td id="T_610910f0_f3c7_11eb_a4bc_05f3231d7fa6row3_col1" class="data row3 col1" >24170980</td>
+                                <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row3_col0" class="data row3 col0" >65_plus</td>
+                        <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row3_col1" class="data row3 col1" >13153</td>
+            </tr>
+            <tr>
+                                <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row4_col0" class="data row4 col0" >lt_55</td>
+                        <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row4_col1" class="data row4 col1" >24170980</td>
             </tr>
     </tbody></table>
 </div>
@@ -13342,7 +13346,9 @@ Remaining people: 24206366
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">age_band</span><span class="o">!=</span><span class="s1">&#39;lt_55&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#drop under 55s and 55-65s with no COVID risk status</span>
+<span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">cohort</span><span class="o">!=</span><span class="s1">&#39;lt_55&#39;</span><span class="p">)]</span>
+<span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">cohort</span><span class="o">!=</span><span class="s1">&#39;55_65N&#39;</span><span class="p">)]</span>
 <span class="n">print_remainder</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
@@ -13360,7 +13366,7 @@ Remaining people: 24206366
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Remaining people: 34865
+<pre>Remaining people: 15414
 </pre>
 </div>
 </div>
@@ -13433,8 +13439,8 @@ Remaining people: 24206366
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Patients identified as COVID-positive only by lateral flow test 3436
-Remaining people: 31429
+<pre>Patients identified as COVID-positive only by lateral flow test 1595
+Remaining people: 13819
 </pre>
 </div>
 </div>
@@ -13488,174 +13494,167 @@ Remaining people: 31429
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6" ><thead>    <tr>        <th class="col_heading level0 col0" >cohort</th>        <th class="col_heading level0 col1" >Admitted w/primary CV19 diagnosis</th>        <th class="col_heading level0 col2" >Admitted w/CV19 diagnosis</th>        <th class="col_heading level0 col3" >Emergency Admission w/CV19 diagnosis</th>        <th class="col_heading level0 col4" >Count of patients</th>    </tr></thead><tbody>
+</style><table id="T_566f4806_f54f_11eb_8d80_0242ac110005" ><thead>    <tr>        <th class="col_heading level0 col0" >cohort</th>        <th class="col_heading level0 col1" >Admitted w/primary CV19 diagnosis</th>        <th class="col_heading level0 col2" >Admitted w/CV19 diagnosis</th>        <th class="col_heading level0 col3" >Emergency Admission w/CV19 diagnosis</th>        <th class="col_heading level0 col4" >Count of patients</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row0_col0" class="data row0 col0" >All</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row0_col1" class="data row0 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row0_col2" class="data row0 col2" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row0_col3" class="data row0 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row0_col4" class="data row0 col4" >30357</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row0_col0" class="data row0 col0" >All</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row0_col1" class="data row0 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row0_col2" class="data row0 col2" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row0_col3" class="data row0 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row0_col4" class="data row0 col4" >13018</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row1_col0" class="data row1 col0" >All</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row1_col1" class="data row1 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row1_col2" class="data row1 col2" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row1_col3" class="data row1 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row1_col4" class="data row1 col4" >512</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row1_col0" class="data row1 col0" >All</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row1_col1" class="data row1 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row1_col2" class="data row1 col2" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row1_col3" class="data row1 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row1_col4" class="data row1 col4" >349</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row2_col0" class="data row2 col0" >All</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row2_col1" class="data row2 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row2_col2" class="data row2 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row2_col3" class="data row2 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row2_col4" class="data row2 col4" >194</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row2_col0" class="data row2 col0" >All</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row2_col1" class="data row2 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row2_col2" class="data row2 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row2_col3" class="data row2 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row2_col4" class="data row2 col4" >167</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row3_col0" class="data row3 col0" >All</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row3_col1" class="data row3 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row3_col2" class="data row3 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row3_col3" class="data row3 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row3_col4" class="data row3 col4" >22</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row3_col0" class="data row3 col0" >All</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row3_col1" class="data row3 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row3_col2" class="data row3 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row3_col3" class="data row3 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row3_col4" class="data row3 col4" >17</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row4_col0" class="data row4 col0" >All</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row4_col1" class="data row4 col1" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row4_col2" class="data row4 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row4_col3" class="data row4 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row4_col4" class="data row4 col4" >240</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row4_col0" class="data row4 col0" >All</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row4_col1" class="data row4 col1" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row4_col2" class="data row4 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row4_col3" class="data row4 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row4_col4" class="data row4 col4" >188</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row5_col0" class="data row5 col0" >All</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row5_col1" class="data row5 col1" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row5_col2" class="data row5 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row5_col3" class="data row5 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row5_col4" class="data row5 col4" >104</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row5_col0" class="data row5 col0" >All</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row5_col1" class="data row5 col1" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row5_col2" class="data row5 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row5_col3" class="data row5 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row5_col4" class="data row5 col4" >74</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row6_col0" class="data row6 col0" >55_65H</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row6_col1" class="data row6 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row6_col2" class="data row6 col2" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row6_col3" class="data row6 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row6_col4" class="data row6 col4" >1311</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row6_col0" class="data row6 col0" >55_65H</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row6_col1" class="data row6 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row6_col2" class="data row6 col2" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row6_col3" class="data row6 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row6_col4" class="data row6 col4" >1311</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row7_col0" class="data row7 col0" >55_65H</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row7_col1" class="data row7 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row7_col2" class="data row7 col2" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row7_col3" class="data row7 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row7_col4" class="data row7 col4" >38</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row7_col0" class="data row7 col0" >55_65H</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row7_col1" class="data row7 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row7_col2" class="data row7 col2" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row7_col3" class="data row7 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row7_col4" class="data row7 col4" >38</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row8_col0" class="data row8 col0" >55_65H</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row8_col1" class="data row8 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row8_col2" class="data row8 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row8_col3" class="data row8 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row8_col4" class="data row8 col4" >16</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row8_col0" class="data row8 col0" >55_65H</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row8_col1" class="data row8 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row8_col2" class="data row8 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row8_col3" class="data row8 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row8_col4" class="data row8 col4" >16</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row9_col0" class="data row9 col0" >55_65H</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row9_col1" class="data row9 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row9_col2" class="data row9 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row9_col3" class="data row9 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row9_col4" class="data row9 col4" ><10</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row9_col0" class="data row9 col0" >55_65H</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row9_col1" class="data row9 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row9_col2" class="data row9 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row9_col3" class="data row9 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row9_col4" class="data row9 col4" ><10</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row10_col0" class="data row10 col0" >55_65H</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row10_col1" class="data row10 col1" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row10_col2" class="data row10 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row10_col3" class="data row10 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row10_col4" class="data row10 col4" >21</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row10_col0" class="data row10 col0" >55_65H</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row10_col1" class="data row10 col1" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row10_col2" class="data row10 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row10_col3" class="data row10 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row10_col4" class="data row10 col4" >21</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row11_col0" class="data row11 col0" >55_65H</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row11_col1" class="data row11 col1" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row11_col2" class="data row11 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row11_col3" class="data row11 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row11_col4" class="data row11 col4" >15</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row11_col0" class="data row11 col0" >55_65H</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row11_col1" class="data row11 col1" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row11_col2" class="data row11 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row11_col3" class="data row11 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row11_col4" class="data row11 col4" >15</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row12_col0" class="data row12 col0" >55_65L</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row12_col1" class="data row12 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row12_col2" class="data row12 col2" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row12_col3" class="data row12 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row12_col4" class="data row12 col4" >17983</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row12_col0" class="data row12 col0" >55_65L</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row12_col1" class="data row12 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row12_col2" class="data row12 col2" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row12_col3" class="data row12 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row12_col4" class="data row12 col4" >644</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row13_col0" class="data row13 col0" >55_65L</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row13_col1" class="data row13 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row13_col2" class="data row13 col2" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row13_col3" class="data row13 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row13_col4" class="data row13 col4" >163</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row13_col0" class="data row13 col0" >55_65L</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row13_col1" class="data row13 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row13_col2" class="data row13 col2" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row13_col3" class="data row13 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row13_col4" class="data row13 col4" ><10</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row14_col0" class="data row14 col0" >55_65L</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row14_col1" class="data row14 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row14_col2" class="data row14 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row14_col3" class="data row14 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row14_col4" class="data row14 col4" >27</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row14_col0" class="data row14 col0" >55_65L</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row14_col1" class="data row14 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row14_col2" class="data row14 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row14_col3" class="data row14 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row14_col4" class="data row14 col4" ><10</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row15_col0" class="data row15 col0" >55_65L</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row15_col1" class="data row15 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row15_col2" class="data row15 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row15_col3" class="data row15 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row15_col4" class="data row15 col4" ><10</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row15_col0" class="data row15 col0" >55_65L</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row15_col1" class="data row15 col1" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row15_col2" class="data row15 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row15_col3" class="data row15 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row15_col4" class="data row15 col4" ><10</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row16_col0" class="data row16 col0" >55_65L</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row16_col1" class="data row16 col1" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row16_col2" class="data row16 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row16_col3" class="data row16 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row16_col4" class="data row16 col4" >62</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row16_col0" class="data row16 col0" >55_65L</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row16_col1" class="data row16 col1" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row16_col2" class="data row16 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row16_col3" class="data row16 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row16_col4" class="data row16 col4" ><10</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row17_col0" class="data row17 col0" >55_65L</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row17_col1" class="data row17 col1" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row17_col2" class="data row17 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row17_col3" class="data row17 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row17_col4" class="data row17 col4" >30</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row17_col0" class="data row17 col0" >65_plus</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row17_col1" class="data row17 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row17_col2" class="data row17 col2" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row17_col3" class="data row17 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row17_col4" class="data row17 col4" >11063</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row18_col0" class="data row18 col0" >65_plus</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row18_col1" class="data row18 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row18_col2" class="data row18 col2" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row18_col3" class="data row18 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row18_col4" class="data row18 col4" >11063</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row18_col0" class="data row18 col0" >65_plus</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row18_col1" class="data row18 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row18_col2" class="data row18 col2" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row18_col3" class="data row18 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row18_col4" class="data row18 col4" >311</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row19_col0" class="data row19 col0" >65_plus</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row19_col1" class="data row19 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row19_col2" class="data row19 col2" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row19_col3" class="data row19 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row19_col4" class="data row19 col4" >311</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row19_col0" class="data row19 col0" >65_plus</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row19_col1" class="data row19 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row19_col2" class="data row19 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row19_col3" class="data row19 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row19_col4" class="data row19 col4" >151</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row20_col0" class="data row20 col0" >65_plus</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row20_col1" class="data row20 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row20_col2" class="data row20 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row20_col3" class="data row20 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row20_col4" class="data row20 col4" >151</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row20_col0" class="data row20 col0" >65_plus</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row20_col1" class="data row20 col1" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row20_col2" class="data row20 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row20_col3" class="data row20 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row20_col4" class="data row20 col4" >17</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row21_col0" class="data row21 col0" >65_plus</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row21_col1" class="data row21 col1" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row21_col2" class="data row21 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row21_col3" class="data row21 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row21_col4" class="data row21 col4" >17</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row21_col0" class="data row21 col0" >65_plus</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row21_col1" class="data row21 col1" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row21_col2" class="data row21 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row21_col3" class="data row21 col3" >0</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row21_col4" class="data row21 col4" >157</td>
             </tr>
             <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row22_col0" class="data row22 col0" >65_plus</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row22_col1" class="data row22 col1" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row22_col2" class="data row22 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row22_col3" class="data row22 col3" >0</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row22_col4" class="data row22 col4" >157</td>
-            </tr>
-            <tr>
-                                <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row23_col0" class="data row23 col0" >65_plus</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row23_col1" class="data row23 col1" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row23_col2" class="data row23 col2" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row23_col3" class="data row23 col3" >1</td>
-                        <td id="T_6326c0a8_f3c7_11eb_a4bc_05f3231d7fa6row23_col4" class="data row23 col4" >59</td>
+                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row22_col0" class="data row22 col0" >65_plus</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row22_col1" class="data row22 col1" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row22_col2" class="data row22 col2" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row22_col3" class="data row22 col3" >1</td>
+                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row22_col4" class="data row22 col4" >59</td>
             </tr>
     </tbody></table>
 </div>
@@ -13703,46 +13702,46 @@ Remaining people: 31429
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-</style><table id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6" ><thead>    <tr>        <th class="col_heading level0 col0" >cohort</th>        <th class="col_heading level0 col1" >Having previous corticosteroid prescription</th>        <th class="col_heading level0 col2" >Count of patients</th>    </tr></thead><tbody>
+</style><table id="T_56790c10_f54f_11eb_8d80_0242ac110005" ><thead>    <tr>        <th class="col_heading level0 col0" >cohort</th>        <th class="col_heading level0 col1" >Having previous corticosteroid prescription</th>        <th class="col_heading level0 col2" >Count of patients</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row0_col0" class="data row0 col0" >All</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row0_col1" class="data row0 col1" >0</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row0_col2" class="data row0 col2" >27551</td>
+                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row0_col0" class="data row0 col0" >All</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row0_col1" class="data row0 col1" >0</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row0_col2" class="data row0 col2" >11300</td>
             </tr>
             <tr>
-                                <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row1_col0" class="data row1 col0" >All</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row1_col1" class="data row1 col1" >1</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row1_col2" class="data row1 col2" >3878</td>
+                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row1_col0" class="data row1 col0" >All</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row1_col1" class="data row1 col1" >1</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row1_col2" class="data row1 col2" >2519</td>
             </tr>
             <tr>
-                                <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row2_col0" class="data row2 col0" >55_65H</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row2_col1" class="data row2 col1" >0</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row2_col2" class="data row2 col2" >1015</td>
+                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row2_col0" class="data row2 col0" >55_65H</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row2_col1" class="data row2 col1" >0</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row2_col2" class="data row2 col2" >1015</td>
             </tr>
             <tr>
-                                <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row3_col0" class="data row3 col0" >55_65H</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row3_col1" class="data row3 col1" >1</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row3_col2" class="data row3 col2" >387</td>
+                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row3_col0" class="data row3 col0" >55_65H</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row3_col1" class="data row3 col1" >1</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row3_col2" class="data row3 col2" >387</td>
             </tr>
             <tr>
-                                <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row4_col0" class="data row4 col0" >55_65L</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row4_col1" class="data row4 col1" >0</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row4_col2" class="data row4 col2" >16796</td>
+                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row4_col0" class="data row4 col0" >55_65L</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row4_col1" class="data row4 col1" >0</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row4_col2" class="data row4 col2" >545</td>
             </tr>
             <tr>
-                                <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row5_col0" class="data row5 col0" >55_65L</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row5_col1" class="data row5 col1" >1</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row5_col2" class="data row5 col2" >1473</td>
+                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row5_col0" class="data row5 col0" >55_65L</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row5_col1" class="data row5 col1" >1</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row5_col2" class="data row5 col2" >114</td>
             </tr>
             <tr>
-                                <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row6_col0" class="data row6 col0" >65_plus</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row6_col1" class="data row6 col1" >0</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row6_col2" class="data row6 col2" >9740</td>
+                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row6_col0" class="data row6 col0" >65_plus</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row6_col1" class="data row6 col1" >0</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row6_col2" class="data row6 col2" >9740</td>
             </tr>
             <tr>
-                                <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row7_col0" class="data row7 col0" >65_plus</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row7_col1" class="data row7 col1" >1</td>
-                        <td id="T_63328104_f3c7_11eb_a4bc_05f3231d7fa6row7_col2" class="data row7 col2" >2018</td>
+                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row7_col0" class="data row7 col0" >65_plus</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row7_col1" class="data row7 col1" >1</td>
+                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row7_col2" class="data row7 col2" >2018</td>
             </tr>
     </tbody></table>
 </div>
@@ -13825,50 +13824,50 @@ Remaining people: 31429
       <th rowspan="4" valign="top">0</th>
       <th rowspan="2" valign="top">0</th>
       <th>0</th>
-      <td>26743</td>
-      <td>3614</td>
-      <td>30357</td>
+      <td>10725</td>
+      <td>2293</td>
+      <td>13018</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>381</td>
-      <td>131</td>
-      <td>512</td>
+      <td>246</td>
+      <td>112</td>
+      <td>349</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">1</th>
       <th>0</th>
-      <td>157</td>
-      <td>37</td>
-      <td>194</td>
+      <td>136</td>
+      <td>33</td>
+      <td>167</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>15</td>
+      <td>11</td>
       <td>&lt;10</td>
-      <td>15</td>
+      <td>17</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">1</th>
       <th rowspan="2" valign="top">1</th>
       <th>0</th>
+      <td>130</td>
+      <td>50</td>
       <td>178</td>
-      <td>62</td>
-      <td>240</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>77</td>
-      <td>27</td>
-      <td>104</td>
+      <td>52</td>
+      <td>24</td>
+      <td>74</td>
     </tr>
     <tr>
       <th>All</th>
       <th></th>
       <th></th>
-      <td>27551</td>
-      <td>3871</td>
-      <td>31422</td>
+      <td>11300</td>
+      <td>2519</td>
+      <td>13819</td>
     </tr>
   </tbody>
 </table>
@@ -13904,7 +13903,7 @@ Remaining people: 31429
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Remaining people: 26743
+<pre>Remaining people: 10725
 </pre>
 </div>
 </div>
@@ -13946,8 +13945,8 @@ Remaining people: 31429
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Patients without GP consultation +/- 7 days from positive test 20273
-Remaining people: 6470
+<pre>Patients without GP consultation +/- 7 days from positive test 7164
+Remaining people: 3561
 </pre>
 </div>
 </div>
