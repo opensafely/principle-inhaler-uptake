@@ -22,7 +22,7 @@ study = StudyDefinition(
             AND (
                 age_band = "65_plus" 
                 OR (
-                    age_band = "55_65" 
+                    age_band = "50_65" 
                     AND (
                         primis_shield 
                         OR 
@@ -102,15 +102,15 @@ study = StudyDefinition(
     age_band=patients.categorised_as(
         {
             "65_plus": "age >= 65",
-            "55_65": "age >=55 AND age <65",
-            "lt_55": "DEFAULT"
+            "50_65": "age >=50 AND age <65",
+            "lt_50": "DEFAULT"
         },
         age=patients.age_as_of("first_positive_test_date - 90 days"),
         return_expectations={
             "category": {
                 "ratios": {
-                    "lt_55": 0.85,
-                    "55_65": 0.05,
+                    "lt_50": 0.85,
+                    "50_65": 0.05,
                     "65_plus": 0.1,
                 }
             }
