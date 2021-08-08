@@ -19,7 +19,7 @@ df = pd.read_csv('../output/input.csv')
 df.first_positive_test_type= df.first_positive_test_type.fillna('Unknown')
 df = df[df.first_positive_test_type!="LFT"]
 
-#add cohort label [over 65s, over 55s with sheilding flag, over 55s with non-sheilding flag]
+#add cohort label [over 65s, over 50s with sheilding flag, over 50s with non-sheilding flag]
 df['cohort'] = df.apply(lambda x: x.age_band if x.age_band == '65_plus' else str(x.age_band) + ('H' if x.primis_shield==1 else 'L'),axis=1)
 
 

@@ -31,12 +31,12 @@ df = df[df.registered == 1]
 out_dict['registered'] = len(df.index)
 
 out_dict['over_65'] = len(df[df.age >= 65].index)
-out_dict['over_55_low_covid_risk'] = len(df[((df.age < 65) & (df.age >= 55)) & (
+out_dict['over_50_low_covid_risk'] = len(df[((df.age < 65) & (df.age >= 50)) & (
     df.primis_shield == 0) & (df.primis_nonshield == 1)].index)
-out_dict['over_55_high_covid_risk'] = len(
-    df[((df.age < 65) & (df.age >= 55)) & (df.primis_shield == 1)].index)
+out_dict['over_50_high_covid_risk'] = len(
+    df[((df.age < 65) & (df.age >= 50)) & (df.primis_shield == 1)].index)
 
-df = df[df.age >= 55]
+df = df[df.age >= 50]
 df = df[(df.age >= 65) | (df.primis_shield == 1) | (df.primis_nonshield == 1)]
 
 df = df[(df.sex == 'M') | (df.sex == 'F')]
@@ -53,10 +53,10 @@ for r in df.groupby('first_positive_test_type')['patient_id'].count().reset_inde
 df = df[df.first_positive_test_type != "LFT_Only"]
 
 out_dict['PCR_+ve_over_65'] = len(df[df.age >= 65].index)
-out_dict['PCR_+ve_over_55_low_covid_risk'] = len(df[((df.age < 65) & (
-    df.age >= 55)) & (df.primis_shield == 0) & (df.primis_nonshield == 1)].index)
-out_dict['PCR_+ve_over_55_high_covid_risk'] = len(
-    df[((df.age < 65) & (df.age >= 55)) & (df.primis_shield == 1)].index)
+out_dict['PCR_+ve_over_50_low_covid_risk'] = len(df[((df.age < 65) & (
+    df.age >= 50)) & (df.primis_shield == 0) & (df.primis_nonshield == 1)].index)
+out_dict['PCR_+ve_over_50_high_covid_risk'] = len(
+    df[((df.age < 65) & (df.age >= 50)) & (df.primis_shield == 1)].index)
 
 df.has_previous_steroid_prescription = df.has_previous_steroid_prescription.fillna(
     0)
