@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8" />
+<!-- saved from url=(0103)file:///D:/Level4FIles/workspaces/principle_trial_budesonide_inhalers_main/output/exclusion_counts.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>exclusion_counts</title>
 
@@ -13046,7 +13046,7 @@ div#notebook {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="file:///D:/Level4FIles/workspaces/principle_trial_budesonide_inhalers_main/output/custom.css">
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -13096,12 +13096,12 @@ div#notebook {
 <span class="k">def</span> <span class="nf">suppress</span><span class="p">(</span><span class="n">df_to_suppress</span><span class="p">,</span><span class="n">columns</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">columns</span><span class="p">:</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df_to_suppress</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;column </span><span class="si">{c}</span><span class="s1"> not in dataframe&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'column </span><span class="si">{c}</span><span class="s1"> not in dataframe'</span><span class="p">)</span>
 
     <span class="n">df</span> <span class="o">=</span> <span class="n">df_to_suppress</span>
     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">columns</span><span class="p">)]:</span>
-        <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{c}</span><span class="s1">&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{c}</span><span class="s1">&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
-        <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{c}</span><span class="s1">&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{c}</span><span class="s1">&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;&lt;10&#39;</span> <span class="k">if</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">&lt;</span><span class="n">n</span> <span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">)</span>
+        <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">'</span><span class="si">{c}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">'</span><span class="si">{c}</span><span class="s1">'</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+        <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">'</span><span class="si">{c}</span><span class="s1">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">'</span><span class="si">{c}</span><span class="s1">'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'&lt;10'</span> <span class="k">if</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">&lt;</span><span class="n">n</span> <span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">df</span>
 </pre></div>
 
@@ -13116,7 +13116,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">suppress_scalar</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
-    <span class="k">return</span> <span class="s1">&#39;&lt;10&#39;</span> <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="o">&lt;</span><span class="mi">10</span> <span class="k">else</span> <span class="n">val</span>
+    <span class="k">return</span> <span class="s1">'&lt;10'</span> <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="o">&lt;</span><span class="mi">10</span> <span class="k">else</span> <span class="n">val</span>
 </pre></div>
 
     </div>
@@ -13130,7 +13130,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_remainder</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Remaining people: {suppress_scalar(len(df.index))}&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Remaining people: {suppress_scalar(len(df.index))}'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13143,7 +13143,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../output/input_exclusioncounts.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../output/input_exclusioncounts.csv'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13154,7 +13154,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Preliminary-exclusions">Preliminary exclusions<a class="anchor-link" href="#Preliminary-exclusions">&#182;</a></h2><p>Remove people who have died or are no longer registered at the practice at the time of study</p>
+<h2 id="Preliminary-exclusions">Preliminary exclusions<a class="anchor-link" href="file:///D:/Level4FIles/workspaces/principle_trial_budesonide_inhalers_main/output/exclusion_counts.html#Preliminary-exclusions">¶</a></h2><p>Remove people who have died or are no longer registered at the practice at the time of study</p>
 
 </div>
 </div>
@@ -13164,7 +13164,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;People having been recorded as having died: {suppress_scalar(len(df[df.has_died == 1].index))}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'People having been recorded as having died: {suppress_scalar(len(df[df.has_died == 1].index))}'</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">has_died</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
 <span class="n">print_remainder</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
@@ -13184,7 +13184,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>People having been recorded as having died: 522717
-Remaining people: 31212403
+Remaining people: 31242977
 </pre>
 </div>
 </div>
@@ -13198,7 +13198,7 @@ Remaining people: 31212403
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;People having been recorded as not being registered: {suppress_scalar(len(df[df.registered == 0].index))}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'People having been recorded as not being registered: {suppress_scalar(len(df[df.registered == 0].index))}'</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">registered</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
 <span class="n">print_remainder</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
@@ -13217,8 +13217,8 @@ Remaining people: 31212403
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>People having been recorded as not being registered: 7006037
-Remaining people: 24206366
+<pre>People having been recorded as not being registered: 7027405
+Remaining people: 24215572
 </pre>
 </div>
 </div>
@@ -13230,7 +13230,7 @@ Remaining people: 24206366
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Sex">Sex<a class="anchor-link" href="#Sex">&#182;</a></h2><p>Include people recorded as having a sex of 'M' or 'F'</p>
+<h2 id="Sex">Sex<a class="anchor-link" href="file:///D:/Level4FIles/workspaces/principle_trial_budesonide_inhalers_main/output/exclusion_counts.html#Sex">¶</a></h2><p>Include people recorded as having a sex of 'M' or 'F'</p>
 
 </div>
 </div>
@@ -13240,7 +13240,7 @@ Remaining people: 24206366
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">sex</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sex</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">)]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">sex</span> <span class="o">==</span> <span class="s1">'M'</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sex</span> <span class="o">==</span> <span class="s1">'F'</span><span class="p">)]</span>
 <span class="n">print_remainder</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
@@ -13258,7 +13258,7 @@ Remaining people: 24206366
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Remaining people: 24205845
+<pre>Remaining people: 24215042
 </pre>
 </div>
 </div>
@@ -13270,12 +13270,12 @@ Remaining people: 24206366
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Age">Age<a class="anchor-link" href="#Age">&#182;</a></h2><p>Three cohorts included based on age at time of positive COVID-19 test and PRIMIS sheilding flags (estimated expected proportion):</p>
+<h2 id="Age">Age<a class="anchor-link" href="file:///D:/Level4FIles/workspaces/principle_trial_budesonide_inhalers_main/output/exclusion_counts.html#Age">¶</a></h2><p>Three cohorts included based on age at time of positive COVID-19 test and PRIMIS sheilding flags (estimated expected proportion):</p>
 <ul>
 <li>over 65s (85%)</li>
-<li>over 55s (15%)<ul>
+<li>over 50s (15%)<ul>
 <li>with shielding flag (5%)</li>
-<li>over 55s with non-shielding flag (10%)</li>
+<li>over 50s with non-shielding flag (10%)</li>
 </ul>
 </li>
 </ul>
@@ -13288,10 +13288,10 @@ Remaining people: 24206366
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;age_band&#39;</span><span class="p">]</span> <span class="o">=</span>  <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;65_plus&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="o">&gt;=</span><span class="mi">65</span> <span class="k">else</span> <span class="s1">&#39;55_65&#39;</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="o">&gt;=</span><span class="mi">55</span> <span class="ow">and</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="o">&lt;</span><span class="mi">65</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;lt_55&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;cohort&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">&#39;65_plus&#39;</span> <span class="k">else</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">&#39;lt_55&#39;</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age_band</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;H&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">primis_shield</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;L&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">primis_nonshield</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;N&#39;</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df_cohort_counts</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cohort&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;patient_id&#39;</span><span class="p">:</span><span class="s1">&#39;Patient count&#39;</span><span class="p">,</span><span class="s2">&quot;cohort&quot;</span><span class="p">:</span><span class="s2">&quot;Cohort&quot;</span><span class="p">})</span>
-<span class="n">suppressed_df_cohort_counts</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df_cohort_counts</span><span class="p">,[</span><span class="s1">&#39;Patient count&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">'age_band'</span><span class="p">]</span> <span class="o">=</span>  <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'65_plus'</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="o">&gt;=</span><span class="mi">65</span> <span class="k">else</span> <span class="s1">'50_65'</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="o">&gt;=</span><span class="mi">50</span> <span class="ow">and</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="o">&lt;</span><span class="mi">65</span><span class="p">)</span> <span class="k">else</span> <span class="s1">'lt_50'</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'cohort'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">'65_plus'</span> <span class="k">else</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age_band</span> <span class="o">==</span> <span class="s1">'lt_50'</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age_band</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s1">'H'</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">primis_shield</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">'L'</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">primis_nonshield</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">'N'</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_cohort_counts</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'cohort'</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">'patient_id'</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">'patient_id'</span><span class="p">:</span><span class="s1">'Patient count'</span><span class="p">,</span><span class="s2">"cohort"</span><span class="p">:</span><span class="s2">"Cohort"</span><span class="p">})</span>
+<span class="n">suppressed_df_cohort_counts</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df_cohort_counts</span><span class="p">,[</span><span class="s1">'Patient count'</span><span class="p">])</span>
 <span class="n">suppressed_df_cohort_counts</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide_index</span><span class="p">()</span>
 </pre></div>
 
@@ -13310,27 +13310,27 @@ Remaining people: 24206366
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<style  type="text/css" >
-</style><table id="T_544d6206_f54f_11eb_8d80_0242ac110005" ><thead>    <tr>        <th class="col_heading level0 col0" >Cohort</th>        <th class="col_heading level0 col1" >Patient count</th>    </tr></thead><tbody>
+<style type="text/css">
+</style><table id="T_342991d8_f8c5_11eb_a78b_0242ac110008"><thead>    <tr>        <th class="col_heading level0 col0">Cohort</th>        <th class="col_heading level0 col1">Patient count</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row0_col0" class="data row0 col0" >55_65H</td>
-                        <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row0_col1" class="data row0 col1" >1526</td>
+                                <td id="T_342991d8_f8c5_11eb_a78b_0242ac110008row0_col0" class="data row0 col0">50_65H</td>
+                        <td id="T_342991d8_f8c5_11eb_a78b_0242ac110008row0_col1" class="data row0 col1">2528</td>
             </tr>
             <tr>
-                                <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row1_col0" class="data row1 col0" >55_65L</td>
-                        <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row1_col1" class="data row1 col1" >735</td>
+                                <td id="T_342991d8_f8c5_11eb_a78b_0242ac110008row1_col0" class="data row1 col0">50_65L</td>
+                        <td id="T_342991d8_f8c5_11eb_a78b_0242ac110008row1_col1" class="data row1 col1">1257</td>
             </tr>
             <tr>
-                                <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row2_col0" class="data row2 col0" >55_65N</td>
-                        <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row2_col1" class="data row2 col1" >19451</td>
+                                <td id="T_342991d8_f8c5_11eb_a78b_0242ac110008row2_col0" class="data row2 col0">50_65N</td>
+                        <td id="T_342991d8_f8c5_11eb_a78b_0242ac110008row2_col1" class="data row2 col1">35961</td>
             </tr>
             <tr>
-                                <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row3_col0" class="data row3 col0" >65_plus</td>
-                        <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row3_col1" class="data row3 col1" >13153</td>
+                                <td id="T_342991d8_f8c5_11eb_a78b_0242ac110008row3_col0" class="data row3 col0">65_plus</td>
+                        <td id="T_342991d8_f8c5_11eb_a78b_0242ac110008row3_col1" class="data row3 col1">13154</td>
             </tr>
             <tr>
-                                <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row4_col0" class="data row4 col0" >lt_55</td>
-                        <td id="T_544d6206_f54f_11eb_8d80_0242ac110005row4_col1" class="data row4 col1" >24170980</td>
+                                <td id="T_342991d8_f8c5_11eb_a78b_0242ac110008row4_col0" class="data row4 col0">lt_50</td>
+                        <td id="T_342991d8_f8c5_11eb_a78b_0242ac110008row4_col1" class="data row4 col1">24162142</td>
             </tr>
     </tbody></table>
 </div>
@@ -13346,9 +13346,9 @@ Remaining people: 24206366
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#drop under 55s and 55-65s with no COVID risk status</span>
-<span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">cohort</span><span class="o">!=</span><span class="s1">&#39;lt_55&#39;</span><span class="p">)]</span>
-<span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">cohort</span><span class="o">!=</span><span class="s1">&#39;55_65N&#39;</span><span class="p">)]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#drop under 50s and 50-65s with no COVID risk status</span>
+<span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">cohort</span><span class="o">!=</span><span class="s1">'lt_50'</span><span class="p">)]</span>
+<span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">cohort</span><span class="o">!=</span><span class="s1">'50_65N'</span><span class="p">)]</span>
 <span class="n">print_remainder</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
@@ -13366,7 +13366,7 @@ Remaining people: 24206366
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Remaining people: 15414
+<pre>Remaining people: 16939
 </pre>
 </div>
 </div>
@@ -13378,7 +13378,7 @@ Remaining people: 24206366
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="PCR-Testing">PCR Testing<a class="anchor-link" href="#PCR-Testing">&#182;</a></h2><p>Only patients identified as having COVID-19 by PCR testing to be included in this study</p>
+<h2 id="PCR-Testing">PCR Testing<a class="anchor-link" href="file:///D:/Level4FIles/workspaces/principle_trial_budesonide_inhalers_main/output/exclusion_counts.html#PCR-Testing">¶</a></h2><p>Only patients identified as having COVID-19 by PCR testing to be included in this study</p>
 
 </div>
 </div>
@@ -13388,7 +13388,7 @@ Remaining people: 24206366
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Most recent positive test date: {pd.to_datetime(df.first_positive_test_date).max()}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Most recent positive test date: {pd.to_datetime(df.first_positive_test_date).max()}'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13419,9 +13419,9 @@ Remaining people: 24206366
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">excl_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_type</span> <span class="o">==</span> <span class="s2">&quot;LFT_Only&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Patients identified as COVID-positive only by lateral flow test {suppress_scalar(excl_count)}&#39;</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_type</span> <span class="o">!=</span> <span class="s2">&quot;LFT_Only&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">excl_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_type</span> <span class="o">==</span> <span class="s2">"LFT_Only"</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Patients identified as COVID-positive only by lateral flow test {suppress_scalar(excl_count)}'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">first_positive_test_type</span> <span class="o">!=</span> <span class="s2">"LFT_Only"</span><span class="p">]</span>
 <span class="n">print_remainder</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
@@ -13439,8 +13439,8 @@ Remaining people: 24206366
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Patients identified as COVID-positive only by lateral flow test 1595
-Remaining people: 13819
+<pre>Patients identified as COVID-positive only by lateral flow test 1734
+Remaining people: 15205
 </pre>
 </div>
 </div>
@@ -13452,7 +13452,7 @@ Remaining people: 13819
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Hospital-Admissions">Hospital Admissions<a class="anchor-link" href="#Hospital-Admissions">&#182;</a></h1><p>Exclude persons identified as</p>
+<h1 id="Hospital-Admissions">Hospital Admissions<a class="anchor-link" href="file:///D:/Level4FIles/workspaces/principle_trial_budesonide_inhalers_main/output/exclusion_counts.html#Hospital-Admissions">¶</a></h1><p>Exclude persons identified as</p>
 <ul>
 <li>having been admitted to hospital with a<ul>
 <li>diagnosis of COVID-19 or </li>
@@ -13470,11 +13470,11 @@ Remaining people: 13819
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_hosp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;primary_covid_hospital_admission&#39;</span><span class="p">,</span><span class="s1">&#39;covid_admission&#39;</span><span class="p">,</span><span class="s1">&#39;covid_emergency_admission&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-<span class="n">df_hosp</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;cohort&#39;</span><span class="p">,</span><span class="s1">&#39;All&#39;</span><span class="p">)</span>
-<span class="n">df_hosp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_hosp</span><span class="p">,</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;cohort&#39;</span><span class="p">,</span><span class="s1">&#39;primary_covid_hospital_admission&#39;</span><span class="p">,</span><span class="s1">&#39;covid_admission&#39;</span><span class="p">,</span><span class="s1">&#39;covid_emergency_admission&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()],</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df_hosp</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;patient_id&#39;</span><span class="p">:</span><span class="s1">&#39;Count of patients&#39;</span><span class="p">,</span><span class="s1">&#39;primary_covid_hospital_admission&#39;</span><span class="p">:</span><span class="s1">&#39;Admitted w/primary CV19 diagnosis&#39;</span><span class="p">,</span><span class="s1">&#39;covid_admission&#39;</span><span class="p">:</span><span class="s1">&#39;Admitted w/CV19 diagnosis&#39;</span><span class="p">,</span><span class="s1">&#39;covid_emergency_admission&#39;</span><span class="p">:</span><span class="s1">&#39;Emergency Admission w/CV19 diagnosis&#39;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df_hosp</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df_hosp</span><span class="p">,[</span><span class="s1">&#39;Count of patients&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_hosp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'primary_covid_hospital_admission'</span><span class="p">,</span><span class="s1">'covid_admission'</span><span class="p">,</span><span class="s1">'covid_emergency_admission'</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">'patient_id'</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">df_hosp</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">'cohort'</span><span class="p">,</span><span class="s1">'All'</span><span class="p">)</span>
+<span class="n">df_hosp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_hosp</span><span class="p">,</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'cohort'</span><span class="p">,</span><span class="s1">'primary_covid_hospital_admission'</span><span class="p">,</span><span class="s1">'covid_admission'</span><span class="p">,</span><span class="s1">'covid_emergency_admission'</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">'patient_id'</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()],</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_hosp</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">'patient_id'</span><span class="p">:</span><span class="s1">'Count of patients'</span><span class="p">,</span><span class="s1">'primary_covid_hospital_admission'</span><span class="p">:</span><span class="s1">'Admitted w/primary CV19 diagnosis'</span><span class="p">,</span><span class="s1">'covid_admission'</span><span class="p">:</span><span class="s1">'Admitted w/CV19 diagnosis'</span><span class="p">,</span><span class="s1">'covid_emergency_admission'</span><span class="p">:</span><span class="s1">'Emergency Admission w/CV19 diagnosis'</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_hosp</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df_hosp</span><span class="p">,[</span><span class="s1">'Count of patients'</span><span class="p">])</span>
 <span class="n">df_hosp</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide_index</span><span class="p">()</span>
 </pre></div>
 
@@ -13493,168 +13493,168 @@ Remaining people: 13819
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<style  type="text/css" >
-</style><table id="T_566f4806_f54f_11eb_8d80_0242ac110005" ><thead>    <tr>        <th class="col_heading level0 col0" >cohort</th>        <th class="col_heading level0 col1" >Admitted w/primary CV19 diagnosis</th>        <th class="col_heading level0 col2" >Admitted w/CV19 diagnosis</th>        <th class="col_heading level0 col3" >Emergency Admission w/CV19 diagnosis</th>        <th class="col_heading level0 col4" >Count of patients</th>    </tr></thead><tbody>
+<style type="text/css">
+</style><table id="T_3648b750_f8c5_11eb_a78b_0242ac110008"><thead>    <tr>        <th class="col_heading level0 col0">cohort</th>        <th class="col_heading level0 col1">Admitted w/primary CV19 diagnosis</th>        <th class="col_heading level0 col2">Admitted w/CV19 diagnosis</th>        <th class="col_heading level0 col3">Emergency Admission w/CV19 diagnosis</th>        <th class="col_heading level0 col4">Count of patients</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row0_col0" class="data row0 col0" >All</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row0_col1" class="data row0 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row0_col2" class="data row0 col2" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row0_col3" class="data row0 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row0_col4" class="data row0 col4" >13018</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row0_col0" class="data row0 col0">All</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row0_col1" class="data row0 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row0_col2" class="data row0 col2">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row0_col3" class="data row0 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row0_col4" class="data row0 col4">14357</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row1_col0" class="data row1 col0" >All</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row1_col1" class="data row1 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row1_col2" class="data row1 col2" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row1_col3" class="data row1 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row1_col4" class="data row1 col4" >349</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row1_col0" class="data row1 col0">All</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row1_col1" class="data row1 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row1_col2" class="data row1 col2">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row1_col3" class="data row1 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row1_col4" class="data row1 col4">379</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row2_col0" class="data row2 col0" >All</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row2_col1" class="data row2 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row2_col2" class="data row2 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row2_col3" class="data row2 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row2_col4" class="data row2 col4" >167</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row2_col0" class="data row2 col0">All</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row2_col1" class="data row2 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row2_col2" class="data row2 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row2_col3" class="data row2 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row2_col4" class="data row2 col4">170</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row3_col0" class="data row3 col0" >All</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row3_col1" class="data row3 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row3_col2" class="data row3 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row3_col3" class="data row3 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row3_col4" class="data row3 col4" >17</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row3_col0" class="data row3 col0">All</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row3_col1" class="data row3 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row3_col2" class="data row3 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row3_col3" class="data row3 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row3_col4" class="data row3 col4">17</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row4_col0" class="data row4 col0" >All</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row4_col1" class="data row4 col1" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row4_col2" class="data row4 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row4_col3" class="data row4 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row4_col4" class="data row4 col4" >188</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row4_col0" class="data row4 col0">All</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row4_col1" class="data row4 col1">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row4_col2" class="data row4 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row4_col3" class="data row4 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row4_col4" class="data row4 col4">197</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row5_col0" class="data row5 col0" >All</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row5_col1" class="data row5 col1" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row5_col2" class="data row5 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row5_col3" class="data row5 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row5_col4" class="data row5 col4" >74</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row5_col0" class="data row5 col0">All</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row5_col1" class="data row5 col1">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row5_col2" class="data row5 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row5_col3" class="data row5 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row5_col4" class="data row5 col4">77</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row6_col0" class="data row6 col0" >55_65H</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row6_col1" class="data row6 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row6_col2" class="data row6 col2" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row6_col3" class="data row6 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row6_col4" class="data row6 col4" >1311</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row6_col0" class="data row6 col0">50_65H</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row6_col1" class="data row6 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row6_col2" class="data row6 col2">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row6_col3" class="data row6 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row6_col4" class="data row6 col4">2183</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row7_col0" class="data row7 col0" >55_65H</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row7_col1" class="data row7 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row7_col2" class="data row7 col2" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row7_col3" class="data row7 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row7_col4" class="data row7 col4" >38</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row7_col0" class="data row7 col0">50_65H</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row7_col1" class="data row7 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row7_col2" class="data row7 col2">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row7_col3" class="data row7 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row7_col4" class="data row7 col4">56</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row8_col0" class="data row8 col0" >55_65H</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row8_col1" class="data row8 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row8_col2" class="data row8 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row8_col3" class="data row8 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row8_col4" class="data row8 col4" >16</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row8_col0" class="data row8 col0">50_65H</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row8_col1" class="data row8 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row8_col2" class="data row8 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row8_col3" class="data row8 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row8_col4" class="data row8 col4">19</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row9_col0" class="data row9 col0" >55_65H</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row9_col1" class="data row9 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row9_col2" class="data row9 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row9_col3" class="data row9 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row9_col4" class="data row9 col4" ><10</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row9_col0" class="data row9 col0">50_65H</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row9_col1" class="data row9 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row9_col2" class="data row9 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row9_col3" class="data row9 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row9_col4" class="data row9 col4">&lt;10</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row10_col0" class="data row10 col0" >55_65H</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row10_col1" class="data row10 col1" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row10_col2" class="data row10 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row10_col3" class="data row10 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row10_col4" class="data row10 col4" >21</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row10_col0" class="data row10 col0">50_65H</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row10_col1" class="data row10 col1">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row10_col2" class="data row10 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row10_col3" class="data row10 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row10_col4" class="data row10 col4">32</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row11_col0" class="data row11 col0" >55_65H</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row11_col1" class="data row11 col1" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row11_col2" class="data row11 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row11_col3" class="data row11 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row11_col4" class="data row11 col4" >15</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row11_col0" class="data row11 col0">50_65H</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row11_col1" class="data row11 col1">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row11_col2" class="data row11 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row11_col3" class="data row11 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row11_col4" class="data row11 col4">18</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row12_col0" class="data row12 col0" >55_65L</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row12_col1" class="data row12 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row12_col2" class="data row12 col2" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row12_col3" class="data row12 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row12_col4" class="data row12 col4" >644</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row12_col0" class="data row12 col0">50_65L</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row12_col1" class="data row12 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row12_col2" class="data row12 col2">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row12_col3" class="data row12 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row12_col4" class="data row12 col4">1110</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row13_col0" class="data row13 col0" >55_65L</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row13_col1" class="data row13 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row13_col2" class="data row13 col2" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row13_col3" class="data row13 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row13_col4" class="data row13 col4" ><10</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row13_col0" class="data row13 col0">50_65L</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row13_col1" class="data row13 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row13_col2" class="data row13 col2">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row13_col3" class="data row13 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row13_col4" class="data row13 col4">12</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row14_col0" class="data row14 col0" >55_65L</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row14_col1" class="data row14 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row14_col2" class="data row14 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row14_col3" class="data row14 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row14_col4" class="data row14 col4" ><10</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row14_col0" class="data row14 col0">50_65L</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row14_col1" class="data row14 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row14_col2" class="data row14 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row14_col3" class="data row14 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row14_col4" class="data row14 col4">&lt;10</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row15_col0" class="data row15 col0" >55_65L</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row15_col1" class="data row15 col1" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row15_col2" class="data row15 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row15_col3" class="data row15 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row15_col4" class="data row15 col4" ><10</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row15_col0" class="data row15 col0">50_65L</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row15_col1" class="data row15 col1">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row15_col2" class="data row15 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row15_col3" class="data row15 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row15_col4" class="data row15 col4">&lt;10</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row16_col0" class="data row16 col0" >55_65L</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row16_col1" class="data row16 col1" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row16_col2" class="data row16 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row16_col3" class="data row16 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row16_col4" class="data row16 col4" ><10</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row16_col0" class="data row16 col0">50_65L</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row16_col1" class="data row16 col1">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row16_col2" class="data row16 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row16_col3" class="data row16 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row16_col4" class="data row16 col4">&lt;10</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row17_col0" class="data row17 col0" >65_plus</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row17_col1" class="data row17 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row17_col2" class="data row17 col2" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row17_col3" class="data row17 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row17_col4" class="data row17 col4" >11063</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row17_col0" class="data row17 col0">65_plus</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row17_col1" class="data row17 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row17_col2" class="data row17 col2">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row17_col3" class="data row17 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row17_col4" class="data row17 col4">11064</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row18_col0" class="data row18 col0" >65_plus</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row18_col1" class="data row18 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row18_col2" class="data row18 col2" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row18_col3" class="data row18 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row18_col4" class="data row18 col4" >311</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row18_col0" class="data row18 col0">65_plus</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row18_col1" class="data row18 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row18_col2" class="data row18 col2">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row18_col3" class="data row18 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row18_col4" class="data row18 col4">311</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row19_col0" class="data row19 col0" >65_plus</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row19_col1" class="data row19 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row19_col2" class="data row19 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row19_col3" class="data row19 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row19_col4" class="data row19 col4" >151</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row19_col0" class="data row19 col0">65_plus</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row19_col1" class="data row19 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row19_col2" class="data row19 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row19_col3" class="data row19 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row19_col4" class="data row19 col4">151</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row20_col0" class="data row20 col0" >65_plus</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row20_col1" class="data row20 col1" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row20_col2" class="data row20 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row20_col3" class="data row20 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row20_col4" class="data row20 col4" >17</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row20_col0" class="data row20 col0">65_plus</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row20_col1" class="data row20 col1">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row20_col2" class="data row20 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row20_col3" class="data row20 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row20_col4" class="data row20 col4">17</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row21_col0" class="data row21 col0" >65_plus</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row21_col1" class="data row21 col1" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row21_col2" class="data row21 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row21_col3" class="data row21 col3" >0</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row21_col4" class="data row21 col4" >157</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row21_col0" class="data row21 col0">65_plus</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row21_col1" class="data row21 col1">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row21_col2" class="data row21 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row21_col3" class="data row21 col3">0</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row21_col4" class="data row21 col4">157</td>
             </tr>
             <tr>
-                                <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row22_col0" class="data row22 col0" >65_plus</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row22_col1" class="data row22 col1" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row22_col2" class="data row22 col2" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row22_col3" class="data row22 col3" >1</td>
-                        <td id="T_566f4806_f54f_11eb_8d80_0242ac110005row22_col4" class="data row22 col4" >59</td>
+                                <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row22_col0" class="data row22 col0">65_plus</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row22_col1" class="data row22 col1">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row22_col2" class="data row22 col2">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row22_col3" class="data row22 col3">1</td>
+                        <td id="T_3648b750_f8c5_11eb_a78b_0242ac110008row22_col4" class="data row22 col4">59</td>
             </tr>
     </tbody></table>
 </div>
@@ -13668,7 +13668,7 @@ Remaining people: 13819
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Previous-Steroid-Prescription">Previous Steroid Prescription<a class="anchor-link" href="#Previous-Steroid-Prescription">&#182;</a></h1><p>Exclude patients recorded as having recieved a prescription for inhaled or oral steroids in the three months (90 days) leading up the issuance of the guidance</p>
+<h1 id="Previous-Steroid-Prescription">Previous Steroid Prescription<a class="anchor-link" href="file:///D:/Level4FIles/workspaces/principle_trial_budesonide_inhalers_main/output/exclusion_counts.html#Previous-Steroid-Prescription">¶</a></h1><p>Exclude patients recorded as having recieved a prescription for inhaled or oral steroids in the three months (90 days) leading up the issuance of the guidance</p>
 
 </div>
 </div>
@@ -13678,11 +13678,11 @@ Remaining people: 13819
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_prev_ccs</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;has_previous_steroid_prescription&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-<span class="n">df_prev_ccs</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;cohort&#39;</span><span class="p">,</span><span class="s1">&#39;All&#39;</span><span class="p">)</span>
-<span class="n">df_prev_ccs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_prev_ccs</span><span class="p">,</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;cohort&#39;</span><span class="p">,</span><span class="s1">&#39;has_previous_steroid_prescription&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;patient_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()],</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df_prev_ccs</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;patient_id&#39;</span><span class="p">:</span><span class="s1">&#39;Count of patients&#39;</span><span class="p">,</span><span class="s1">&#39;has_previous_steroid_prescription&#39;</span><span class="p">:</span><span class="s1">&#39;Having previous corticosteroid prescription&#39;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df_prev_ccs</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df_prev_ccs</span><span class="p">,[</span><span class="s1">&#39;Count of patients&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_prev_ccs</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'has_previous_steroid_prescription'</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">'patient_id'</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">df_prev_ccs</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">'cohort'</span><span class="p">,</span><span class="s1">'All'</span><span class="p">)</span>
+<span class="n">df_prev_ccs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_prev_ccs</span><span class="p">,</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'cohort'</span><span class="p">,</span><span class="s1">'has_previous_steroid_prescription'</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">'patient_id'</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()],</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_prev_ccs</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">'patient_id'</span><span class="p">:</span><span class="s1">'Count of patients'</span><span class="p">,</span><span class="s1">'has_previous_steroid_prescription'</span><span class="p">:</span><span class="s1">'Having previous corticosteroid prescription'</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_prev_ccs</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">df_prev_ccs</span><span class="p">,[</span><span class="s1">'Count of patients'</span><span class="p">])</span>
 <span class="n">df_prev_ccs</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide_index</span><span class="p">()</span>
 </pre></div>
 
@@ -13701,47 +13701,47 @@ Remaining people: 13819
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<style  type="text/css" >
-</style><table id="T_56790c10_f54f_11eb_8d80_0242ac110005" ><thead>    <tr>        <th class="col_heading level0 col0" >cohort</th>        <th class="col_heading level0 col1" >Having previous corticosteroid prescription</th>        <th class="col_heading level0 col2" >Count of patients</th>    </tr></thead><tbody>
+<style type="text/css">
+</style><table id="T_3652b520_f8c5_11eb_a78b_0242ac110008"><thead>    <tr>        <th class="col_heading level0 col0">cohort</th>        <th class="col_heading level0 col1">Having previous corticosteroid prescription</th>        <th class="col_heading level0 col2">Count of patients</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row0_col0" class="data row0 col0" >All</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row0_col1" class="data row0 col1" >0</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row0_col2" class="data row0 col2" >11300</td>
+                                <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row0_col0" class="data row0 col0">All</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row0_col1" class="data row0 col1">0</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row0_col2" class="data row0 col2">12404</td>
             </tr>
             <tr>
-                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row1_col0" class="data row1 col0" >All</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row1_col1" class="data row1 col1" >1</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row1_col2" class="data row1 col2" >2519</td>
+                                <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row1_col0" class="data row1 col0">All</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row1_col1" class="data row1 col1">1</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row1_col2" class="data row1 col2">2801</td>
             </tr>
             <tr>
-                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row2_col0" class="data row2 col0" >55_65H</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row2_col1" class="data row2 col1" >0</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row2_col2" class="data row2 col2" >1015</td>
+                                <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row2_col0" class="data row2 col0">50_65H</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row2_col1" class="data row2 col1">0</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row2_col2" class="data row2 col2">1725</td>
             </tr>
             <tr>
-                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row3_col0" class="data row3 col0" >55_65H</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row3_col1" class="data row3 col1" >1</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row3_col2" class="data row3 col2" >387</td>
+                                <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row3_col0" class="data row3 col0">50_65H</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row3_col1" class="data row3 col1">1</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row3_col2" class="data row3 col2">584</td>
             </tr>
             <tr>
-                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row4_col0" class="data row4 col0" >55_65L</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row4_col1" class="data row4 col1" >0</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row4_col2" class="data row4 col2" >545</td>
+                                <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row4_col0" class="data row4 col0">50_65L</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row4_col1" class="data row4 col1">0</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row4_col2" class="data row4 col2">938</td>
             </tr>
             <tr>
-                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row5_col0" class="data row5 col0" >55_65L</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row5_col1" class="data row5 col1" >1</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row5_col2" class="data row5 col2" >114</td>
+                                <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row5_col0" class="data row5 col0">50_65L</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row5_col1" class="data row5 col1">1</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row5_col2" class="data row5 col2">199</td>
             </tr>
             <tr>
-                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row6_col0" class="data row6 col0" >65_plus</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row6_col1" class="data row6 col1" >0</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row6_col2" class="data row6 col2" >9740</td>
+                                <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row6_col0" class="data row6 col0">65_plus</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row6_col1" class="data row6 col1">0</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row6_col2" class="data row6 col2">9741</td>
             </tr>
             <tr>
-                                <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row7_col0" class="data row7 col0" >65_plus</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row7_col1" class="data row7 col1" >1</td>
-                        <td id="T_56790c10_f54f_11eb_8d80_0242ac110005row7_col2" class="data row7 col2" >2018</td>
+                                <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row7_col0" class="data row7 col0">65_plus</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row7_col1" class="data row7 col1">1</td>
+                        <td id="T_3652b520_f8c5_11eb_a78b_0242ac110008row7_col2" class="data row7 col2">2018</td>
             </tr>
     </tbody></table>
 </div>
@@ -13755,7 +13755,7 @@ Remaining people: 13819
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Hospitalisation-x-Previous-Steroid-Prescription">Hospitalisation x Previous Steroid Prescription<a class="anchor-link" href="#Hospitalisation-x-Previous-Steroid-Prescription">&#182;</a></h1><p>Cross-tabluation of previous two exclusion criteria to understand interactions</p>
+<h1 id="Hospitalisation-x-Previous-Steroid-Prescription">Hospitalisation x Previous Steroid Prescription<a class="anchor-link" href="file:///D:/Level4FIles/workspaces/principle_trial_budesonide_inhalers_main/output/exclusion_counts.html#Hospitalisation-x-Previous-Steroid-Prescription">¶</a></h1><p>Cross-tabluation of previous two exclusion criteria to understand interactions</p>
 
 </div>
 </div>
@@ -13765,8 +13765,8 @@ Remaining people: 13819
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hospXccs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;patient_id&#39;</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;primary_covid_hospital_admission&#39;</span><span class="p">,</span><span class="s1">&#39;covid_admission&#39;</span><span class="p">,</span><span class="s1">&#39;covid_emergency_admission&#39;</span><span class="p">],</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;has_previous_steroid_prescription&#39;</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span><span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">hospXccs</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{y}</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hospXccs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="s1">'patient_id'</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">'primary_covid_hospital_admission'</span><span class="p">,</span><span class="s1">'covid_admission'</span><span class="p">,</span><span class="s1">'covid_emergency_admission'</span><span class="p">],</span><span class="n">columns</span><span class="o">=</span><span class="s1">'has_previous_steroid_prescription'</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="s1">'count'</span><span class="p">,</span><span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">hospXccs</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{y}</span><span class="s1">'</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">hospXccs</span> <span class="o">=</span> <span class="n">suppress</span><span class="p">(</span><span class="n">hospXccs</span><span class="p">,</span><span class="n">hospXccs</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 <span class="n">hospXccs</span>
 </pre></div>
@@ -13787,7 +13787,7 @@ Remaining people: 13819
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style scoped>
+<style scoped="">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -13824,50 +13824,50 @@ Remaining people: 13819
       <th rowspan="4" valign="top">0</th>
       <th rowspan="2" valign="top">0</th>
       <th>0</th>
-      <td>10725</td>
-      <td>2293</td>
-      <td>13018</td>
+      <td>11793</td>
+      <td>2564</td>
+      <td>14357</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>246</td>
-      <td>112</td>
-      <td>349</td>
+      <td>262</td>
+      <td>117</td>
+      <td>379</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">1</th>
       <th>0</th>
-      <td>136</td>
-      <td>33</td>
-      <td>167</td>
+      <td>140</td>
+      <td>34</td>
+      <td>170</td>
     </tr>
     <tr>
       <th>1</th>
       <td>11</td>
       <td>&lt;10</td>
-      <td>17</td>
+      <td>-</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">1</th>
       <th rowspan="2" valign="top">1</th>
       <th>0</th>
-      <td>130</td>
-      <td>50</td>
-      <td>178</td>
+      <td>143</td>
+      <td>54</td>
+      <td>189</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>52</td>
-      <td>24</td>
-      <td>74</td>
+      <td>55</td>
+      <td>25</td>
+      <td>77</td>
     </tr>
     <tr>
       <th>All</th>
       <th></th>
       <th></th>
-      <td>11300</td>
-      <td>2519</td>
-      <td>13819</td>
+      <td>12404</td>
+      <td>2783</td>
+      <td>15176</td>
     </tr>
   </tbody>
 </table>
@@ -13903,7 +13903,7 @@ Remaining people: 13819
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Remaining people: 10725
+<pre>Remaining people: 11793
 </pre>
 </div>
 </div>
@@ -13915,7 +13915,7 @@ Remaining people: 13819
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="GP-Consultation">GP Consultation<a class="anchor-link" href="#GP-Consultation">&#182;</a></h2><p>The presence of a GP consultation within 7 days prior to, or 7 days post the first positive test result is included as an explanatory variable rather than an exclusion criteria due to uncertainty about its recording.</p>
+<h2 id="GP-Consultation">GP Consultation<a class="anchor-link" href="file:///D:/Level4FIles/workspaces/principle_trial_budesonide_inhalers_main/output/exclusion_counts.html#GP-Consultation">¶</a></h2><p>The presence of a GP consultation within 7 days prior to, or 7 days post the first positive test result is included as an explanatory variable rather than an exclusion criteria due to uncertainty about its recording.</p>
 
 </div>
 </div>
@@ -13926,7 +13926,7 @@ Remaining people: 13819
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">excl_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">with_consultation</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Patients without GP consultation +/- 7 days from positive test {suppress_scalar(excl_count)}&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Patients without GP consultation +/- 7 days from positive test {suppress_scalar(excl_count)}'</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">with_consultation</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
 <span class="n">print_remainder</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
@@ -13945,8 +13945,8 @@ Remaining people: 13819
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Patients without GP consultation +/- 7 days from positive test 7164
-Remaining people: 3561
+<pre>Patients without GP consultation +/- 7 days from positive test 7872
+Remaining people: 3921
 </pre>
 </div>
 </div>
@@ -13957,9 +13957,10 @@ Remaining people: 3561
 </div>
     </div>
   </div>
-</body>
+
 
  
 
 
-</html>
+
+</body></html>
