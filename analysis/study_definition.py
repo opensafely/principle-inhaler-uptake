@@ -116,6 +116,12 @@ study = StudyDefinition(
             }
         }
     ),
+    practice_id = patients.registered_practice_as_of(
+        "index_date",
+        returning='pseudo_id',
+        return_expectations={"int" : {"distribution": "normal", "mean": 25, "stddev": 5}, "incidence" : 1}
+    ),
+
     region=patients.registered_practice_as_of(
         "index_date",
         returning='nuts1_region_name',
