@@ -13971,7 +13971,7 @@ a.anchor-link {
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13985,7 +13985,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">case_data_url</span> <span class="o">=</span> <span class="s1">&#39;https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&amp;areaCode=E92000001&amp;metric=newCasesBySpecimenDateAgeDemographics&amp;format=csv&#39;</span>
@@ -14000,7 +14000,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_case_by_age</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">case_data_url</span><span class="p">)</span>
@@ -14014,11 +14014,11 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#create same age bands as study def</span>
-<span class="n">df_case_by_age</span><span class="p">[</span><span class="s1">&#39;age_band&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_case_by_age</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;65_plus&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;7&#39;</span><span class="p">,</span><span class="s1">&#39;8&#39;</span><span class="p">,</span><span class="s1">&#39;9&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span><span class="s1">&#39;65&#39;</span> <span class="k">else</span> <span class="s1">&#39;55_65&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;55&#39;</span><span class="p">,</span><span class="s1">&#39;60&#39;</span><span class="p">,</span><span class="s1">&#39;65&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span> <span class="o">==</span> <span class="s1">&#39;unassigned&#39;</span> <span class="k">else</span> <span class="s1">&#39;lt_55&#39;</span>  <span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_case_by_age</span><span class="p">[</span><span class="s1">&#39;age_band&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_case_by_age</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;65_plus&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;7&#39;</span><span class="p">,</span><span class="s1">&#39;8&#39;</span><span class="p">,</span><span class="s1">&#39;9&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span><span class="s1">&#39;65&#39;</span> <span class="k">else</span> <span class="s1">&#39;50_64&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;50&#39;</span><span class="p">,</span><span class="s1">&#39;55&#39;</span><span class="p">,</span><span class="s1">&#39;60&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">age</span> <span class="o">==</span> <span class="s1">&#39;unassigned&#39;</span> <span class="k">else</span> <span class="s1">&#39;lt_50&#39;</span>  <span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14029,7 +14029,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#convert dates to datetime</span>
@@ -14044,7 +14044,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#filter to study date range</span>
@@ -14059,7 +14059,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_case_by_age</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_case_by_age</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m&#39;</span><span class="p">)</span>
@@ -14073,10 +14073,10 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df_case_by_age</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;month&#39;</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;age_band&#39;</span><span class="p">],</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;cases&#39;</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span><span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df_case_by_age</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;month&#39;</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;age_band&#39;</span><span class="p">],</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;cases&#39;</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span><span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -14092,11 +14092,11 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -14115,9 +14115,9 @@ a.anchor-link {
   <thead>
     <tr style="text-align: right;">
       <th>age_band</th>
-      <th>55_65</th>
+      <th>50_64</th>
       <th>65_plus</th>
-      <th>lt_55</th>
+      <th>lt_50</th>
       <th>unassigned</th>
       <th>All</th>
     </tr>
@@ -14133,51 +14133,59 @@ a.anchor-link {
   <tbody>
     <tr>
       <th>2021-03</th>
-      <td>1500</td>
+      <td>2129</td>
       <td>518</td>
-      <td>16474</td>
+      <td>15843</td>
       <td>49</td>
-      <td>18541</td>
+      <td>18539</td>
     </tr>
     <tr>
       <th>2021-04</th>
-      <td>9996</td>
-      <td>3530</td>
-      <td>105098</td>
-      <td>268</td>
+      <td>13483</td>
+      <td>3527</td>
+      <td>101616</td>
+      <td>266</td>
       <td>118892</td>
     </tr>
     <tr>
       <th>2021-05</th>
-      <td>7851</td>
-      <td>2425</td>
-      <td>113324</td>
+      <td>10943</td>
+      <td>2427</td>
+      <td>110226</td>
       <td>73</td>
-      <td>123673</td>
+      <td>123669</td>
     </tr>
     <tr>
       <th>2021-06</th>
-      <td>25402</td>
-      <td>7513</td>
-      <td>560467</td>
-      <td>201</td>
-      <td>593583</td>
+      <td>37171</td>
+      <td>7517</td>
+      <td>548744</td>
+      <td>200</td>
+      <td>593632</td>
     </tr>
     <tr>
       <th>2021-07</th>
-      <td>99799</td>
-      <td>31427</td>
-      <td>1607530</td>
-      <td>446</td>
-      <td>1739202</td>
+      <td>151616</td>
+      <td>34568</td>
+      <td>1681964</td>
+      <td>477</td>
+      <td>1868625</td>
+    </tr>
+    <tr>
+      <th>2021-08</th>
+      <td>34071</td>
+      <td>8860</td>
+      <td>295377</td>
+      <td>61</td>
+      <td>338369</td>
     </tr>
     <tr>
       <th>All</th>
-      <td>144548</td>
-      <td>45413</td>
-      <td>2402893</td>
-      <td>1037</td>
-      <td>2593891</td>
+      <td>249413</td>
+      <td>57417</td>
+      <td>2753770</td>
+      <td>1126</td>
+      <td>3061726</td>
     </tr>
   </tbody>
 </table>
