@@ -1,6 +1,6 @@
-# {{project_name}}
+# Measuring implementation of a national COVID-19 therapeutic alert following PRINCIPLE trial using OpenSAFELY
 
-This is the code and configuration for {{project_name}}
+This is the code and configuration for measurement of the implementation of a [a national COVID-19 therapeutic alert](https://www.cas.mhra.gov.uk/ViewandAcknowledgment/ViewAlert.aspx?AlertID=103154) about the prescribing of inhaled budesonide for patients with COVID-19 in people at high risk of complications following pre-publication results2 from the [PRINCIPLE trial](https://doi.org/10.1016/S0140-6736(21)01744-X)
 
 * The paper is [here]()
 * Raw model outputs, including charts, crosstabs, etc, are in `released_outputs/`
