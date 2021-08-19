@@ -5,6 +5,7 @@ from datetime import date, timedelta
 '''
 Guidance issued 2021-04-12, with inclusion criteria of symptom onset within 14 days, therefore index date of 2021-03-29
 '''
+last_day_of_last_month = (date.today().replace(day=1) - timedelta(days=1)).strftime('%Y-%m-%d')
 
 study = StudyDefinition(
     default_expectations={
@@ -36,9 +37,8 @@ study = StudyDefinition(
     first_positive_test_date=patients.with_test_result_in_sgss(
         pathogen="SARS-CoV-2",
         test_result="positive",
-        on_or_after="index_date",
+        between=["index_date",last_day_of_last_month],
         find_first_match_in_period=True,
-        #restrict_to_earliest_specimen_date=False,
         returning="date",
         date_format="YYYY-MM-DD",
         return_expectations={
@@ -50,9 +50,8 @@ study = StudyDefinition(
     first_positive_test_type=patients.with_test_result_in_sgss(
         pathogen="SARS-CoV-2",
         test_result="positive",
-        on_or_after="index_date",
+        between=["index_date",last_day_of_last_month],
         find_first_match_in_period=True,
-        #restrict_to_earliest_specimen_date=False,
         returning="case_category",
         return_expectations={
             "rate": "universal",
