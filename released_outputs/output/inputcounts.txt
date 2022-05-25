@@ -1,7 +1,0 @@
-totalrows:1727
-first_positive_test_date_notna:1727
-with_consultation:614
-hospitalised:1625
-has_budesonide_prescription__0:1724
-has_budesonide_prescription__1:[REDACTED]
-has_budesonide_prescription__2:[REDACTED]
